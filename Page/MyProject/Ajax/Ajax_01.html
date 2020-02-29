@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax-get</title>
+</head>
+<body>
+<h1></h1>
+<script>
+    //创建Ajax
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function () {//监听请求
+        if(xhr.readyState!==4){return;}
+        if(xhr.status>=200 && xhr.status<=300){
+            document.querySelector('h1').innerText=xhr.responseText;//将获取的数据（全部存在responseText属性中）通过选中器写入h1标签中
+        }else{
+            console.error("请求失败！");
+        }
+    }
+    xhr.open('get','../text/css.txt',true);//打开xhr对象
+    xhr.send();//发送请求
+</script>
+</body>
+</html>

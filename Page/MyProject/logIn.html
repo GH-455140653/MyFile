@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>登陆</title>
+	<script type="text/javascript" src="js/waibuyinru.js"></script>
+	<script src="./jQuery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() { //页面打开时检查是否存在记录的账号和密码
+			if(getCookies("loginAN")) {
+				document.getElementById("Account").value = getCookies("loginAN");
+				if(getCookies("loginPW")) document.getElementById("Password").value = getCookies("loginPW");
+			}
+		};
+
+		function mouseOnclickLogin() {
+			const checkBox = document.getElementById("Checkbox");
+			const aN = document.getElementById("Account").value;
+			const pW = document.getElementById("Password").value;
+			if(ischina(aN)) {
+				mouseOnclickRemove();
+				return alert("请输入字母、数字、下划线！");
+			}
+			if(pW && aN) {
+				if(checkBox.checked) {
+					setCookies("loginAN", aN, 7);
+					setCookies("loginPW", pW, 7);
+				} else {
+					setCookies("loginAN", aN, 1); //只保存账号，保存时间为1天，用于页面数据传递。
+				}
+				//实现简单的静态账号密码登陆检查
+				const xhr = new XMLHttpRequest();
+				xhr.onreadystatechange=function () {
+					if(xhr.readyState!==4) return;
+					if(xhr.status>=200 && xhr.status<=300){
+						const resp = JSON.parse(xhr.responseText);
+						if(resp.user===aN && resp.password===pW) {
+							alert('登陆成功！');
+							window.open("index.html",'_self');//当前页面跳转
+						}
+						else alert('账号或密码错误！');
+					}else{
+						console.error('遇到未知错误，请求失败！');
+					}
+				};
+				xhr.open('post','./jsonp/login.json',true);
+				xhr.setRequestHeader('Content-Type','application/x-www.form-urlencoded');
+				xhr.send('user=LRL&password=123');
+			} else {
+				alert("请输入账号和密码！")
+			}
+		}
+
+		function mouseOnclickRemove() {
+			removeCookies("loginAN");
+			document.getElementById("Account").value = "";
+			removeCookies("loginPW");
+			document.getElementById("Password").value = "";
+		}
+
+		// $('#Password').keydown(function() {
+		// 	if (event.keyCode === "13") {
+		// 		$('.btn_Login').click();
+		// 	}
+		// });
+
+	</script>
+	<style type="text/css">
+		.div_body{margin:0 30% 0 40%}
+		.div_head{
+			margin:10% 30% 2% 45.6%;
+			width: 128px;
+			height: 128px;
+			background-image: url("./icon/login.png")
+		}
+		body{
+			background: #E9E7EF;
+		}
+		#Account{
+			height: 30px;
+			width: 200px;
+
+		}
+		#Password{
+			height: 30px;
+			width: 200px;
+		}
+		div input{
+			border: 1px solid #ccc;  /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+			/*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+			border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+			/*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+			padding: 7px 0 7px 5px;
+		}
+	</style>
+</head>
+
+<body>
+<div class="div_head"></div>
+<div class="div_body">
+	<div>
+		<label for="Account">账号：</label><input id="Account" placeholder="请输入你的账号" maxlength="15"/>
+	</div>
+	<div style="margin-top: 10px">
+		<label for="Password">密码：</label><input type="password" id="Password" placeholder="请输入你的密码" maxlength="20"/>
+	</div>
+	<div style="margin: 10px 0 10px 52px;">
+		<button class="btn_Login" style="height: 50px;width: 95px;cursor: pointer" onclick="mouseOnclickLogin()">登录</button>
+		<button style="height: 50px;width: 95px;cursor: pointer" onclick="mouseOnclickRemove()">清除</button>
+		<input type="checkbox" id="Checkbox" /><label for="Checkbox">记住密码</label>
+	</div>
+</div>
+</body>
+
+</html>

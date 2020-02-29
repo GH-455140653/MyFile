@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>透明度轮播</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .slider {
+            width: 1200px;
+            height: 800px;
+            border: 2px solid crimson;
+            position: relative;
+        }
+
+        .slider .list .item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .slider .list .item:first-of-type {
+            opacity: 1;
+            display: block;
+            width: 1200px;
+            height: 800px;
+        }
+
+        .slider .prev {
+            background-image: url("../icon/left.png");
+            position: absolute;
+            top: 400px;
+            width: 32px;
+            height: 32px;
+            border: 0;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .slider .next {
+            background-image: url("../icon/right.png");
+            position: absolute;
+            top: 400px;
+            right: 0;
+            width: 32px;
+            height: 32px;
+            border: 0;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .slider .pageination {
+            position: relative;
+            top: 750px;
+            left: 550px;
+        }
+
+        .slider .pageination .bullet {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            float: left;
+            border: 2px solid yellow;
+            cursor: pointer;
+            color: white;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .slider .pageination .bullet.focus {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<!--div.slider>ul.list>(li.item>img[src="../img/img_$.jpg"])*4-->
+<div class="slider">
+    <ul class="list">
+        <li class="item"><img src="../img/img_1.jpg" alt=""></li>
+        <li class="item"><img src="../img/img_2.jpg" alt=""></li>
+        <li class="item"><img src="../img/img_3.jpg" alt=""></li>
+        <li class="item"><img src="../img/img_4.jpg" alt=""></li>
+    </ul>
+    <button class="prev"></button>
+    <button class="next"></button>
+    <!--ul.pageination>(li.bullet{$})*4-->
+    <ul class="pageination">
+        <li class="bullet focus">1</li>
+        <li class="bullet">2</li>
+        <li class="bullet">3</li>
+        <li class="bullet">4</li>
+    </ul>
+</div>
+<script src="../js/animation.js"></script>
+<script>
+    (function () {
+        var prevIndex, nextIndex;
+        var len;
+        var id;
+        init();
+
+        function init() {
+            prevIndex = nextIndex = 0;
+            len = document.querySelectorAll('.list .item').length;
+            document.querySelector('.prev').onclick = function () {
+                sliderPrev();
+            }
+            document.querySelector('.next').onclick = function () {
+                sliderNext();
+            }
+            var bullets = document.querySelectorAll('.slider .pageination .bullet');
+            for (var i = 0; i < bullets.length; i++) {
+                bullets[i].index = i;
+                bullets[i].onclick = function () {
+                    prevIndex = nextIndex;
+                    nextIndex = this.index;
+                    sliderTo(prevIndex, nextIndex);
+                }
+            }
+            var slider = document.querySelector('.slider');
+            slider.onmouseover = function () {
+                stop();
+            }
+            slider.onmouseout = function () {
+                auto();
+            }
+            auto();
+        }
+
+        function sliderPrev() {
+            prevIndex = nextIndex;
+            nextIndex--;
+            if (nextIndex === -1) {
+                nextIndex = len - 1;
+            }
+            sliderTo(prevIndex, nextIndex);
+        }
+
+        function sliderNext() {
+            prevIndex = nextIndex;
+            nextIndex++;
+            if (nextIndex === len) {
+                nextIndex = 0;
+            }
+            sliderTo(prevIndex, nextIndex);
+        }
+
+        function sliderTo(prev, next) {
+            var bullets = document.querySelectorAll('.slider .pageination .bullet');
+            bullets[prev].className = 'bullet';
+            bullets[next].className = 'bullet focus';
+            var lis = document.querySelectorAll('.list .item');
+            animate(lis[prev], {opacity: 0});
+            animate(lis[next], {opacity: 100});
+        }
+
+        function auto() {
+            clearInterval(id);
+            id = setInterval(function () {
+                sliderNext()
+            }, 2000);
+        }
+
+        function stop() {
+            clearInterval(id);
+        }
+    })()
+</script>
+
+</body>
+</html>

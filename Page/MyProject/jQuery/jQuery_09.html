@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>plugin--随机色插件</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        (function ($) {
+            $.fn.extend({
+                randomColor:function () {
+                    function random() {
+                        var r=Math.floor(Math.random()*256);
+                        var g=Math.floor(Math.random()*256);
+                        var b=Math.floor(Math.random()*256);
+                        return 'rgb('+r+','+g+','+b+')';
+                    }
+                    this.each(function (index) {
+                        $(this).css({
+                            backgroundColor:random()
+                        })
+                    })
+                    return this;
+                }
+            })
+        })(jQuery);
+
+        $('div').randomColor();
+    </script>
+</body>
+</html>

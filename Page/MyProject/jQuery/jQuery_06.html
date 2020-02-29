@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp</title>
+</head>
+<body>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    //https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1441,21106&wd=jsonp&cb=gap
+    $.ajax({
+        type:'get',
+        url:'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1441,21106',
+        dataType:'jsonp',
+        jsonp:'cb',
+        data:{
+            wd:'string',
+        }
+    }).done(function (resp) {
+        alert(resp.g[0].q);
+    })
+</script>
+</body>
+</html>

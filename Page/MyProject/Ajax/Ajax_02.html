@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax-post</title>
+</head>
+<body>
+<script>
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function () {
+        if(xhr.readyState!==4) return;
+        if(xhr.status>=200 && xhr.status<=300){
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.user==='lrl' && resp.password===1234567) alert('登陆成功！');
+            else alert('登陆失败！');
+        }else{
+            console.error('请求失败');
+        }
+    }
+    // xhr.open('post','./accessed.php',true);//格式解析失败，需要服务器
+    xhr.open('post','../jsonp/jsonp_02.json',true);
+    xhr.setRequestHeader('Content-Type','application/x-www.form-urlencoded');
+    xhr.send('user=lrl&password=123');
+</script>
+
+</body>
+</html>

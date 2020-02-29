@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  源.cpp
+D:\VS Program\Project1\源.cpp(112): warning C4715: “ListDelete”: 不是所有的控件路径都返回值
+  Project1.vcxproj -> D:\VS Program\Project1\Debug\Hw_1.exe

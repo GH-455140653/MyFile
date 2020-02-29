@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e61e9ae0-04e1-41d2-b103-fe726aa0b77b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MyProject" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Ajax/Ajax_03.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1X6VKmpotCJZDIvtXioVYT2s4lZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e61e9ae0-04e1-41d2-b103-fe726aa0b77b" name="Default Changelist" comment="" />
+      <created>1580366469732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580366469732</updated>
+      <workItem from="1580366471602" duration="308000" />
+      <workItem from="1580366916272" duration="15514000" />
+      <workItem from="1580383462339" duration="4361000" />
+      <workItem from="1580436676889" duration="8865000" />
+      <workItem from="1580526438703" duration="5382000" />
+      <workItem from="1580545844898" duration="11083000" />
+      <workItem from="1580565024699" duration="645000" />
+      <workItem from="1580612126341" duration="20489000" />
+      <workItem from="1580696083297" duration="27506000" />
+      <workItem from="1580796477475" duration="4194000" />
+      <workItem from="1580800690264" duration="6305000" />
+      <workItem from="1580870636833" duration="22105000" />
+      <workItem from="1580897078977" duration="1010000" />
+      <workItem from="1580910604303" duration="32000" />
+      <workItem from="1580929173631" duration="6000" />
+      <workItem from="1580929257016" duration="137000" />
+      <workItem from="1580973792408" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="72" key="#更新" timestamp="1580555573282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#更新/0.0.1536.824@0.0.1536.824" timestamp="1580555573282" />
+    <state x="550" y="178" key="FileChooserDialogImpl" timestamp="1580929334241">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580929334241" />
+    <state x="589" y="309" width="382" height="206" key="Github.CreateGistDialog" timestamp="1580555744297">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="589" y="309" width="382" height="206" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1580555744297" />
+    <state x="271" y="79" key="SettingsEditor" timestamp="1580929367541">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="271" y="79" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580929367541" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580719676615">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580719676615" />
+  </component>
+</project>

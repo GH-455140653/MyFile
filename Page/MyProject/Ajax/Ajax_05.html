@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON-search</title>
+</head>
+<body>
+<input type="text">
+<ul></ul>
+<script src="../jQuery/jquery-3.4.1.min.js"></script>
+<script>
+    function getData(data) {
+        var script=document.querySelector('#jsonp');
+        script.parentNode.removeChild(script);
+        $('ul').html('');
+        for(var i=0;i<data.g.length;i++)
+        {
+            $('<li>' +data.g[i].q+'</li>').appendTo('ul');
+        }
+    }
+    
+    function getList(wd) {
+        var script=document.createElement('script');
+        script.id='jsonp';
+        script.src='https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1441,21106,30495,30472&cb=getData&wd='+wd;
+        document.body.appendChild(script);
+    }
+
+    $('input').keyup(function () {
+        var wd=$(this).val();//没有可获取的地址
+        getList(wd);
+    })
+
+   /*function getData(data) {
+    console.log(data);
+   }
+   var script=document.createElement('script');
+   script.id='jsonp';
+   script.src='../jsonp/jsonp.js';
+   document.body.appendChild(script);*/
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选与单选</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th><input type="checkbox"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+    </tr>
+    </tbody>
+</table>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    $('thead input').change(function () {
+        var isChecked=$(this).prop('checked');
+        $('tbody input').prop('checked',isChecked);
+    })
+
+    $('tbody input').change(function () {
+        var allCount=$('tbody input').length;
+        var checkCount=$('tbody input:checked').length;
+        var isAllChecked=allCount===checkCount;
+        $('thead input').prop('checked',isAllChecked);
+    })
+</script>
+</body>
+</html>

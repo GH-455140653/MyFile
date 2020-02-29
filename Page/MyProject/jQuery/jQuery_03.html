@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animate</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #90EE90;
+        }
+    </style>
+</head>
+<body>
+<button>显示</button>
+<button>隐藏</button>
+<button>停止</button>
+<div></div>=
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+
+    $('button:first').click(function () {
+        // $('div').show(3000);//从宽度、高度、透明度三方面同时改变显示出来
+        // $('div').fadeIn(2000);//仅从透明度改变显现出来
+        $('div').slideDown(2000);//从上而下拉出显示
+        // $('div').animate({//通过自定义改变属性改变动画方式
+        //     height:600
+        // },2000).animate({
+        //     width:400
+        // },2000)
+    });
+    $('button:eq(1)').click(function () {
+        // $('div').hide(3000);//从宽度、高度、透明度三方面同时改变隐藏起来
+        // $('div').fadeOut(2000);//仅从透明度改变隐藏起来
+        $('div').slideUp(2000);//从下而上拉入消失
+        // $('div').animate({//通过自定义改变属性改变动画方式
+        //     width:200
+        // },2000).animate({
+        //     height:200
+        // },2000)
+    });
+    $('button:last').click(function () {
+        $('div').stop(true);//停止动画
+    })
+</script>
+</body>
+</html>

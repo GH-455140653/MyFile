@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiple</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<button>删除节点</button>
+<button>清除最后节点内容</button>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    //在Li最后节点后面加上一个新的节点
+    // $('ul').append('<li>5</li>');
+    $('<li>5</li>').appendTo('ul');
+
+    //在Li最开始节点前面加上一个新的节点
+    // $('ul').prepend('<li>0</li>');
+    $('<li>0</li>').prependTo('ul');
+
+    //在指定节点后面加上一个新的节点
+    // $('li:eq(2)').after('<li>3.5</li>');
+    $('<li>3.5</li>').insertAfter('li:eq(2)');
+
+    //删除最后节点
+    $('button:first').click(function () {
+        $('li:last').remove();
+    })
+    //清除最后节点文本内容
+    $('button:last').click(function () {
+        $('li:last').empty();
+    })
+
+</script>
+</body>
+</html>

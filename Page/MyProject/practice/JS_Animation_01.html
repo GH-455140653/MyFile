@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动态方块移动碰撞</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				overflow: hidden;
+			}
+			
+			div {
+				left: 0px;
+				right: 0px;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				background-color: #90EE90;
+			}
+			
+			div:nth-of-type(2) {
+				left: 500px;
+				top: 500px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+		<div></div>
+		<script type="text/javascript">
+			var speedX = 3;
+			var speedY = 3;
+			var div_1 = document.querySelector("div"); //获取符合条件的第一个子元素属性的文本内容
+			var div_2 = document.querySelector("div:nth-of-type(2)");
+			div_1.speedX = 5;
+			div_1.speedY = 3;
+			div_2.speedX = 5;
+			div_2.speedY = 3;
+
+			function move(el) {
+				var curleft = parseInt(window.getComputedStyle(el).left); //获取该页面指定元素的css样式并转化为十进制进行解析
+				var curtop = parseInt(window.getComputedStyle(el).top);
+				check_border_collision(el); //碰撞检测
+				var tempX, tempY;
+				if(check_block_collision(div_1, div_2)) {
+					tempX = div_1.speedX;
+					tempY = div_1.speedY;
+					div_1.speedX = div_2.speedX;
+					div_1.speedY = div_2.speedY;
+					div_2.speedX = tempX;
+					div_2.speedY = tempY;
+				}
+				var left = curleft + el.speedX;
+				var top = curtop + el.speedY;
+				el.style.left = left + 'px'; //属性修改
+				el.style.top = top + 'px'; //属性修改
+			}
+
+			function check_border_collision(el) {
+				var style = window.getComputedStyle(el);
+				var left = parseInt(style.left);
+				var top = parseInt(style.top);
+				var w = parseInt(style.width);
+				var h = parseInt(style.height);
+
+				if(left < 0) {
+					left = 0;
+					el.speedX *= -1;
+				} //左碰撞
+
+				if(left > window.innerWidth - w) {
+					left = window.innerWidth - w;
+					el.speedX *= -1;
+				} //右碰撞
+
+				if(top < 0) {
+					top = 0;
+					el.speedY *= -1;
+				} //上碰撞
+
+				if(top > window.innerHeight - h) {
+					top = window.innerHeight - h;
+					el.speedY *= -1;
+				} //下碰撞
+			}
+
+			function check_block_collision(block_1, block_2) {
+				var left1 = parseInt(window.getComputedStyle(block_1).left);
+				var left2 = parseInt(window.getComputedStyle(block_2).left);
+				var top1 = parseInt(window.getComputedStyle(block_1).top);
+				var top2 = parseInt(window.getComputedStyle(block_2).top);
+				var width1 = parseInt(window.getComputedStyle(block_1).width);
+				var width2 = parseInt(window.getComputedStyle(block_2).width);
+				var height1 = parseInt(window.getComputedStyle(block_1).height);
+				var height2 = parseInt(window.getComputedStyle(block_2).height);
+
+				var center1 = {
+					x: left1 + width1 / 2,
+					y: top1 + height1 / 2
+				}
+
+				var center2 = {
+					x: left2 + width2 / 2,
+					y: top2 + height2 / 2
+				}
+
+				var diffX = Math.abs(center1.x - center2.x);
+				var diffY = Math.abs(center1.y - center2.y);
+
+				if(diffX < (width1 + width2) / 2 && diffY < (height1 + height2) / 2) {
+					return true;
+				}
+				return false;
+			}
+			setInterval(function() {
+				move(div_1)
+				move(div_2)
+			}, 2); //周期性的调用函数
+		</script>
+	</body>
+
+</html>

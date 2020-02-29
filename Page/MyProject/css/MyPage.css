@@ -1,0 +1,383 @@
+/*全局属性*/
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+	width: 960px;
+	margin:0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: #999999;
+}
+
+a:hover {
+	color: #663;
+	background-color: #E9E7EF;
+}
+
+a:active {
+	color: blueviolet;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear:after {
+	display: block;
+	content: ".";
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clear {
+	zoom: 1;
+	clear:both;
+}
+
+
+/*全局属性*/
+
+
+/*catalogue属性*/
+
+.catalogue {
+	padding: 5px;
+	height: 45px;
+	width: 960px;
+	border: 1px solid peru;
+}
+
+.span {
+	padding: 0;
+}
+
+.catalogue div span {
+	float: left;
+	font-family: "楷体";
+	padding: 0 10px 0 10px;
+	font-size: 34.6px;
+}
+
+.catalogue ul li {
+	float: right;
+	border: 1px dashed blue;
+	line-height: 30px;
+	padding: 5px 10px 5px 45px;
+	margin-left: 10px;
+}
+
+.img_01 {
+	background-image: url(../icon/bianji.png);
+	background-repeat: no-repeat;
+}
+
+.img_02 {
+	background-image: url(../icon/geren.png);
+	background-repeat: no-repeat;
+}
+
+.img_03 {
+	background-image: url(../icon/daohang.png);
+	background-repeat: no-repeat;
+}
+
+.img_04 {
+	background-image: url(../icon/shouye.png);
+	background-repeat: no-repeat;
+}
+
+
+/*catalogue属性*/
+
+
+/*photo属性*/
+
+.photo {
+	border: 1px solid blue;
+	padding: 5px;
+	height: 640px;
+	width: 960px;
+}
+
+.slider {
+	height: 640px;
+	width: 960px;
+	margin: 0;
+	position: relative;
+}
+
+.tupian_01 {
+	background-image: url(../icon/photo_left.jpg);
+	height: 130px;
+	width: 130px;
+	float: left;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 2px;
+}
+
+.tupian_02 {
+	background-image: url(../icon/photo_right.jpg);
+	height: 130px;
+	width: 130px;
+	float: right;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 2px;
+}
+
+.photo input {
+	float: left;
+	margin: 40px 20px 40px 20px;
+	height: 50px;
+	width: 400px;
+	font-size: 30px;
+}
+
+.photo ul li {
+	float: left;
+	margin-left: 0;
+	height: 38px;
+	width: 100px;
+	text-align: center;
+	margin: 38px 0 38px 0;
+	padding: 10px;
+	font-size: 30px;
+}
+
+
+/*photo属性*/
+
+
+/*main属性*/
+
+.main {
+	border: 1px solid black;
+	padding: 5px;
+	height: 1000px;
+	width: 960px;
+	border-bottom: 0;
+}
+
+.head {
+	width: 960px;
+	height: 70px;
+}
+
+.room_01 li {
+	box-sizing: border-box;/*解决IE盒子与标准盒子的区别*/
+	width: 25%;
+	float: right;
+	border: 1px solid red;
+	padding: 13px 62.4px 13px 62.4px;
+	font-size: 30px;
+	background-color: lightgreen;
+}
+
+.main_left {
+	width: 240px;
+	height: 500px;
+	margin: 0;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+}
+
+.room_02 li {
+	background-color: lemonchiffon;
+	border-bottom: dashed;
+}
+
+.tupian_03 {
+	height: 200px;
+	width: 200px;
+	background-image: url(../icon/untitled.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.tupian_04 {
+	background-image: url(../icon/shuidi.png);
+	height: 200px;
+	width: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main_right {
+	border-left: 1px solid blueviolet;
+	width: 708px;
+	height: 920px;
+	float: left;
+}
+
+.top ul li {
+	width: 200px;
+	height: 270px;
+	border: 1px solid mediumspringgreen;
+	float: left;
+	margin: 17px;
+}
+
+.top_01 {
+	background-image: url(../icon/excel2.png);
+	background-repeat: no-repeat;
+}
+
+.top_02 {
+	background-image: url(../icon/word1.png);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.top_03 {
+	background-image: url(../icon/excel3.png);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.middle ul li {
+	width: 200px;
+	height: 270px;
+	border: 1px solid mediumspringgreen;
+	float: left;
+	margin: 17px;
+}
+
+.middle_01 {
+	background: url(../icon/excel1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.middle_02 {
+	background: url(../icon/PPT1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.middle_03 {
+	background: url(../icon/ppt3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom ul li {
+	width: 200px;
+	height: 270px;
+	border: 1px solid mediumspringgreen;
+	float: left;
+	margin: 17px;
+}
+
+.bottom_01 {
+	background-image: url(../icon/ppt2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom_02 {
+	background: url(../icon/WORD.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bottom_03 {
+	background: url(../icon/word3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/*main属性*/
+
+
+/*foot属性*/
+
+.foot {
+	border: 1px dashed green;
+	padding: 5px;
+	height:150px;
+	width: 960px;
+}
+
+
+/*foot属性*/
+
+
+.slider .list .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.slider .list .item:first-of-type {
+	opacity: 1;
+	display: block;
+	width: 960px;
+	height: 380px;
+}
+
+.slider .prev {
+	background-image: url("../icon/left.png");
+	position: absolute;
+	top: 300px;
+	width: 32px;
+	height: 32px;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.slider .next {
+	background-image: url("../icon/right.png");
+	position: absolute;
+	top: 300px;
+	right: 0;
+	width: 32px;
+	height: 32px;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.slider .pageination {
+	position: relative;
+	top: 580px;
+	left: 350px;
+
+}
+
+.slider .pageination .bullet {
+	margin-top: 0;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	float: left;
+	border: 2px solid yellow;
+	cursor: pointer;
+	color: white;
+	line-height: 20px;
+	text-align: center;
+}
+
+.slider .pageination .bullet.focus {
+	background-color: hotpink;
+}

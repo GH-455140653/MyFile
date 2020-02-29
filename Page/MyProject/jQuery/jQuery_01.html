@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+
+        }
+        .play{
+            background-color: #90EE90;
+        }
+        .pause{
+            background-color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div class="pause"></div>
+<input type="text">
+<input type="checkbox" checked>
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $('input').keyup(function () {//实现末尾自动追加字符，存在bug：在追加字符后面出现连续追加，无法清零状态
+            var v=$(this).val();
+            if(v.slice(-2)!=='px') $(this).val(v+'px');
+    })
+    $('input[type=checkbox]').change(function () {
+        console.log($(this).attr('checked'));//返回checked
+        console.log($(this).prop('checked'));//返回true|false
+    })
+    $('div').click(function () {//实现改变类名，可用作：暂停|开始按钮
+        $(this).toggleClass('play');
+        $(this).toggleClass('pause');
+    })
+</script>
+
+</body>
+</html>

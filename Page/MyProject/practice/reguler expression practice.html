@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>正则表达式</title>
+	</head>
+	<script type="text/javascript">
+		/*
+		var reg = /abc/ig;
+		var str="abcabc";
+		var flag=reg.test(str); //正则表达式方法（test）：匹配字符串中是否含有子串
+		console.log(flag);
+		*/
+		/*
+		reg = /abc/ig;
+		var str = "abcabc";
+		console.log(str.match(reg)); //字符串方法（match）：匹配字符串（str）中是否含有（多少个）子串（reg）
+		*/
+		/*
+		var reg= /abc/ig;
+		var str = "123456abc";
+		console.log(str.search(reg));//字符串方法（search）：以正则为子串与str串进行匹配，给出匹配成功的索引
+		*/
+		/*
+		var reg=/\s/;
+		var str="google chrome";
+		console.log(str.split(reg));//字符串方法（split）：以正则为分割符将串进行分割
+		*/
+		/*
+		var reg=/C|N|M/g;
+		var str="google chrome CNM";
+		console.log(str.replace(reg,"*"));//将满足正则的子串以第二个实参进行替代
+		*/
+		/*
+		var reg = /chrome/g;
+		var str = "google chrome is the best browser in the world!If you use the chrome,you will find something interests in the google chrome.";
+//		do
+//		{
+//			flag=reg.exec(str);
+//			console.log(flag);
+//		}while(flag.index!=null);
+
+//		var flag=reg.exec(str).index;
+//		while(flag!=null) 
+//		{
+//			console.log(flag);
+//			flag=reg.exec(str).index;
+//		}
+		*/
+		/*
+		 * (.)匹配除换行符的一切字符
+		var reg=/g..gle/ig;
+		var str= "g88gleg--glegoogleg..gleg@@gle";
+		console.log(reg.test(str),str.match(reg));
+		*/
+		/*
+		 * （*）重复多次匹配
+		var reg=/g*le/g;
+		var str="googlegooooooooogle";
+		console.log(str.match(reg),reg.test(str));
+		*/
+		/*
+		 * (+)至少存在一次重复匹配
+		var reg=/g+le/g;
+		var str="googlegooooooooogle";
+		console.log(str.match(reg),reg.test(str));
+		*/
+		/*
+		 * (?)匹配0或者1次
+		var reg=/g?le/g;
+		var str="oooole";
+		console.log(str.match(reg),reg.test(str));
+		*/
+		/*
+		 * \d,\D,\w,\W,[0-9a-zA-Z]运用
+		var reg=/\w/g;
+		var str="abc123ABC_";
+		console.log(str.match(reg),reg.test(str));
+		*/
+		/*^;$;{,};|;的运用
+		var reg=/^go{2,3}gle|baidu$/g;
+		var str="googlegooglebingyahoo360baidu";
+		console.log(str.match(reg),reg.test(str));
+		*/
+		/*两个元素交换
+		var reg=/(.*)\s(.*)/;
+		var str="google taobao"
+		console.log(str.replace(reg,"$2 $1"));
+		*/
+	</script>	
+	<body>		
+	</body>
+</html>

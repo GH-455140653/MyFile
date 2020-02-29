@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数与继承</title>
+</head>
+<body>
+<script>
+    function Preson(name,age) {
+        this.name=name;
+        this.age=age;
+    }
+    Preson.prototype.sayHello=function () {
+        alert(this.name);
+        alert("A");
+    }
+    function Student(name,age,id){
+        Preson.apply(this,[name,age]);
+        this.id=id;
+    }
+    Student.prototype=Object.create(Preson.prototype);
+    Student.prototype.study=function () {
+        alert("S");
+    }
+    var S=new Student('John',18,'0010');
+    S.sayHello();
+    S.study();
+</script>
+</body>
+</html>

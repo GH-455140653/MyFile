@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>秒表</title>
+		<style type="text/css">
+			.bk{border: 2px solid black;width: 450px;height: 350px;text-align: center;margin:10% auto;background-color: #E9E7EF;}
+			.bp{border: 1px solid red;height:50px;width: 300px;text-align: center;background-color: #E9E7EF;margin:15px auto;padding: 50px;background-color: #999999;}
+			#start{height: 40px;width:250px;background-color: yellow;}
+			#stop{height: 40px;width:250px;background-color: yellow;}
+			#pause{height: 40px;width:250px;background-color: yellow;}
+		</style>
+		<script type="text/javascript"  src="../JS/waibuyinru.js">
+			
+		</script>
+		<script type="text/javascript">
+			alert("这是一个秒表，可以给你记录时间哦！");
+			function $(id){
+				return document.getElementById(id);
+			}
+			
+			function name(n){
+				if(n<10)return "0"+n;
+				else return n;
+			}
+			window.onload=function(){
+				var i=0;
+				var time=null;
+				$("start").onclick=function(){
+					time=setInterval(function(){
+						i++;
+						/*alert(i%60);*/
+						$("id_s").innerHTML=name(i%60);
+						$("id_m").innerHTML=name(parseInt(i/60)%60);
+						$("id_h").innerHTML=name(parseInt(i/3600));
+					},1000)
+				}
+				$("pause").onclick=function(){
+					clearInterval(time);
+				}
+				$("stop").onclick=function(){
+					clearInterval(time);
+					i=0;
+					$("id_s").innerHTML="00";
+					$("id_m").innerHTML="00";
+					$("id_h").innerHTML="00";
+					
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<!--<div>
+			<input  type="button" id="sj" value="点击显示当前时间" onclick="showday()" style="height: 100px;width: 300px;text-align: center;" />
+		</div>-->
+		<p align="center">这是一个秒表</p>
+		<div class="bk" >
+		<div class="bp">
+			<span id="id_h">00</span> :
+			<span id="id_m">00</span> :
+			<span id="id_s">00</span>
+		</div>
+				<button id="start" value="" >开始</button>
+				<button id="pause" value="" />暂停</button>
+				<button id="stop" value="" />终止</button>
+		</div>
+		
+	</body>
+</html>

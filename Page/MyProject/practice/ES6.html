@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/waibuyinru.js"></script>
+		<script type="text/javascript">
+			for(let item of feiBo(10)){console.log(item);}//generator函数
+			
+			class Person{//class类
+				constructor(name){
+					this.name=name;
+				}
+				sayhello(){
+					console.log(this.name);
+				}
+			}
+			var person =new Person("John");
+			console.log(person.name);
+			person.sayhello();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

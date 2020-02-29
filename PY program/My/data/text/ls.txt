@@ -1,0 +1,63 @@
+Board of directors:董事会
+Md=managing director:总经理
+Personnel manager:人事经理
+Marketing department:营销部
+CEO:首席执行官
+President/chairman:董事长
+Subsidiary:子公司
+Fiscal year:财政年度
+Proprietorship:所有权
+Partnership:合作关系
+Tertiary industry:第三产业
+Vehicle manufacturing:汽车制造
+Retailing:零售
+Catering:餐饮
+Banking:银行业
+Pension scheme:养老金计划
+Quotation:报价单
+Union reps:工会代表
+Regulations:规章、规定
+Complaints:投诉
+Maintenance:维修、保养
+Sales rep:销售代表
+Procurement:采购
+Trade exhibition:贸易展览会
+Courie:快递员
+Receipt:收据
+Sub-contract:分包合同
+Prototype:原形，雏形
+Extension:分机
+Agent:代理
+Business associates:商业伙伴
+Head of department:部门主管
+Superior:上司
+Branch:分公司
+Quality control:品控
+Order book:订货单
+Stock:库存
+Share:证券、股票
+Supplier:供货商
+Distributor:经销商
+Enquiry:询盘
+Quote:报盘
+Import license:进口许可证
+Air waybill:航空运单
+Bill of lading:海运提单
+Account:账户
+Net profit:净利润
+Gross profit:毛利润
+irrevocable documentary Letter of credit:不可撤销跟单信用证
+FOB=Free on Board:离岸价
+CIF=Cost，insurance and Freight:到岸价
+Freight forwarder:货运承揽商
+Proforma invoice:估价发票，假定发票 
+Invoice:发票
+draft at sight:见票即付
+credit terms:信用条款
+delivery:交货
+Consign:托运
+Payment:付款
+Budget:预算
+House bill:公司汇票
+Specification:详细规格说明
+Component:零部件

@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: snake - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\45514\AppData\Local\Temp\RSP52C6.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/snake.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C Program\snake.c"
+]
+Creating command line "cl.exe @C:\Users\45514\AppData\Local\Temp\RSP52C6.tmp" 
+<h3>Output Window</h3>
+Compiling...
+snake.c
+d:\c program\snake.c(1) : fatal error C1083: Cannot open include file: 'easyx.h': No such file or directory
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+snake.obj - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

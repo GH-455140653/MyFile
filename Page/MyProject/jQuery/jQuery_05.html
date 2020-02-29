@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+</head>
+<body>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    $.ajax({
+        type:'get',
+        url:'../jsonp/jsonp_01.json',
+        data:{
+            name:'阿福'
+        }
+    }).done(function (resp) {
+        console.log(resp.name);
+    })
+</script>
+</body>
+</html>
