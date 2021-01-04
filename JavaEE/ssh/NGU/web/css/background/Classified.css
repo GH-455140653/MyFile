@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Classified{
+    width: 100%;
+    display: none;
+}
+
+.Ctop{
+    height: 40px;
+}
+
+.Ctop>label{
+    position: relative;
+    left: 8%;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.Ccontent{
+    height: 500px;
+}
+
+/*菜单*/
+.Cmenu{
+    font-size: 22px;
+    top: 30px;
+    width: 50%;
+    position: relative;
+    left: 15%;
+    float: left;
+}
+
+
+.Cmenu ul li ul{
+    display: none;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+    width: 400px;
+}
+
+.Cmenu ul li{
+    width: 200px;
+}
+
+.Cmenu ul li a{
+    text-decoration: none;
+}
+
+/*两个按钮*/
+.Cmenu ul li ul li button{
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.Cmenu ul li ul li input{
+    width: 70px;
+    background-color:transparent;
+    border:none;
+}
+
+.Cmenu ul li:hover ul{
+    display: block;
+}
+
+
+.Cadd{
+    width: 50%;
+    float: right;
+}
+
+.one{
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.one select{
+    width: 110px;
+    margin: 10px;
+}
+
+.two{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.two select{
+    width: 110px;
+    margin: 10px;
+}
+
+.three{
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+.three input{
+    width: 110px;
+    margin: 10px;
+}
+
+.Cadd button{
+    position: relative;
+    left: 120px;
+    top: 80px;
+    width: 60px;
+}

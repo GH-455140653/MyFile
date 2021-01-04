@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.CommentContral{
+    width: 100%;
+    display: none;
+}
+
+
+/*上下页*/
+.comment-top{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    top: 20px;
+}
+
+
+.CpreviousPage{
+    position: relative;
+    left: 5%;
+}
+
+.CnextPage{
+    position: relative;
+    left:8%;
+}
+
+.Clabel{
+    position: relative;
+    left:10%;
+}
+
+
+/* 表格divcss */
+.Comment-table{
+    width: 100%;
+    height: 500px;
+}
+
+/*表格样式*/
+.Ctable{
+    margin-right: 0px;
+    top:10%;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height:350px;
+    align-self: center;
+    text-align: center;
+}
+
+/*全选div*/
+.Cbottomb{
+    height: 30px;
+    width: 100%;
+}
+/*全选按钮*/
+.Cselectall{
+    float: left;
+    top:-50px;
+    left:10%;
+    position: relative;
+}
+
+/*删除按钮*/
+.Cdelectselect{
+    float: right;
+    position: relative;
+    right: 10%;
+    top:-50px;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Beans" removed="false">
+          <file>file://$MODULE_DIR$/src/Beans.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="cda74225-922c-43ad-9be9-8d4ac830fa29" />
+          <unit-entry name="sessionFactory" value="cda74225-922c-43ad-9be9-8d4ac830fa29" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Spring" level="project" />
+    <orderEntry type="library" name="Hibernate" level="project" />
+    <orderEntry type="library" name="struts2" level="project" />
+    <orderEntry type="library" name="other" level="project" />
+    <orderEntry type="library" name="database" level="project" />
+    <orderEntry type="library" name="jquery-easing" level="application" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="Swiper" level="application" />
+    <orderEntry type="library" name="dplayer" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="jq" level="project" />
+    <orderEntry type="library" name="bootstrap-select" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="Swiper" level="application" />
+    <orderEntry type="library" name="jquery-easing" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="dplayer" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="bootstrap-select" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="webtorrent" level="application" />
+    <orderEntry type="library" name="shaka-player" level="application" />
+    <orderEntry type="library" name="dash" level="application" />
+    <orderEntry type="library" name="hls.js" level="application" />
+    <orderEntry type="library" name="flv.js" level="application" />
+  </component>
+</module>

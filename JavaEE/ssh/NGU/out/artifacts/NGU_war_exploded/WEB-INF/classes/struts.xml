@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!--设置最大上传文件大小-->
+    <constant name="struts.multipart.maxSize" value="1073741824"/>
+
+    <!-- Add packages here -->
+
+    <package name="user" namespace="/User" extends="struts-default">
+
+        <action name="*_login" class="{1}Action" method="login">
+            <result name="success">
+                /index_foreground.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_pwdForget" class="{1}Action" method="pwdForget">
+            <result name="success">
+                /login_user.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_pwdModify" class="{1}Action" method="pwdModify">
+            <result name="success">
+                /login_user.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_register" class="{1}Action" method="register">
+            <result name="success">
+                /login_user.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_getAllMember" class="{1}Action" method="getAllMember">
+            <result name="success">
+                /member.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_deleteSelectMember" class="{1}Action" method="deleteSelectMember">
+            <result name="success">
+                /member.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_searchMember" class="{1}Action" method="searchMember">
+            <result name="success">
+                /member.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_videoBrowse" class="{1}Action" method="videoBrowse">
+            <result name="success">
+                /userCenter.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+    </package>
+
+    <package name="admin" namespace="/Admin" extends="struts-default">
+
+        <action name="*_login" class="{1}Action" method="login">
+            <result name="success">
+                /index_background.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_loginout" class="{1}Action" method="loginout">
+            <result name="success">
+                /login_admin.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_register" class="{1}Action" method="register">
+            <result name="success">
+                /login_admin.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_add" class="{1}Action" method="add">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        <action name="*_delete" class="{1}Action" method="delete">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        <action name="*_update" class="{1}Action" method="update">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        <action name="*_deleteAll" class="{1}Action" method="deleteAll">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        <action name="*_apport" class="{1}Action" method="apport">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+        <action name="*_authorPagination" class="{1}Action" method="authorPagination">
+            <result name="success">
+                /admin_author.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+    </package>
+
+    <package name="classify" namespace="/Classify" extends="struts-default">
+
+        <action name="*_add" class="{1}Action" method="add">
+            <result name="success">
+                /classify.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_update" class="{1}Action" method="update">
+            <result name="success">
+                /classify.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_delete" class="{1}Action" method="delete">
+            <result name="success">
+                /classify.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_foregroundDate" class="{1}Action" method="foregroundDate"/>
+
+        <action name="*_read" class="{1}Action" method="read">
+            <result name="success">
+                /classify.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+    </package>
+
+    <package name="video" namespace="/Video" extends="struts-default">
+
+        <action name="*_read" class="{1}Action" method="read">
+            <result name="success">
+                /video.jsp
+            </result>
+        </action>
+
+        <action name="*_videoAdd" class="{1}Action" method="videoAdd">
+            <!-- 文件拦截器 -->
+            <interceptor-ref name="fileUpload">
+                <!--默认所有格式-->
+                <param name="allowedTypes"/>
+                <!-- 单个文件的大小 -->
+                <param name="maximumSize">673881350</param>
+
+            </interceptor-ref>
+
+            <interceptor-ref name="defaultStack"/>
+            <result name="success">
+                /video.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_dataUpdate" class="{1}Action" method="dataUpdate">
+            <result>
+                /video.jsp
+            </result>
+        </action>
+
+        <action name="*_videoDelete" class="{1}Action" method="videoDelete">
+            <result name="success">
+                /video.jsp
+            </result>
+            <result name="error">
+                /video.jsp
+            </result>
+        </action>
+
+        <action name="*_videoUpdate" class="{1}Action" method="videoUpdate">
+            <result name="success">
+                /video.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <!--        <action name="*_videoPagination" class="{1}Action" method="videoPagination"   >-->
+        <!--            <result>-->
+        <!--                /video.jsp-->
+        <!--            </result>-->
+        <!--        </action>-->
+
+        <action name="*_videoSearch" class="{1}Action" method="videoSearch">
+            <result name="success">
+                /videoPlay.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_searchVideoBack" class="{1}Action" method="searchVideoBack">
+            <result name="success">
+                /video.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_videoPlay" class="{1}Action" method="videoPlay">
+            <result name="success">
+                /videoPlay.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+
+    </package>
+
+    <package name="comment" namespace="/Comment" extends="struts-default">
+
+        <action name="*_findData" class="{1}Action" method="findData">
+            <result name="success">
+                /comment.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+
+        <action name="*_addComment" class="{1}Action" method="addComment">
+            <result name="success">
+                /videoPlay.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_deleteSelectMember" class="{1}Action" method="deleteSelectMember">
+            <result name="success">
+                /comment.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+        <action name="*_commentPagination" class="{1}Action" method="commentPagination">
+            <result name="success">
+                /comment.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+    </package>
+
+    <package name="table" namespace="/Table" extends="struts-default">
+
+        <action name="*_getUserList" class="{1}Action" method="getUserList">
+            <result name="success">
+                /ReportUser.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+
+        <action name="*_getVideoList" class="{1}Action" method="getVideoList">
+            <result name="success">
+                /ReportVideo.jsp
+            </result>
+            <result name="error">
+                /error.jsp
+            </result>
+        </action>
+
+    </package>
+
+</struts>

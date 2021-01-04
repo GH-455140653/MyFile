@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.VideoUp{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: none;
+}
+
+
+.videotop-left{
+    top: 40px;
+    width: 40%;
+    float: left;
+    height: 60px;
+    position: relative;
+}
+
+.videotop-right{
+    top: 40px;
+    float: left;
+    height: 60px;
+    width: 60%;
+    position: relative;
+}
+
+/*第一个下拉框*/
+.one-Rsleect{
+    position: relative;
+    left: 20%;
+    top: 17px;
+    width: 80px;
+}
+
+/*第二个下拉框*/
+.two-Rsleect{
+    position: relative;
+    left: 25%;
+    top: 17px;
+    width: 80px;
+}
+
+.videoinput{
+    width: 150px;
+    position: relative;
+    top: -26px;
+}
+
+.videotext{
+    resize:none;
+    position: relative;
+    left: 10%;
+    width: 50%;
+    height: 60px;
+}
+
+
+/*第二层盒子*/
+.videomiddle{
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*第二层左边*/
+.up-left{
+    width: 80%;
+    float: left;
+    height: 200px;
+}
+
+/*上传控件1*/
+.cideointput1{
+    position: relative;
+    left: 10%;
+    top:100px;
+}
+
+/*上传控件2*/
+.cideointput2{
+    position: relative;
+    float: right;
+    right: 10%;
+    top:100px;
+}
+
+/*第二层右边*/
+.up-right{
+    width: 20%;
+    float: right;
+    height: 400px;
+}
+
+.upadd{
+    position: relative;
+    top:100px;
+    width: 50px;
+    height: 30px;
+    left: 20px;
+}
+
+.upresert{
+    position: relative;
+    top:200px;   
+    width: 50px;
+    height: 30px;
+    left: -35px;
+}
+
+.upclose{
+    position: relative;
+    top:300px;
+    width: 50px;
+    height: 30px;
+    left: -85px;
+}
+
+/*最底层的盒子*/
+.videobottom{
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+}
+
+/*最底层的盒子左侧img*/
+.bottom-img{
+    z-index: 999;
+    width: 18%;
+    height: 200px;
+    float: left;
+    position: absolute;
+    left: calc(6% + 225px);
+    top: 340px;
+    /* left: 225px; */
+    border:1px solid rgb(39, 52, 231)
+}
+
+.bottom-img>img{
+    height:100%;
+    width: 100%;
+}
+
+/*最底层的盒子右侧video*/
+.bottom-video{
+    z-index: 999;
+    width: 20%;
+    height: 200px;
+    float: right;
+    position: absolute;
+    right: 400px;
+    top: 340px;
+    border:1px solid rgb(39, 52, 231)
+}
+
+.bottom-video>video{
+    height:100%;
+    width: 100%;
+}

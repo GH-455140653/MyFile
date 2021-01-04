@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.HomePage{
+    width: 100%;
+    height: 800px;
+    /* display: none; */
+}
+
+/*左侧*/
+.Hpleft{
+    float: left;
+    width: 70%;
+    height: 400px;
+}
+
+.Hpleft div img{
+    width: 200px;
+    height:200px;
+    position: relative;
+    left: 35%;
+    top: 60px;
+    
+}
+
+.Hpleft div p{
+    position: relative;
+    top: 90px;
+    width: 80%;
+    left: 10%;
+}
+
+.HpL-bo{
+    width: 500px;
+    height: 120px;
+    /* background: rgb(138, 153, 223); */
+    position: relative;
+    top: 110px;
+    left:20%;
+}
+
+/*右侧*/
+.Hpright{
+    float: right;
+    width: 30%;
+}
+
+.Hpright img{
+    margin:auto ;
+    width: 100px;
+    height: 100px;
+}
+
+.Hpright table{
+    width: 55%;
+    position: relative;
+    top: 80px;
+    height: 400px;
+    background-color: rgb(221, 233, 232);
+}
+

@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-web-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-tx-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-orm-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-jdbc-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-expression-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-core-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-context-support-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-context-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-beans-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-aspects-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-aop-4.0.9.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/SSH保留/SSH保留/SSH包/sshjar/spring/spring-test-4.0.9.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

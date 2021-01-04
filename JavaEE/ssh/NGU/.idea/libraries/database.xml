@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="database">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/Oracle驱动包/ojdbc6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/Mysql驱动包/mysql-connector-java-5.1.35-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../study/大三上/JavaEE/材料/MSsql驱动包/sqljdbc4-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

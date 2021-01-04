@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.resourcescontral{
+    width: 100%;
+    display: none;
+}
+
+.resourcr-top{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+}
+
+/*左侧搜索divcss*/
+.resourcr-topsearch{
+    width: 80%;
+    float: left;
+}
+
+.rsearch-text{
+    float: left;
+    position: relative;
+    left: 15%;
+}
+
+.rsearch-button{
+    float: left;
+    position: relative;
+    left: 17%;
+}
+
+.radd{
+    float: left;
+    position: relative;
+    left: 19%;
+}
+
+/* 右侧上下页div */
+.resourcr-toppage{
+    float: right;
+    width: 20%;
+}
+
+.RpreviousPage{
+    position: relative;
+    left: -35%;
+}
+
+.RnextPage{
+    position: relative;
+    left: -30%;
+}
+
+.Rlabel{
+    float: right;
+    position: relative;
+    right: 50%;
+}
+
+/* 表格divcss */
+.resourcr-form{
+    width: 100%;
+    height: 500px;
+}
+
+/*表格样式*/
+.Reatable{
+    top:10%;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height:350px;
+    align-self: center;
+    text-align: center;
+}
+
+/*视频名称*/
+.videoname{
+    width: 60%;
+    background-color:transparent;
+    border:none;
+}
+
+/*分类名*/
+.videoclass{
+    width: 50px;
+    background-color:transparent;
+    border:none;
+}
+
+/*封面*/
+.Vimg{
+    width: 80px;
+    height: 55px;
+    /* display: none; */
+}
+
+/*修改封面*/
+.videoimg{
+    display: none;
+    width: 100px;
+}
+
+/*简介*/
+.videobrief{
+    width: 80%;
+    background-color:transparent;
+    border:none;
+    resize: none;
+}
+
+.nomean{
+    display: none;
+}
+
+

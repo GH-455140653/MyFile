@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*头部css*/
+
+.usercontral{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    display: none;
+}
+
+.topfront{ 
+    width: 80%;
+    height: 30px;
+    float: left;
+    position: relative;
+ 
+}
+
+.topbehind{
+    line-height: 30px;
+    width: 20%;
+    height: 50px;
+    float: right;
+    position: relative;
+}
+
+.topfront input{
+    float: left;
+    position: relative;
+    left: 18%;
+}
+
+.topfront>.search{
+    float: left;
+    position: relative;
+    left: 21%;
+}
+
+ .topfront>.PreviousPage{  
+    float: right;
+    position: relative;
+    right: 200px;
+} 
+
+.topfront>.NextPage{
+    float: right;
+    position: relative;
+    right: 60px;
+}  
+
+.topbehind>.label-top{
+    float: right;
+    position: relative;
+    right:80%;
+}
+
+
+/* 表格divcss */
+.bottomfront{
+    width: 100%;
+    height: 500px;
+}
+
+/*表格样式*/
+.bottomfront>table{
+    top:10%;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height:350px;
+    align-self: center;
+}
+
+/*全选div*/
+.bottombutton{
+    height: 30px;
+    width: 100%;
+}
+/*全选按钮*/
+.selectall{
+    float: left;
+    top:-50px;
+    left:15%;
+    position: relative;
+    font-size: 16px;
+}
+
+/*删除按钮*/
+.delectselect{
+    float: right;
+    top:-50px;
+    right:15%;
+    position: relative;
+}

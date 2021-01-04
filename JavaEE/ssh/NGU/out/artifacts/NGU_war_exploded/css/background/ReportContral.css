@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.ReportContral{
+    width: 100%;
+    height: 600px;
+    
+}
+
+.Report-top{
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+.user-report{
+    position: relative;
+    left: 10%;
+}
+
+.video-report{
+    position: relative;
+    left: 12%;
+}
+
+/*第二行*/
+.Rtop-second{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+
+.Rtop-left{
+    float: left;
+    position: relative;
+    left: 10%;
+    width: 20%;
+
+}
+
+.Rtop-middle{
+    width: 60%;
+    float: left;
+    position: relative;
+    left: 10%;
+    height: 30px;
+}
+
+.imgcolor{
+    float: left;
+    position: relative;
+    width: 8%;
+    height: 80%;
+    background: rgb(228, 55, 55);
+}
+
+.middle-label{
+    float: left;
+    position: relative;
+    left: 5%;
+}
+
+.Rtop-right{
+    width: 20%;
+    height: 30px;
+    float: right;
+}
+
+
+/*下载按钮*/
+.Rdownload{
+    float: right;
+    position: relative;
+    right: 50%;
+}
+
+/*刷新按钮*/
+.Rrefrsh{
+    float: right;
+    position: relative;
+    right: 45%;
+}
+
+.Repot-chart1{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+    top: 60px;
+    
+}
+
+.Repot-chart2{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    left: 10%;
+    top: 60px;  
+    
+}
+
+
+
