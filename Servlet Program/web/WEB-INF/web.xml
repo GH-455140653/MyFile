@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>userSer</servlet-name>
+        <servlet-class>com.dqpi.Service.UserService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userSer</servlet-name>
+        <url-pattern>/userservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userLogIn</servlet-name>
+        <servlet-class>practice.login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userLogIn</servlet-name>
+        <url-pattern>/userlogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userHandle</servlet-name>
+<!--        <servlet-class>com.dqpi.Handle.indexHandle</servlet-class>-->
+        <servlet-class>com.dqpi.Handle.PageHandle.indexHandle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userHandle</servlet-name>
+        <url-pattern>/userhandle</url-pattern>
+    </servlet-mapping>
+</web-app>
