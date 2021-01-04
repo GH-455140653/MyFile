@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(#E9E7EF, #f7f7f7);
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 36px;
+}
+
+fieldset {
+    width: 25%;
+}
+
+legend {
+    font-family: 华文楷体;
+    font-size: 20px;
+}
+
+#form_login {
+    margin: 0 auto;
+}
+
+/*验证码输入框*/
+input[name="verify"] {
+    width: 70px;
+}
+
+/*input控件美化*/
+#form_login > input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+/*提交、重置按钮*/
+#form_login > input[type="reset"] {
+    padding: 0;
+}
+
+#form_login > input[type="submit"] {
+    padding: 0;
+}
+
+.btn {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
+}
+
+/*验证码显示框*/
+#verifyNum {
+    border-style: groove;
+    padding: 1px 10px 4px 10px;
+    display: inline;
+    cursor: pointer;
+    -webkit-user-select: none; /*禁止用户选中文字*/
+    color: #f40;
+    background-color: #F8F8FF;
+}

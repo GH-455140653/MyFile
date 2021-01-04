@@ -1,0 +1,41 @@
+import random
+
+# 执墨凝霜 前女友B真嫩 被淡忘的方程式 永不复行 微光丶落影成歌 真心丶玖爱 丿MIN丶铁魂 jhgjhk 丿小胜灬 凹凸镘专打小怪兽 饥渴难耐丿 AceYgs
+a = ["执墨凝霜", "前女友B真嫩", "被淡忘的方程式", "永不复行", "微光丶落影成歌", "真心丶玖爱", "丿MIN丶铁魂", "jhgjhk","丿小胜灬", "凹凸镘专打小怪兽","饥渴难耐丿", "AceYgs"]
+b = ["丿小胜灬", "凹凸镘专打小怪兽"]
+c = ["饥渴难耐丿", "AceYgs"]
+
+flag = 0
+# for i in range(3):
+select = random.choice([True, False])
+if select:
+    print("下列人员进入左边队列：\n")
+else:
+    print("下列人员进入右边队列：\n")
+while flag < 5:
+    keys = random.randint(0, len(a) - flag - 1)
+    who = a.pop(keys)
+    print(who)
+    flag += 1
+# x = input("\n按任意键结束")
+
+# import random
+#
+# a = []
+# print("请问你的小队有几个人：")
+# num = int(input())
+# for i in range(0, num):
+#     a.append(input("请输入第{0}个人的名字：".format(i + 1)))
+# people = int(input("每队多少人："))
+# select = random.choice([True, False])
+# if select:
+#     print("下列人员进入左边队列：\n")
+# else:
+#     print("下列人员进入右边队列：\n")
+# flag = 0
+# while flag < people:
+#     keys = random.randint(0, len(a) - flag - 1)
+#     who = a.pop(keys)
+#     print(who)
+#     flag += 1
+# input("\n按任意键结束")

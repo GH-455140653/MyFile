@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../study/大二下/JavaWeb/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../study/大二下/JavaWeb/commons-io-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../study/大二下/JavaWeb/mysql-connector-java-5.1.35-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

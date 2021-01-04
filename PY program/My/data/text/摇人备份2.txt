@@ -1,0 +1,50 @@
+import random
+
+
+def depart(paraX):
+    symbol = random.choice([True, False])
+    if symbol:
+        print(paraX.pop(0))
+    else:
+        print(paraX.pop(1))
+
+
+# 执墨凝霜 前女友B真嫩 被淡忘的方程式 永不复行 微光丶落影成歌 真心丶玖爱 丿MIN丶铁魂 jhgjhk 丿小胜灬 凹凸镘专打小怪兽 饥渴难耐丿 AceYgs
+a = ["执墨凝霜", "前女友B真嫩", "被淡忘的方程式", "永不复行", "微光丶落影成歌", "真心丶玖爱", "饥渴难耐丿", "jhgjhk"]
+b = ["丿小胜灬", "凹凸镘专打小怪兽"]
+c = ["丿MIN丶铁魂", "AceYgs"]
+
+select = random.choice([True, False])
+if select:
+    print("下列人员进入左边队列：\n")
+else:
+    print("下列人员进入右边队列：\n")
+
+# depart(b)
+# depart(c)
+num = 0
+flag_1 = False
+flag_2 = False
+flag_b = False
+flag_c = False
+while num < 3:
+    if flag_b == False:
+        flag_1 = random.choice([True, False])
+        if flag_1:
+            depart(b)
+            flag_b = True
+    if flag_c == False:
+        flag_2 = random.choice([True, False])
+        if flag_1:
+            depart(c)
+            flag_c = True
+    keys = random.randint(0, len(a) - num - 1)
+    who = a.pop(keys)
+    print(who)
+    num += 1
+if flag_b == False:
+    depart(b)
+if flag_c == False:
+    depart(c)
+
+# x = input("\n按任意键结束")

@@ -1,0 +1,796 @@
+
+
+目 录
+
+
+第1章 概 述	1
+1.1 系统开发目的和意义	1
+1.2 系统开发环境及技术	1
+1.3 系统基本功能简介	3
+第2章 人事工资管理系统总体设计	4
+2.1 系统功能模块设计	4
+2.2 系统数据库设计	6
+第3章 人事工资管理系统详细设计及编码	8
+3.1 数据库底层访问类	8
+3.2 系统登录模块	11
+3.3 系统后台首页面	14
+3.4 员工个人信息管理	16
+3.5 工资管理	25
+3.6 考勤管理	29
+3.7 留言管理	33
+3.8 个人中心	37
+3.9 意见反馈	39
+结 论	44
+参考文献	45
+ 
+第1章 概 述
+1.1 系统开发目的和意义
+本次课程设计的题目是“人事工资管理系统”，该设计是对JavaWeb课程设计课程中所学知识的巩固和深入应用。该系统是B/S模式的系统，系统发布后可以通过浏览器访问。系统结合Java语言、JSP技术以及MVC模式、HTML+CSS+JavaScript技术进行设计和开发。
+人事工资管理系统是一个体系较为完备的系统，主要分为人事资源管理和员工工资管理两大模块，是目前工厂进行员工管理需要的常用系统之一。曾经有许多系统的是采用C/S模型通过系统应用程序的方式嵌入到计算机系统里面的，能做到界面美观，操作上手难度低，方便使用的特点，但对用户计算机的配置要求比较高，对操作系统的兼容性比较低，这就导致了一旦出现操作系统损坏的情况或更换操作系统的情况，管理系统将不复存在。简而言之，以往C/S模式下的系统移植性不高，不利于管理系统在不同的计算机下运行。
+在这种情况下，基于当前互联网的高速发展，大数据的初步成型，B/S模式下的管理系统的出现就显得大势所趋，只要用户有浏览器，即可访问该系统，相对完美的解决了计算机操作系统的兼容性问题。
+面对目前市场需求环境下，通过采用B/S模式下开发的“人事工资管理系统”，不仅满足市场需求，更能熟悉并了解MVC模式下的Web系统中的应用，提高对JSP技术的运用能力，在开发软件系统的过程中深入了解软件开发过程的基本步骤和基本思想，从而提高自身的综合开发能力。
+1.2 系统开发环境及技术
+1.2.1 人事工资管理系统开发环境
+人事工资管理系统基于B/S（Browser/Server）模式开发，采用面向对象的思想进行设计，系统的实现使用了JSP技术，系统编码采用了IntelliJ IDEA作为集成开发环境，后台使用Java语言编写程序；前端使用HTML、CSS、JavaScript等技术设计开发页面；数据库使用MySQL5.6。该系统所需要的运行环境如下：
+1．	客户端：谷歌浏览器或其他谷歌内核的浏览器。
+2．	服务器端：安装Java虚拟机及MySQL5.6应用程序系统。
+1.2.2 人事工资管理系统开发技术
+1．	MVC模式
+本系统是基于MVC模式设计和开发的，MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功能在一个逻辑的图形化用户界面的结构中。
+本系统利用MVC方式进行开发设计,有效地利用了MVC模式的特点,避免一些系统问题。[2]
+2．	JSP技术
+JSP是全名JavaServer Pages，是由Sun公司主导创建的一种动态网页技术标准。JSP部署在网络服务器上可以接受客户端的请求传给服务器后台，后台经过处理，响应客户端的需求。
+JSP技术开发的Web应用程序或分布式管理系统能够跨平台运行,具有很强的鲁棒性和普适性,因此能够广泛应用于互联网软件设计中。[1]
+3．	JDBC（Java Data Base Connectivity）技术
+JDBC即Java数据库连接，（Java Database Connectivity，简称JDBC）是Java语言中用来规范客户端程序如何来访问数据库的应用程序接口，提供了诸如查询和更新数据库中数据的方法。即通过JDBC技术，可以通过指令行实现对数据库内容的插入和更新。
+4．	HTML技术
+HTML称为超文本标记语言，是一种标识性的语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。
+5．	CSS技术
+CSS全称层叠样式表(英文全称：Cascading Style Sheets)，是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
+6．	JavaScript技术
+JavaScript是一种属于网络的高级脚本语言，被广泛用于Web应用开发，常用来为网页添加各式各样的动态功能，为用户提供更流畅美观的浏览效果。
+1.3 系统基本功能简介
+人事工资管理系统是基于MVC模式设计和开发的，MVC模式下的，将系统分为前台的视图层，后台的数据处理层，以及数据存储的模型层，三层分化有利于数据与操作的解耦，加强了相同数据的重复利用性，在小组合作中能较为容易的实现了分工，代码的变更在一定程度上不会影响别的模块，有利于后期的代码合并与维护。
+在功能设计上，基于MVC模式，分为前台和后台两个部分功能；前台采取JSP内置对象session结合模型类进行数据的封装，一定程度上解决了数据的安全性问题和session变量的滥用问题。获取的变量通过代码片写入前端视图层界面，实现数据的动态交互。前台通过JS对每个需要上传服务器的表单进行判断，保证数据的合理性。后台采取控制类结合模型类对从视图层获取的数据进行处理，访问数据库并进行相关操作，最后将处理后的结果回调视图层，实现后台数据交互。其中，在前台和后台的数据类型的获取和传递方面，需要留意两者的数据类型经过转码后是否与数据库的数据类型一致，这可以通过前端JS控制传递和后台数据转换和转码实现。
+实现本单位的人员以及工资进行增加、删除、修改、查询,对人事的管理及工资发放中的,应发工资合计等项目,由系统自动进行计算;同时本系统还可对人事及工资管理情况进行多角度查询。[3]
+ 
+第2章 人事工资管理系统总体设计
+2.1 系统功能模块设计
+人事工资管理系统主要由人事资源管理和员工工资两大模块构成。本系统功能模块设计如下：
+1．	系统登录模块
+对账号和密码进行数据库访问校验。
+2．	人事资源管理模块
+对已有用户的个人信息进行查询和更新。
+3．	工资管理模块
+通过特定算法并结合不同模块对用户的个人工资进行结算。
+4．	留言管理模块
+对用户的留言进行管理，实现留言的插入和修改。
+5．	考勤管理模块
+是用户实现每日签到的功能和管理员进行考勤状态的修改模块。
+6．	意见模块
+是使用者对该系统存在的问题和建议的反馈途径。
+7．	个人中心
+给予系统使用者修改密码权利。
+系统功能模块图如图2-1所示。
+ 
+图2-1 系统功能模块图
+管理员系统功能模块如图2-2所示。
+ 
+图2-2 管理员系统功能模块图
+用户系统功能模块如图2-3所示。
+ 
+图2-3 用户系统功能模块图
+2.2 系统数据库设计
+数据库管理系统是允许用户在计算机上创建数据库，增加、修改、删除、排序和检索数据库中的数据，并使用数据库中的数据创建表格和报表的软件系统。数据库的设计直接关系到整个系统的数据的存储，是系统开发的一个重要环节。合理的数据库设计能够给系统带来很好管理作用，提高系统后台对数据的访问效率。而且能够使得各个功能模块的设计变得非常简单而且模块间的关系特别明确。本系统的数据库是在MySQL中创建的。
+根据前面的分析，人事工资管理系统数据库共包含5个表，包括员工个人信息表（t_Person）、用户信息表（t_Login）、留言信息表（t_Dialog）、考勤信息表（t_Sign）、工资信息表（t_Wage）和用户建议表（t_Suggestion）
+表的结构、表字段的数据类型及相关说明如下：
+t_login是用户登录该系统的数据库存储表，用来存储用户的员工编号，密码以及权限。
+表2-1用户信息表
+列名	说明	数据类型	约束
+authority	权限	int（1）	default（0）、not null
+no	账号(员工编号)	int(10)	primary key、Unsigned、
+ON DELETE CASCADE ON UPDATE CASCADE
+password	密码	varchar(20)	not null、default（123）
+t_person是存储员工个人信息的数据库存储表，记录员工的员工编号，姓名，所在部门等个人信息。
+表2-2 员工信息表
+列名	说明	数据类型	约束
+no	员工编号	int（10）	primary key、Unsigned
+Pname	员工姓名	varchar(10)	not null
+Page	员工年龄	int（3）	not null
+Psex	员工性别	enum('男','女')	NOT NULL、DEFAULT '男'
+Psalary	员工底薪	varchar(10)	not null
+Pdept	员工所在部门	enum('销售部','技术部','财务部','后勤部','人力资源部')	not null
+Ptele	员工电话	varchar(11)	not null
+t_wage是存储员工的当月工资信息的存储表，由员工编号和当月工资组成。
+表2-3 工资信息表
+列名	说明	数据类型	约束
+no	员工编号	int（10）	primary key、Unsigned、
+ON DELETE CASCADE ON UPDATE CASCADE
+Ssalary	薪水	varchar(10)	not null
+t_dialog是存储员工留言信息的数据表，里面由员工编号，留言编号和留言内容组成。
+表2-4 留言信息表
+列名	说明	数据类型	约束
+Dno	留言编号	int(10)	primary key、Unsigned
+no	员工编号	int(10)	Unique、Unsigned
+ON DELETE CASCADE ON UPDATE CASCADE
+Dmessage	留言内容	varchar(50)	not null
+t_Sign是存储员工考勤信息的数据表，表中有员工编号和当日签到事件和签到状态组成。
+表2-5 考勤信息表
+列名	说明	数据类型	约束
+no	员工编号	int(10)	primary key、Unsigned
+ON DELETE CASCADE ON UPDATE CASCADE
+Wtime	签到时间	DATE	primary key
+Wstatues	签到状态	int(1)	default（0）
+t_advice是存储员工考勤信息的数据表，里面由用户的员工编号、建议编号和建议内容组成。
+表2-6 建议信息表
+列名	说明	数据类型	约束
+no	员工编号	int(10)	not null、Unsigned
+ON DELETE CASCADE ON UPDATE CASCADE
+Sno	建议编号	int(10)	primary key、Unsigned
+Smessage	建议内容	varchar（1000）	not null
+其中在考勤信息表里面加入触发器和存储器，当每天时间到达开始时间00：00时触发该触发器，触发器根据已有的员工编号默认添加一个签到时间（当天时间）,可用于判断某个用户在哪天未签到和默认签到情况0。
+
+ 
+第3章 人事工资管理系统详细设计及编码
+3.1 数据库底层访问类
+本系统是采用MVC模式框架实现的，通过不同的JSP页面实现视图层，通过servlet实现对数据的获取和响应，通过不同的模型类以及继承其模型类的不同子类实现对获取的数据的加工处理。其中，数据库作为系统的关键成分，承担着数据的存储和更新功能，要完成对业务的逻辑处理就需要在这三层模式之下建立一个访问数据库底层，通过SQL语句进行连接并对数据进行操作，从而实现信息的维护功能。
+3.1.1 使用JDBC技术连接数据库
+JDBC是Java语言用来规范客户端来访问数据库的应用程序接口，是Java连接数据库的一种方法。[4]在该系统中，由于数据存储在数据库中，客户端要想对数据进行修改，就需要服务端通过一定的方法访问数据库并将相应的数据库语言进行数据库的连接，在该系统中，采用JDBC连接数据库。
+在纯Java环境中，一般集成环境只配有运行Java程序的基本方法包和接口，也就是我们常说的JDK，而JDK包中并不含有连接各类数据库的接口和相关类，需要导入一个数据库连接驱动程序包，每个不同的数据库的连接包都是不一样的，需要管理者自行下载并导入。
+在IDEA集成环境中，可以在项目文件里面找到模块下的依赖右侧的“+”，点击选择SQL驱动包所在路径并点击添加实现，在本系统中，采用的是MySQL数据库，因此导入了mysql-connector-java5.1.35-bin.jar驱动程序包，如图3-1所示。
+ 
+图3-1 数据库驱动包程序导入
+3.1.2 添加DBManager公共类
+基于MVC模式下，该系统需要创建一个com.NGU.Util包，在该包内创建一个专门用于数据库连接的公共类，实现数据库的连接、修改和查询的函数封装。
+其中，在该类中，有如下成员变量：
+connection类型的变量con，con是数据库连接对象，用于构建数据库连接；
+String类型的变量driver，用于存储Java反射机制注册的数据库字符串；
+String类型的变量url，用于连接指定数据库的指定库；
+String类型的变量user，用于存储打开数据库的账号；
+String类型的变量password，用于存储打开数据库密码；
+ResultSet类型的变量rs，用于存储函数封装后的返回结果；
+Statement类型的变量st，用于用户向数据库发送需要处理的SQL语句。
+数据库的操作可以大致分为两类，一类是查询，一类是更新，因此在该类中，封装了4个方法，数据库连接getConnection()、数据库查询executeQuery()、数据库更新executeUpdate()、数据库连接关闭dbmclose()。
+1．数据库连接方法getConnection()
+该方法是用于构建并连接数据的一个函数封装，通过对成员变量url，root，password的参数传递，调用数据库连接方法DriverManager.getConnection()对数据库进行连接，实现数据库的后台连接。
+getConnection方法的关键代码如下：
+    private Connection getConnection() {
+            Class.forName(driver);
+            con = DriverManager.getConnection(url,user,password);
+            if (!con.equals(null)) {
+                System.out.println("数据库连接成功");
+            }
+        return con;
+    }
+2．数据库查询方法executeQuery()
+该方法是数据库的查询方法，可以实现对数据库中的数据进行查询。
+executeQuery方法的关键代码如下：
+    public ResultSet executeQuery(String sql) {
+        st = (Statement) con.createStatement();
+        rs = st.executeQuery(sql);
+        return rs;
+    }
+3．数据库增删改的操作方法executeUpdate()
+该方法时对数据库的数据的删除，修改，更新的方法，返回数据库内执行SQL语句后改变数据库内受影响的行数。
+executeUpdate()方法的关键代码：
+    public int executeUpdate(String sql) {
+        int cont = 0;
+        st = (Statement) con.createStatement();
+        cont = st.executeUpdate(sql);
+        return cont;
+    }
+4．数据库的关闭方法dbmclose()
+该方法主要用于在数据库执行完相应的SQL语句后，为了防止数据库连接持续占用系统内存导致资源浪费，该系统定义了一个数据库关闭方法，实现对数据库的连接状态的关闭。
+dbmclose()方法的关键代码：
+    public void dbmclose() {
+        rs.close();
+        st.close();
+        con.close();
+    }
+3.2 系统登录模块
+登录是一个信息管理系统的开始，也是一个系统权限划分的重要特征之一，登录模块的建立往往通向两个或多个不同的后台系统管理界面，给不同用户提供不同的功能，一定程度上提高了用户的体验感，客观上提高了系统的安全性。
+3.2.1 View层构建
+首先在IDEA中的项目中，找到浏览器项目区Web目录，在该目录下建立一个项目目录NGU，再在该目录下建立一个登录页面(index.jsp)，在该目录下通过HTML语言建立一个表单并选择指定的表单控件，通过表单的action属性为表单提供一个上传服务器的URL地址。
+由于登录设计严格的安全性，故在上传方式上选择安全的POST提交方式。又基于MVC模式下，通过servlet和绝对路径结合将前台获取的数据传到后台。
+界面通过前台的CSS样式与JavaScript技术对页面布局进行美化改善。
+登录界面如图3-2所示。
+ 
+图3-2 登录界面
+3.2.2 Model层构建
+对于登录模块，实现数据的封装需要对用户的登录密码进行类的封装，需要在java类中建立一个存储所有模型的包(com.NGU.Model),即需要在模型类(Model)中建立一个用户登录的类(User)，用于存储登录信息并通过该类与底层服务器信息进行匹对，实现登录功能。
+该类中主要有四个属性，它们分别是name，no，password和authority，分别代表用户姓名、用户员工编号、用户的密码和用户的权限。其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+具体代码(name属性的构建)代码如下所示：
+package com.NGU.Model;
+public class User {
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.2.3 Controller层构建
+Controller层里面通过UserServletHandle类继承HttpServlet类实现servlet数据传递，前台通过隐藏域设置，后台通过doPost方法判断隐藏域（login）的值获取数据，实现数据传递从前台传递到后台。
+在该方法中，通过JSP内置对象request的getParameter()方法接收表单数据，此处参数是登录的账号和密码，参数接收后进行转码操作，再通过子类继承父类的接口，实例化UserDaoImpLogin的对象，调用该类中的read()方法，实现登录的数据库访问与匹对，获取相应的结果存储在数据类型为ResultSet的数据集中，通过List类型集合返回到servlet中，最后通过if…else语句结合JSP内置对象response的sendRedirect()实现页面的跳转。
+其中，为了后期管理系统页面的数据传递，需要设置JSP内置对象session，建立一个浏览器变量，里面存储着需要的用户参数值。
+方法关键代码如下：
+if (flag.equals("login")) {
+    String no = req.getParameter("name");
+    ……
+    UserDAOI userDAOI = new UserDaoImpLogin(no, password, authority);
+    list = userDAOI.read();
+    session.setAttribute("list_login", list);
+    if (list.size() == 0) {
+        resp.sendRedirect("NGU/index.jsp?msg=error");
+    } else {
+        if (list.get(0).getAuthority() == 1) {
+            resp.sendRedirect("NGU/user.jsp");}}
+3.2.4 用户登录操作的DAO类
+实现用户登录操作的DAO类为UserDaoImpLogin，该类主要包括3个方法，分别为read方法、update方法、checkMessage方法和select方法，其中read（）方法用于实现系统的登录的数据库匹配功能，该方法没有参数，返回值为一个存储User模型类的数据集合；checkMessage是数据库账号密码与前台数据获取的账号密码进行匹对的方法；select是对查询用户登录表（表2-1）方法封装；update（）方法用于实现账号密码的修改，将在后续章节介绍；
+当用户输入用户名和密码后，通过表单传递给servlet，servlet再将数据传给指定的UserDaoImpLogin类调用read方法系统验证用户输入的用户和密码是否正确，实现过程中借助DBManger数据库底层操作类判断用户登录是否成功结合checkMessage()方法判断两者数据匹对，代码如下：
+    if (list.size() != 0) {
+        if (!checkMessage(list.get(0).getNo(), list.get(0).getPassword())) {
+            list.clear();
+        }
+    }
+其中，由于该系统的用户有两类，管理员和普通用户，故sql语句需要分开独立写入数据库，可以有效的提高数据的访问能力，代码如下：
+String sql;
+if (authority == 1) {
+    sql = "SELECT t_person.no,PASSWORD,authority,Pname FROM t_person,t_login WHERE t_login.no=t_person.no AND authority=1 AND t_person.no=" + no;
+} else {
+    sql = "SELECT t_person.no,PASSWORD,authority,Pname FROM t_person,t_login WHERE t_login.no=t_person.no AND authority=0 AND t_person.no=" + no;
+}
+当执行完sql语句得到一个非空的结果集rs时，则表示用户登录成功，方法返回一个存储了User类模型的数据集合list，否则返回一个长度为0的集合。
+该方法的核心伪代码如下：
+List<User> list = new ArrayList<>();
+String sql;
+sql语句;
+list = select(sql);
+db.dbmclose();
+checkMessage();
+return list;
+3.2.5 用户登录验证码功能
+在目前主流的登陆界面中，往往为了控制网页的访问量，防止一些恶意爬虫对网页的压力攻击，都会设置一个验证功能，本系统也有类似的验证码功能，实现主要是通过前台的JS的编写实现的。
+首先给出随机生成的字符范围：数字、英文大小写共62字符，通过Math.Random函数结合for循环随机选取，判断重复，最后将结果通过window属性的innerHTML写入指定的DIV层中。
+关键实现代码如下：
+function refreshCode() {
+    var code = ‘62个字符’,char = '', result = '';
+    for (var i = 0; i < 4; i++) {
+    var code_index = Math.round(Math.random() * 61);
+        char = code[code_index];
+        if (result.toUpperCase().indexOf(char.toUpperCase()) > -1) 
+        {i--;continue;}
+        result += char;
+    }
+    code_box.innerHTML = result;
+}
+3.3 系统后台首页面
+在该系统的首界面中，为了使每个模块能够独立运行并维护方便，系统设计采用不同模块实现页面跳转功能，因此页制造了许多模块页面文件：admin.jsp,user.jsp,Person.jsp,Sign.jsp,Wage.jsp等JSP页面。
+该系统的后台管理员的管理界面设计如下图3-3所示。
+ 
+图3-3 管理员后台管理界面
+
+该系统的用户后台管理界面如下图3-4所示。
+ 
+图3-4 用户后台管理界面
+3.4 员工个人信息管理
+该模块是员工个人信息修改模块，用户可以在该模块对个人信息进行修改与个人信息的查询并打印查询结果；管理员可以在该模块对用户的个人信息进行修改，删除，查询和添加操作。
+员工个人信息模块管理模块界面如3-5所示。
+ 
+图3-5 员工个人信息管理界面
+3.4.1 Model层构建
+在com.NGU.Model中建立一个模型类Person，用于获取并存储员工的个人信息。
+该类中主要有七个属性，它们分别是name，no，age，sex，salary，dept和tele，分别代表用户的姓名，员工编号，年龄，性别，底薪，所在部门和联系方式。其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+关键代码实现如下：
+package com.NGU.Model;
+public class Person{
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.4.2 添加员工——管理员
+1．View层构建
+首先在IDEA中的项目中，找到浏览器项目区Web目录，在该目录下找到之前创建好的NGU目录，在该目录下有之前创建的管理员主界面(admin.jsp)，里面含有员工添加的DIV层，用于添加录入新员工，按照指定格式，在员工编号，员工姓名，年龄等输入框与下拉框中输入或选择指定内容，完成后点击确定，在经过前台数据类型匹配之后即可提交到后台服务端处理，重置即情况所有已输入内容。
+员工添加界面如图3-6所示。
+ 
+图3-6 员工添加界面
+
+2．Controller层构建
+在后台接收前台传递数据后，通过隐藏域的值（insertPerson）判断进入指定区域进行数据的处理。通过子类继承父类的接口并通过构造函数实现数据传递，将数据传递到处理类包中的UserDaoImpPerson类中处理数据，最后通过调用该类中的insert方法与底层数据库进行交互，实现新员工的添加。、
+关键代码是实现如下：
+if (flag.equals("insertPerson")) {
+    String no = req.getParameter("pno");
+    ……
+    PersonDAOI personDAOI = new UserDaoImpPerson();
+    personDAOI.insert(no, name, dept, age, sex, salary, tel);
+     resp.sendRedirect("NGU/admin.jsp");
+}
+3．DAO实现类
+实现员工信息管理的添加操作的DAO类为UserDaoImpPerson，该类方法较多，添加员工主要涉及的方法有read()和insert()，前者负责查询遍历目前已有员工，用于后期防止用户编号相同重复添加问题，后者用于对新用户的添加。
+在servlet中传递的参数，首先需要对参数进行转码操作，其次再进行数据库的员工信息表（表2-2）进行交互操作，通过sql语句更新数据库里面指定表中内容，最后关闭数据库。
+关键代码实现如下：
+name = new String(name.getBytes("ISO-8859-1"), "utf-8");
+……
+DBManager db = new DBManager();
+String sql = "INSERT INTO t_person VALUES(" + no + ",'" + name + "'," + age + ",'" + sex + "'," + salary + ",'" + dept + "'," + tel + ")";
+db.executeUpdate(sql);
+3.4.3 员工个人信息管理系统——管理员
+1．View层构建
+首先在IDEA中的项目中，找到浏览器项目区Web目录，在该目录下建立一个项目目录NGU，在该目录下有之前创建的管理员主页面(admin.jsp)。在该页面，当管理员在左侧列表栏内点击员工信息管理并点击进入员工个人信息管理系统后，即可进入个人信息管理系统页面，即新的页面Person.jsp。
+该系统用户管理员对员工的个人信息进行删除，修改和查询操作。
+通过鼠标点击按钮触发指定事件实现数据传递。
+也可以通过输入框和下拉框选择指定员工数据进行用户查询。
+再员工查询表中，每列第一个单元格都是一个复选框，用于管理员对员工的批量删除操作。
+基于不同用户使用的浏览器可能在页面布局上会用较大的视觉差异，为了防止数据过多导致用户下拉次数过多影响用户对系统的体验，该模块内设置了分页操作，一表五个数据。
+管理员还可以对员工个人数据进行修改，通过JS提示框来指定数据修改。
+对于分页操作，该模块时通过前端JS计算生成的通过每次servlet返回参数名index的值来判断页数。
+关键代码如下：
+/*上一页*/
+index = parseInt(index - 5);
+window.location.href = "<%=basePath %>NGU/Person.jsp?index=" + index;
+/*下一页*/
+if (index + 4 >= len) {
+    alert("已经是最后一页！");
+} else {
+    index = parseInt(index + 5);
+    window.location.href = "<%=basePath %>NGU/Person.jsp?index=" + index;}
+员工信息管理界面如下图3-7所示。
+ 
+图3-7 员工信息管理界面
+
+2．Controller层构建
+在该子系统中，用户可以通过选择按钮点击，触发不同的隐藏域进入来执行不同的操作，该系统中有隐藏域值为deletePerson、updatePerson和searchPerson，通过不同的隐藏域，在表单提交时传到后台servlet会通过if…else语句进行选择，找到指定区域，实例化相应的DAO类，通过调用UserDaoImpPerson类中的delete()、change()和update()方法分别实现对数据的转码与访问数据库。最后通过内置对象Response返回指定页面。
+关键代码实现如下所示：
+name = new String(name.getBytes("ISO-8859-1"), "utf-8");
+……
+其中作为该页面的特色，该页面提供指定条件查询，也就是简单的筛选操作，通过管理员手动输入和下拉框指定选择，缩小搜索范围，提高检索效率，一定程度上解决了数据量大，查找某个人困难的问题。
+该功能主要通过前台和后台交互结合实现，前台负责对用户输入选择的信息进行判断，失败则弹出警告框，否则通过js传递数据到servlet，通过隐藏域值(searchPerson)进入指定区域，结合相应的处理类通过构造函数传入，最后将查询结果返回到servlet并将数据写入浏览器变量session中，返回指定页面，实现指定查询功能。
+具体代码如下：
+String dept = req.getParameter("dept");
+dept = new String(dept.getBytes("iso-8859-1"), "utf-8");
+PersonDAOI personDAOI = new UserDaoImpPerson();
+List<Person> list6 = new ArrayList<>();
+list6 = personDAOI.search(no, dept);
+session.setAttribute("personlist", list6);
+resp.sendRedirect("NGU/Person.jsp?index=0");
+其中，页面参数index是为了分页操作。
+3．DAO实现类
+该页面的DAO层处理时依赖UserDaoImpPerson实现的，涉及到多个函数功能
+在servlet将指定数据传进处理类中，其中通过不同方法实现不同的功能。
+各个功能实现的关键代码如下：
+DBManager db = new DBManager();//打开数据库
+/*各种功能的SQL语句*/
+String sql = "delete from t_person where no=" + num;//delete方法sql语句
+String sql = "update t_person set " + type + "='" + value + "' where no=" + no;//update方法SQL语句
+String sql = "update t_person set Pname='" + name + "',Page='" + age + "',Psex='" + sex + "',Pdept='" + dept + "',Ptele='" + tel + "' where no=" + no;//change方法SQL语句
+sql = "select * from t_person where Pdept=" + "'" + dept + "' and no=" + num;//search方法SQL语句
+ResultSet rs = db.executeQuery(sql);//查询功能返回数据集
+return list;//返回数据查询集合
+db.dbmclose();
+3.4.4 员工个人信息修改——用户
+1．View层构建
+首先在IDEA中的项目中，找到浏览器项目区Web目录，在该目录找到目录名为NGU的目录，再在该目录下找到用户管理主界面(user.jsp)
+当用户在用户管理界面点击左侧列表修改个人信息时，在右侧员工个人信息修改中即可出现个人信息修改的表单项，表单内在登陆时便查询了当前登录用户的个人信息并提前写入右侧的DIV图层中，直到用户点击左侧的修改个人信息才显示。
+用户可以根据自身需求，将需要修改的地方进行修改，点击确认修改在前台数据判断后传到后台处理并修改数据库；点击重置按钮便可将数据恢复到初始状态。
+用户个人信息修改界面如图3-8所示。
+ 
+图3-8 用户个人信息修改
+2．Controller层构建
+用户登录完成的同时，在servlet中同时查询了用户的个人信息，通过嵌入登录模块(login)内执行。最后设置session返回，实现数据登录完并写入指定的DIV图层中。
+关键代码如下：
+/*获取所有员工的编号*/
+PersonDAOI personDAOI = new UserDaoImpPerson();
+List<Integer> list_no = new ArrayList<>();
+list_no = personDAOI.readno();
+session.setAttribute("list_no", list_no);
+数据的修改需要修改的数据通过前台判断后，将数据传入servlet中，在servlet通过隐藏域找到指定的隐藏域值(changePerson)，在该区域获取前台表单传进来的数据，通过处理类UserDaoImpPerson调用change()方法，实现数据修改功能，返回一个集合list8，通过session设置变量，在前台读取即可实现修改。
+关键代码如下：
+String no = req.getParameter("userno");
+……
+PersonDAOI personDAOI = new UserDaoImpPerson();
+List<Person> list8 = new ArrayList<>();
+list8 = personDAOI.change(no, name, dept, age, sex, tel);
+session.setAttribute("userinfo", list8);
+resp.sendRedirect("NGU/user.jsp");
+
+3．DAO实现类
+对servlet传进来的参数进行转码：
+name = new String(name.getBytes("ISO-8859-1"), "utf-8");
+随后打开数据库并执行修改语句：
+DBManager db = new DBManager();
+String sql = "update t_person set Pname='" + name + "',Page='" + age + "',Psex='" + sex + "',Pdept='" + dept + "',Ptele='" + tel + "' where no=" + no;
+db.executeUpdate(sql);
+其次再将数据库修改后的内容查询出来，写入集合里面：
+List<Person> l1 = new ArrayList<>();
+String sql2 = "select Pname,Psex,Page,Pdept,Ptele,Psalary from t_person where no=" + no;
+ResultSet rs = db.executeQuery(sql2);
+while(rs.next()){
+    Person p1 = new Person();
+    p1.setName(rs.getString("Pname"));
+    ……
+    l1.add(p1);
+}
+最后关闭数据库并将数据库查询出来的新值返回到servlet：
+db.dbmclose();
+return l1;
+3.4.5 员工个人信息查询与打印——用户
+1．View层构建
+在IDEA中找到Web目录，并在其下找到user.jsp页面。
+当用户在用户管理界面点击左侧列表修改个人信息时，在右侧员工个人即可显示个人信息表格，表格的数据在当前用户登录的时候便开始查询指定数据库的指定表中数据，将查询结果写入右侧的DIV图层中，直到用户点击左侧的修改个人信息才显示。
+其中，当用户在右侧点击打印时，后台将获取表格的信息，将数据写入一个文本文档里面并提示用户下载。
+用户个人信息查询界面如图3-9所示。
+ 
+图3-9 用户个人信息查询
+3．Controller层构建
+当用户在用户管理界面点击左侧“查询个人信息”时，数据已经填入表格，代码上节已述，再次不在赘述。
+当用户点击“打印”按钮时，前台传递页面数据给后台处理，servlet获取指定隐藏域(downloadInfo)将数据传递到用户个人信息处理类(UserDaoImpPerson)中处理，通过调用writeTxt和download方法将数据处理后并打印数据。
+关键代码如下：
+String myname = req.getParameter("myname");
+myname = new String(myname.getBytes("ISO-8859-1"), "utf-8");
+……
+PersonDAOI personDAOI = new UserDaoImpPerson();
+personDAOI.writeTxt(path1, myname, mysex, myage, mydept, mytel);
+personDAOI.download(path1, req, resp);
+resp.sendRedirect("NGU/user.jsp");
+4．DAO实现类
+接收servlet传来的参数，对数据进行文件流的写入：
+public void writeTxt(String path, String name, String sex, String age, String dept, String tel) {
+    FileWriter fw;
+    fw = new FileWriter(path + "\\information.txt");//建立filewrite对象，并实例化
+    fw.write("姓名:" + name + "\n");
+    ……
+    fw.close();
+}
+对写入的文件进行字符流的读取，设置最大字符数，文件存储路径，以及文件名的设置，最后关闭打开的读取操作，最后传回给前台，实现文件的下载。
+关键代码如下：
+首先是对文件的文件获取
+File file = new File(path + "\\information.txt");//获取服务器文件
+InputStream ins = new FileInputStream(file);
+/* 设置文件ContentType类型，这样设置，会自动判断下载文件类型 */
+response.setContentType("multipart/form-data");
+/* 设置文件头：最后一个参数是设置下载文件名 */
+response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
+进行文件的字符流写入
+OutputStream os = response.getOutputStream();
+byte[] b = new byte[1024];
+int len;
+while ((len = ins.read(b)) > 0) {
+os.write(b, 0, len);
+关闭打开的文件资源
+os.flush();
+os.close();
+ins.close();
+3.5 工资管理
+工资管理是该系统的第二大模块，是计算并生成员工当月工资的子系统，该系统是根据用户个人信息的底薪和考勤模块里每日的签到次数进行计算并得出当月应得的工资。
+当月工资的计算规则：每个月员工法定签到次数为30天（不考虑特殊月份），每个月少签到1天，扣除个人底薪的1/20，直到工资为0为止；整个月签到满30天，当月应得工资为底薪的两倍。
+工资管理界面如图3-10所示。
+ 
+图3-10工资管理界面
+3.5.1 Model层构建
+在com.NGU.Model中建立一个模型类Salary，用于获取并存储员工的工资信息。
+该类中主要有四个属性，它们分别是name，no，SignDayTimes分别代表用户的姓名，员工编号，当月签到天数和当月月薪。其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+关键代码实现如下：
+package com.NGU.Model;
+public class Salary{
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.5.2 员工工资管理系统
+1．View层构建
+在NGU目录下有一个Wage.jsp页面，该页面主要由table表格和各种input的表单控制组成，该页面是管理员用来查询员工当月签到次数的页面。
+在工资管理界面点击进入工资管理系统即可进入员工工资管理页面，该页面有查询全部个人工资，按员工编号查询工资，查询出来结果的分页操作以及主界面返回操作。
+不同的按钮通过url上传递参数值，使用get方法向后台servlet传送前台数据。
+员工工资管理界面如图3-11所示。
+ 
+图3-11 员工工资管理界面
+
+2．Controller层构建
+在点击工资管理界面的按钮时，按钮实现通过表单实现，内置隐藏域，通过隐藏域的值(searchwage)先传递到后台servlet对各个用户的工资进行查询，最后再将数据存在一个session变量集合里面，通过前台代码片进行访问。通过该方法，实现对页面一经打开便是查询全部结果的界面。
+关键代码如下：
+if (flag.equals("searchwage")) {
+     List<Salary> listsalary = new ArrayList<>();
+    WageDAOI wageDAOI = new UserDaoImpWage();
+    listsalary = wageDAOI.readWage();
+    session.setAttribute("listsalary", listsalary);
+    resp.sendRedirect("NGU/Wage.jsp?index=0");
+}
+当用户按条件查询完毕后，想要恢复全部结果，只需点击查询全部按钮，页面将再次执行该隐藏域值对应的方法，实现查询全部的效果。
+其中，在该子系统中，用户的员工编号下拉框是在进入该系统前查询好的，通过按钮的点击，将按钮所在表单的隐藏域(searchwage)传到servlet，servlet通过实例化一个继承(WageDAOI)的接口类(UserDaoImpWage)，调用该类的方法获得处理后的数据，最终将数据通过session传递回服务器。
+关键代码如下：
+if (flag.equals("searchwage")) {
+    List<Salary> listsalary = new ArrayList<>();
+    WageDAOI wageDAOI = new UserDaoImpWage();
+    listsalary = wageDAOI.readWage();
+    session.setAttribute("listsalary", listsalary);
+    resp.sendRedirect("NGU/Wage.jsp?index=0");
+}
+按照员工编号查询与在之前章节相类似，再次不在赘述。
+3．DAO实现类
+工资管理系统的实现类是UserDaoImpWage，该类中的主要方法有readWage()，changeWage()和readby()等，他们的作用分别是页面加载时进行的工资表（表2-3）的查询，修改底薪以及按编号查询工资。
+在用户进入该子系统时，servlet将获取指定隐藏域执行指定区域内容，在实现打开页面即可看到工资信息数据的功能，首先需要在处理类中定义一个计算工资的方法select，该方法通过if…else语句对工资不满30天的按照缺勤一天扣除1/20计算，直到扣到当月工资为0为止，而满30天的则能获取底薪工资的两倍，通过算法得出的数据结果返回到集合里面，通过函数返回值传递回servlet，实现工资查询功能。
+工资计算关键代码如下：
+/*计算工资*/
+double sum = 0;
+if (rs.getInt("times") >= 29) {
+    sum = Integer.parseInt(rs.getString("Psalary")) * 2;
+} else {
+    double cos = Integer.parseInt(rs.getString("Psalary")) * 0.05 * (30 - rs.getInt("times"));
+    sum = Integer.parseInt(rs.getString("Psalary")) - cos;
+}
+if (sum <= 0) {sum = 0;}
+在计算工资前，还需要对员工的底薪和员工个人信息进行表的关联查询，需要先查询出指定员工编号的员工的底薪。然后才能结合select方法计算出员工的当月工资。
+主要的SQL语句：
+sql = "SELECT t_wage.no,t_person.Pname,COUNT(CASE WHEN t_sign.`Wstatues`=1 AND t_sign.`Wtime`BETWEEN CONCAT(YEAR(CURDATE()),'-',MONTH(CURDATE()),'-','01') AND CONCAT(YEAR(CURDATE()),'-',MONTH(CURDATE()),'-','31') THEN t_wage.no ELSE NULL END) AS times,t_person.`Psalary`\r\n" +"FROM t_person,t_Sign,t_Wage\r\n" +"WHERE t_person.`no`=t_sign.`no` AND t_sign.`no`=t_wage.`no` \r\n" +"GROUP BY t_sign.`no`";
+3.6 考勤管理
+考勤模块是员工工资来源的重要评判因素，考勤系统的建立可以提供管理者在月末计算工资时一个准确的签到次数，而用户则可以通过每日签到功能进行每日签到。
+考勤管理系统界面如图3-12所示。
+ 
+图3-12 考勤管理界面
+3.6.1 Model层构建
+在com.NGU.Model中建立一个模型类Sign，用于获取并存储员工的签到信息。
+该类中主要有六个属性，它们分别是name，no，sex，dept，time，和statues分别代表用户的姓名，员工编号，性别，所在部门，签到时间以及当日签到状态。
+其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+关键代码实现如下：
+package com.NGU.Model;
+public class Salary{
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.6.2 考勤信息管理系统——管理员
+1．View层构建
+在NGU目录下创建一个Sign.jsp页面，该页面组成和别的页面相似，该页面主要的功能是显示并操作用户的签到状态的一个页面。
+在该界面中，页面由表格，按钮和表单组成，其中表格内的数据是管理员在点击考勤管理界面的按钮“点击查看考勤信息”时，访问数据库实现的，该功能在上述章节已有叙述，在本节将不在赘述。
+考勤信息管理界面如图3-13所示。
+ 
+图3-13 考勤信息管理界面
+
+2．Controller层构建
+在该子系统里，管理员可以选择不同的按钮，触发不同的隐藏域传递给servlet实现不同功能。
+查询全部，分页操作，按员工编号查询在上述章节有详细叙述，再次不在赘述。
+对于该系统的特色，修改签到状态。
+修改签到状态首先在前台为了防止系统使用者误触，有良好的确认取消提示框，在用户确定修改时，后台servlet找到指定修改模块的隐藏域(signupdate)，进入该模块执行类函数的方法，实现状态修改。
+关键代码如下：
+SignDAOI signDAOI = new UserDaoImpSign();
+signDAOI.update(signupdateno, signupdatetime, signupdatestatues);//把编号，日期，当天签到状态传参修改当天签到状态
+signDAOI = new UserDaoImpSign();//要是没有重新初始化会报：结果集中没有值
+listsign = signDAOI.read();/*在修改成功后再重新加载刷新页面*/
+3．DAO实现类
+签到功能实现类是UserDaoImpSign类，该类中有两个方法，分别用来查询和更新已有数据，即登录状态，两个方法分别是read()和update()。
+对于签到状态的改变，首先通过前台获取个人信息参数数据，对个人信息进行转码，数值类型转换，随后查询出该用户的签到状态，如果是“1”则为已签到，那么只需将1转为“0”即可由已签到转为未签到，反之，同理。
+if (statues == 0) { 
+sql = "UPDATE t_sign SET wstatues=1 WHERE NO=" + no + " AND wtime='" + time + "'";
+    System.out.print(sql);
+} else if (statues == 1) {
+    sql = "UPDATE t_sign SET wstatues=0 WHERE NO=" + no + " AND wtime='" + time + "'";}
+之后再将更新完的数据进行考勤信息表（表2-5）的查询，将查询结果写入集合list中，在servlet中response返回页面，实现状态更新。
+3.6.3 签到——用户
+1．View层构建
+用户的签到页面在NGU目录下的user.jsp中，通过嵌入用户管理界面实现的。
+用户的考勤模块主要由一个表单控件input组成，通过CSS样式改变，实现点击修改的效果。
+其中，该模块的签到状态的显示为：签到和已签到，在用户登录时需要同时查询结果返回到该页面的DIV层中。
+用户个人信息查询界面如图3-14所示。
+ 
+图3-14 用户签到界面
+2．Controller层构建
+对于登录即查询签到状态的嵌入功能实现，由于每个用户在第二天刚开始都是未签到状态的，需要数据库触发器和存储器同时工作在每日0时创建，故签到模块需要在每次登录时对当日签到状态进行判断，返回指定结果用于前端显示。
+关键代码如下：
+/*签到模块嵌入*/
+SignDAOI signDAOI = new UserDaoImpSign();//读取签到表是为了查看用户当天的签到状态
+String time = new SimpleDateFormat("yyyy-MM-dd").format(new Date()).toString();//获取今天日期
+signDAOI.insertintosign(Integer.parseInt(no), time);
+int statues = signDAOI.readstatues(Integer.parseInt(no), time);
+session.setAttribute("statues", statues);
+
+对于员工点击签到后，servlet获取前端传递的登录信息，在servlet进行转码，数值类型转换，通过调用UserDaoImpSign类的update方法实现数据修改，最后返回一个修改后的查询结果，用于前端输出。
+关键代码如下：
+String no = req.getParameter("no");
+String time = new SimpleDateFormat("yyyy-MM-dd").format(new Date()).toString();/*获取今天日期*/
+int statues = 0;
+SignDAOI signDAOI = new UserDaoImpSign();
+signDAOI.update(no, time, statues);/*把编号，日期，当天签到状态传参修改当天签到状态*/
+session.setAttribute("statues", 1);
+resp.sendRedirect("NGU/user.jsp");
+3．DAO实现类
+该模块的DAO处理类是UserDaoImpSign，该类对员工的签到处理还是update()方法。
+用户的签到功能的实现和上节的用户的签到修改是一样的，都是通过改变已有的签到状态，由01或是10来实现的，故在此不在赘述。
+3.7 留言管理
+该系统的留言功能是用户与用户之间，用户与管理员进行员工之间的沟通交流平台，类似贴吧，朋友圈那个圈内文化。在员工繁忙的工作中，给予员工一个放松和倾吐的空间，一定程度上增进了员工与员工之间的交流。
+留言管理系统界面如图3-15所示
+ 
+图3-15 留言管理界面
+3.7.1 Model层构建
+在com.NGU.Model中建立一个模型类Dialog，用于获取并存储员工的留言信息。
+该类中主要有四个属性，它们分别是name，no，message和Dno分别代表用户的姓名，员工编号，留言内容和留言编号。
+其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+关键代码实现如下：
+package com.NGU.Model;
+public class Dialog{
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.7.2 留言信息管理系统
+1．View层构建
+在NGU目录下创建两个新页面用于显示查询员工留言数据，通过点击两个主页实现页面跳转，他们分别是adminDialogOutput.jsp和userDialogOutput.jsp。连个页面由于内容和操作都是一致的，因此下面论述讲两者合并。
+用户和管理员都可以通过点击进入留言管理界面即可进入留言信息管理界面，点击后页面在跳转的同时实现表查询并将数据写入当前页面。
+该页面主要由退出系统、批量删除、按条件查询、分页操作和查询全部的相关表单控件。
+管理员留言信息管理系统界面如图3-16所示。
+ 
+图3-16 管理员留言系统界面
+用户留言信息管理系统界面如图3-17所示
+ 
+图3-17 用户留言信息系统界面
+2．Controller层构建
+在用户和管理员的视图层能够明显的看出，不同的用户是不能对不属于自己的留言进行修改和删除的，但是管理员能够删除不属于自己的留言，以此来净化留言系统的环境。
+由于用户和管理员的操作界面和操作内容差异不大，这里将两者进行结合。
+对于用户点击删除按钮时，后台servlet接收指定隐藏域(delete)对数据进行获取，随后通过构造函数进入UserDaoImpDialog处理类中，采用先删后查的方式，对数据进行处理，得出新的查询结果返回页面，实现删除功能。
+关键代码：
+DialogDAOI dialogDAOI = new UserDaoImpDialog(dno);
+dialogDAOI.delete();//删除
+List<Dialog> list_dialog = new ArrayList<>();
+DialogDAOI dialogDAOIread = new UserDaoImpDialog();
+list_dialog = dialogDAOIread.read();//查询
+3．DAO实现类
+该模块的实现是通过UserDaoImpDialog处理类实现的，该类中有大量封装函数，通过指定功能的调用实现。
+对于删除的功能实现里，由于用户和管理员系统界面操作差异不大，故对每个操作进行封装，如查询封装为一个方法read()，删除封装为一个函数delete()，按留言编号查询readByDno()等，这样在不同的输出界面只需调用函数便可实现功能，实现方法与类的解耦。
+在观察中发现，管理员界面与用户界面的差异在于，员工并不能按指定编号查询，只能查询自己的留言，通过前台数据传递获取的用户员工编号，获取到后台，后台在类中封装了一个专门通过员工编号进行留言信息表（表2-4）的查询的方法，最终将查询结果返回到页面。由于按编号查询在上述章节已讲，在此只介绍查询自己留言关键代码：
+SQL语句：
+String sql = "select t_dialog.no ,Dno,Dmessage,Pname from t_dialog,t_person where t_dialog.no=t_person.no and t_dialog.no=" + no;
+数据查询并写入：
+ResultSet rs = db.executeQuery(sql);
+while (rs.next()) {
+    Dialog dialog = new Dialog();
+    ……
+    list.add(dialog);
+}
+结果返回并关闭数据库：
+db.dbmclose();
+return list;
+3.8 个人中心
+每个用户在员工添加时便加入到该系统中来了，因此在该系统中，员工编号往往是用户的登录账号，密码在添加员工时，有数据库设置默认为123，权限为0即普通用户。
+为了每个用户个人信息的安全，该系统给予用户修改密码的权力，即在该模块中，用户可以通过输入自己的密码来修改初始密码。
+由于用户和管理员的修改密码模块是一样的，因此此处讲两者合并，不在单一论述。
+3.8.1 Model层构建
+改模型类和登录页面的模型是一致的，需要的查阅前面章节，在此不再赘述。
+3.8.2 密码修改
+1．View层构建
+修改密码模块在两个主页面的个人中心项内，用户点击修改密码即可出现一个输入框组成的表单。
+密码修改功能页面是由一个from表单，多个表单控件实现的，其中账号的表单输入框上的账号信息是从登陆后的session中获取的。
+密码修改界面如图3-18所示。
+ 
+图3-18 密码修改
+2．Controller层构建
+当用户点击确认后，数据通过form表单打包通过post方法带入servlet进行隐藏域的选择，在“UserPasswordUpdate”中，通过UserDaoImpLogin的处理类中实现数据的处理，即对密码的更新，最后通过url返回主页面，通过前台写入登录界面。
+关键代码：
+String no = req.getParameter("name");
+String psw = req.getParameter("psw");
+UserDAOI userDAOI = new UserDaoImpLogin(no, psw);
+list = userDAOI.update();
+resp.sendRedirect("NGU/index.jsp?msg=flag&no=" + list.get(0).getNo() + "&authority=" + list.get(0).getAuthority());//msg用于表示变量，告知页面修改密码成功
+3．DAO实现类
+该功能的是现实也是通过处理类UserDaoImpLogin，在该类中的密码修改的方法update()中，首先需要将需要修改的账号密码传进数据库中，数据库通过查询匹配，找到需要修改的对象，通过update语句对数据指定元组进行修改。
+在该系统中，用户修改密码之后是需要重新登录的，为了登录方便，往往在账号和权限上会由系统自动填写完毕，用户只需要重新输入密码即可实现登录操作。因此这就需要我们重新对用户的数据进行一次用户信息表（表2-1）的查询操作，并将新的数据结果返回到前端输入框中。
+关键代码如下：
+/*修改*/
+String sql = "update t_login set password='" + password + "' where no=" + no;
+int num = db.executeUpdate(sql);//数据库有多少行的受到变化
+if (num != 0) {//数据库元组修改失败，数据库的行变化为0，否则为不为0的正整数
+    System.out.println("数据更新成功！");
+     sql = "select no,authority from t_login where no=" + no;
+/*查询*/
+ResultSet rs = db.executeQuery(sql);
+while (rs.next()) {
+    User user = new User();
+    user.setNo(rs.getInt("no"));
+    user.setAuthority(rs.getInt("authority"));
+    list.add(user);
+}
+/*数据库关闭并放回数据结果*/
+db.dbmclose();
+return list;
+3.9 意见反馈
+一个系统的在制作出来后，往往不可能是十全十美，一个Bug都没有的，因此需要给使用着提供一个意见反馈的地方，通过多人公测，进行数据采集，意见反馈，得知问题，并着手解决问题，这样才能使系统逐渐完善。
+意见反馈界面如图3-19所示。
+ 
+图3-19 意见反馈界面
+3.9.1 Model层构建
+在com.NGU.Model中建立一个模型类Advice，用于获取并存储员工的意见信息。
+该类中主要有四个属性，它们分别是name，no，message、tele和Sno分别代表用户的姓名，员工编号，留言内容，留言者的联系方式和留言编号。
+其中每个属性都有相应的字段封装，保证数据在类中的安全性，都有get和post方法，其中get是外部类对该类数据的获取，post是数据在该类中的写入。
+关键代码实现如下：
+package com.NGU.Model;
+public class Advice{
+    private String name;//员工姓名
+    ……
+    public String getName() {return name;}
+    public void setName(String name) {this.name = name;}
+    ……
+}
+3.9.2 意见信息管理系统
+1．View层构建
+在NGU目录下创建一个用来专门接收并显示留言信息的页面Advice.jsp页面，该页面主要也是有表格和按钮组成，唯一不同的是分页操作时由超链接是现实的，不过和之前的分页操作大同小异，再次不在赘述。
+当管理员点击进入反馈系统是，系统通过点击便将数据采集在需要打开的新页面中，故在员工反馈信息系统中可以见到如下布局。
+该页面有一个表格，里面显示着目前数据库已有的用户建议信息。
+有常用的按钮、复选框和超链接等，实现管理员对用户建议的管理。
+意见信息管理系统界面如图3-20所示。
+ 
+图3-20 意见信息管理系统
+
+2．Controller层构建
+对于建议，一般管理员看到建议都是及时去处理的，处理完都是要即使删除建议，因此该界面中提供管理员批量删除和单独删除操作。
+在该界面里，所有的操作都是通过前台JS采用window.location.herf=“url”实现的，因此在后台servlet是通过doGet方法获取前台数据的，通过url上写的独特的参数“key”键值对，在后台起到和隐藏域效果相同的作用，通过if…else语句进行筛选，处理并返回指定页面。
+由于该页面的所有操作都是之前章节所提到，在此不再赘述。
+3．DAO实现类
+模块的实现是通过UserDaoImpAdvice处理类中的方法实现的，通过按钮跳转页面的同时实现建议信息表（表2-6）的查询。
+该类同样也是和留言功能一致，都是对函数进行封装，需要的时候调用该类即可实现指定功能。
+类的方法主要是批量的删除和指定查询操作，与之前模块功能的方法大同小异，再此不在赘述。
+3.9.3 发布意见
+1．View层构建
+该功能在用户的主界面中(user.jsp)，当用户点击意见反馈即可出现文本输入框和文件上传框以及各种事件监测按钮。
+作为该系统的使用者，往往能发现很多系统构建者所不能发现的问题，因此在用户管理界面中添加一个意见反馈模块，增强用户对与系统的交互，起到系统公测效果。
+在该模块下，用户可以通过文本输入反馈意见，也可以通过文件上传反馈意见。
+用户发布意见界面如图3-8所示。
+ 
+图3-8 用户发布意见
+2．功能的实现
+文本上传和留言发布功能一致，再次不在赘述。
+作为该模块的特色，本系统支持文件上传功能，用户可以通过上传在客户端电脑中编写好的文本内容，在客户端进行获取并解析，最后再写入数据库，再管理员意见信息管理页面读出相应的文本内容，实现两种用户之间的信息传递。
+首先在com.NGU.Service中创建一个单独的servlet，用于独立的文件上传，由于上传功能非常占服务器内存，为了防止单个处理占据servlet导致其他用户无法使用servlet的情况发生，因此需要对上传功能独立成块。
+再通过文件包的导入和表单列表的获取和文件名的获取，转码，最后通过文件流的写入，将文件写入到服务器指定位置。
+关键代码如下：
+创建一个工厂实例并解析获取数据：
+req.setCharacterEncoding("utf-8");//解决post请求乱码
+DiskFileItemFactory factory = new DiskFileItemFactory();
+ServletFileUpload fileUpload=new ServletFileUpload(factory);//创建解析器实例
+fileUpload.setHeaderEncoding("iso-8859-1");
+循环遍历表单内容，进行文件服务器的写入：
+for (FileItem fileItem : fileItems) {
+……
+}
+判断当前表单项是否是一个普通表单项:
+if (fileItem.isFormField()) {……}else{……}
+在判断结果为false结果下，对数据进行文件流的写入：
+String s;
+while ((s = bin.readLine()) != null) {
+    list.add(s);
+}
+bin.close();
+
+最后将文件的内容同步写到数据库中：
+String Smessage = "";
+for (int i = 0; i < list.size(); i++)
+    Smessage = Smessage + list.get(i);
+Smessage = new String(Smessage.getBytes("GBK2312"), "utf-8");
+AdviceDAOI adviceDAOI = new UserDaoImpAdvise(no, Smessage);
+List<Advice> list_advice = new ArrayList<>();
+list_advice = adviceDAOI.create();
+ 
+结 论
+基于MVC模式的人事工资管理系统采用JSP技术进行开发，系统使用了IntelliJ IDEA作为开发环境，服务器采用Tomcat7.0，后台数据库为MySQL5.6，该系统完全采用面向对象的思想，是基于B/S模式的项目，可以通过浏览器访问。
+该系统前台主要是各种JSP页面，如登录页面，管理员主页面，用户主页面等，后台主要是不同用户的功能模块，如用户管理，员工信息管理，考勤管理，留言管理等，具体如下：
+1．用户登录：用户登录是进入系统的前期，登录模块采用前台获取用户输入，后台与数据库相关数据匹对实现；验证码则通过前台JS随机生成，实现简单的验证码操作。
+2．员工信息管理：员工个人信息是该系统的一大模块，是对员工的个人信息进行添加、删除、修改和查询的管理模块，在该模块中，有批量删除和按条件查询功能，在一定程度上提高了检索效率。个人信息的下载功能是该模块的特色。
+3．考勤管理：考勤模块是记录员工每日的签到状态，是工作模块计算当月工资的前提，主要功能是该模块的核心功能是在数据库处理方面，实现每日0时开始自增数据，保证数据的完整性。
+4．留言管理：留言模块是一个休闲模块，员工能够在该模块内分享自身故事，一定程度上增进人与人之间的情感交流。在功能特色上，任何一个用户只能修改和删除自己的留言，而管理员则可以删除他人的留言以此净化留言环境。
+5．工资管理：工资管理是该系统的另一大模块，该模块主要涉及数据库的多表查询和后台算法结合计算，再结合考勤情况的基础上充分且准确计算出员工的当月工资。
+6．建议管理：建议模块是维护系统的重要功能，是用户和开发者的交互途径，用户可以通过文件上传和文本上传反应系统问题所在。
+7．密码修改：每个员工在添加时便自动生成一个员工编号的账号以及默认密码，该模块提供给用户修改密码的权利，保障个人隐私。
+系统的每个功能实现严格按照Model、View、Controller三层结构设计和实现，同时加入数据库底层访问类，有效地降低了代码的耦合性，方便系统扩展和维护。
+系统在前端界面上采取了各种人性化提示操作和界面美化，提高用户对系统的体验感。
+系统基本完成了用户的基本需求，但在功能上还有待完善，如功能上传方面只能上传文本文件；条件查询只能按编号条件查询显得过于平庸。
+ 
+参考文献
+[1]	张明亮.JSP技术在互联网软件中的应用优势研究[J].软件工程,2019,22(10)
+[2]	李秋锦.基于MVC模式的学生选课系统的开发与设计[J].科技经济导刊,2019,27
+[3]	刘峰民,刘洋,赵小娟.人事工资信息管理系统设计[J].甘肃科技,2019,35. 
+[4]	林龙,刘华贞.JSP+Servlet+Tomcat应用开发从零开始学(第2版)[M].北京:清华大学出版社.2019
+[5]	庾佳.关于JSP动态Web开发技术课程建设思路的研究[J].电脑知识与技术,2020,16

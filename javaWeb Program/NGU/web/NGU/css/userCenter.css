@@ -1,0 +1,281 @@
+/*全局*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.subject {
+    height: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: #9ff000 2px dashed;
+}
+
+
+/*左侧菜单*/
+#left {
+    float: left;
+    width: 18%;
+    height: 800px;
+    background: #9CC;
+}
+
+#left p {
+    line-height: 30px;
+}
+
+/*右侧功能模块*/
+#right {
+    background-color: #F8F8FF;
+    float: left;
+    width: 80%;
+    height: 800px;
+}
+
+#p2 {
+    text-indent: 2em;
+    letter-spacing: normal;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.p3 {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.p1 {
+    text-indent: 35px;
+    font-size: 20px;
+    font-family: 楷体;
+}
+
+.p0 {
+    text-indent: 50%;
+}
+
+/*主页面系统介绍 */
+.introduce {
+    float: left;
+    width: 100%;
+    background-color: #F8F8FF;
+    height: 700px;
+    position: relative;
+    display: none;
+}
+
+.introduce h1 {
+    margin-top: 10%;
+}
+
+.introduce fieldset {
+    padding: 100px;
+    width: 70%;
+    text-indent: 2em;
+    font-size: 20px;
+}
+
+/*更改我的资料 */
+#changeinfo {
+    float: left;
+    width: 100%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 700px;
+    display: none;
+}
+
+#changeinfo fieldset input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+/*确认修改按钮 */
+.btn_person {
+    width: 120px;
+    height: 50px;
+}
+
+/*查看我的资料 */
+#searchinfo {
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    height: 800px;
+    width: 100%;
+}
+
+#table_person tr {
+    text-align: center;
+}
+
+#table_person td {
+    text-align: center;
+    padding: 30px 70px 30px 70px;
+    border: 1px silver solid;
+}
+
+/*打印按钮 */
+#print {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*签到 */
+#kdao {
+    display: none;
+}
+
+#kdao h1 {
+    margin-top: 10%;
+}
+
+/*签到按钮 */
+#qiandao {
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+/*文本意见反馈 */
+#opinion_txt {
+    display: none;
+    margin-left: 400px;
+}
+
+#opinion_tarea {
+    height: 20%;
+    width: 40%;
+    resize: none;
+}
+
+/*按钮*/
+.btn {
+    margin: 25px 0 0 170px;
+    width: 120px;
+    height: 50px;
+}
+
+/*留言管理界面*/
+
+#mymsg {
+    display: none;
+}
+
+.mymsg h1 {
+    margin-top: 5%;
+}
+
+.mymsg legend {
+    font-size: 30px;
+}
+
+.mymsg fieldset {
+    width: 70%;
+}
+
+.mymsg p {
+    padding: 100px;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+.mymsg input[type="submit"] {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px
+}
+
+/*添加留言*/
+#writemsg {
+    display: none;
+}
+
+.form_dialog > p {
+    margin-top: 10%;
+}
+
+.form_dialog > textarea {
+    font-size: 20px;
+    width: 60%;
+    resize: none;
+}
+
+.form_dialog > input[type="submit"] {
+    font-size: 18px;
+}
+
+
+/*修改密码 */
+.changepassword {
+    margin: 0;
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 700px;
+    display: none;
+}
+
+.formPswUpdate {
+    font-size: 20px;
+}
+
+.formPswUpdate h2 {
+    margin-top: 10%;
+}
+
+.formPswUpdate > input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+.formPswUpdate > input[type="reset"] {
+    padding: 0;
+}
+
+.formPswUpdate > input[type="submit"] {
+    padding: 0;
+}
+
+.button7 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.button8 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.div7 {
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+/*页脚*/
+.page_bottom {
+    background-color: bisque
+}

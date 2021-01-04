@@ -1,0 +1,298 @@
+/*------------------------------------全局-----------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: #3366ff 2px dashed;
+}
+
+/*------------------------------------左边-----------------------------------*/
+.left {
+    float: left;
+    width: 15%;
+    background: #BCD2EE;
+    height: 900px;
+}
+
+.left p {
+    line-height: 30px;
+}
+
+.p1 {
+    text-indent: 35px;
+    font-size: 20px;
+    font-family: 楷体;
+}
+
+.p0 {
+    text-indent: 60%;
+}
+
+
+/*----------------------------------介绍页面css(introduce)------------------------------*/
+.introduce {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    position: relative;
+    display: none;
+}
+
+.introduce h1 {
+    margin-top: 10%;
+}
+
+.introduce fieldset {
+    padding: 100px;
+    width: 70%;
+    text-indent: 2em;
+    font-size: 20px;
+}
+
+/*--------------------------------查询员工信息css(right1)-----------------------------*/
+.right1 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.right1 fieldset {
+    width: 70%;
+}
+
+.right1 p {
+    font-size: 20px;
+    padding: 50px;
+}
+
+.right1 legend {
+    font-size: 30px;
+    font-family: 楷体;
+}
+
+.right1 input[type="submit"] {
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/*---------------------------------添加新员工css(right2)----------------------------------*/
+.right2 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+.right2 fieldset {
+    width: 25%;
+}
+
+.right2 legend {
+    font-family: 楷体;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*-----------------------------查询工资信息css(right3)---------------------------*/
+.searchwage {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+.searchwage fieldset {
+    width: 70%;
+    padding: 50px;
+}
+
+.searchwage legend {
+    font-size: 30px;
+    font-family: 楷体;
+}
+
+.searchwage p {
+    font-size: 20px;
+}
+
+.searchwage input[type="submit"] {
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/*---------------------------------考勤信息css---------------------------*/
+.searchkdao {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+.searchkdao fieldset {
+    width: 70%;
+    padding: 100px;
+}
+
+.searchkdao p {
+    font-size: 30px;
+}
+
+.searchkdao input[type="submit"] {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*-------------------------------意见管理------------------------------*/
+#suggest {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+#suggest p {
+    font-size: 20px;
+}
+
+#suggest fieldset {
+    padding: 50px;
+    width: 70%;
+}
+
+#suggest legend {
+    font-size: 30px;
+    font-family: 楷体;
+}
+
+#suggest input[type="submit"] {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*-------------------------------修改密码css(psw_Aupdate)------------------------------*/
+
+.psw_Aupdate {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+#form_pswUpdate {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+#form_pswUpdate input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+#name_modify, #password_modify, #psw_modify, #psw_sure_modify {
+    font-size: 20px;
+    height: 40px;
+    width: 250px;
+}
+
+#form_pswUpdate input[type="reset"] {
+    padding: 0;
+}
+
+#form_pswUpdate input[type="submit"] {
+    padding: 0;
+}
+
+.btn {
+    font-size: 30px;
+    height: 50px;
+    width: 85px;
+    cursor: pointer;
+}
+
+/*-------------------------------发布留言css(writemsg)------------------------------*/
+
+.writemsg {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.form_dialog > p {
+    margin-top: 10%;
+}
+
+.form_dialog > textarea {
+    font-size: 20px;
+    width: 60%;
+    resize: none;
+}
+
+.form_dialog > input[type="submit"] {
+    font-size: 18px;
+}
+
+/*-------------------------------留言信息操作系统(mymsg)------------------------------*/
+.mymsg {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.mymsg legend {
+    font-size: 30px;
+}
+
+.mymsg fieldset {
+    width: 70%;
+}
+
+.mymsg p {
+    padding: 100px;
+    font-size: 30px;
+    text-indent: 2em;
+}
+
+.mymsg input[type="submit"] {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px
+}
+
+/*-------------------------------页脚------------------------------*/
+.page_bottom {
+    background-color: bisque
+}
+
