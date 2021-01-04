@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>interval</title>
+</head>
+
+<body>
+<script>
+    var time;
+
+    function randomNum() {
+        document.getElementById("num").innerHTML = parseInt(Math.random() * 30 + 1);
+        document.getElementById("class").innerHTML = parseInt(Math.random() * 2 + 1);
+    }
+
+    function MyStart() {
+        time = window.setInterval("randomNum()", 100);
+    }
+
+    function MyStop() {
+        window.clearInterval(time);
+        alert(document.getElementById("class").innerHTML + "班" + document.getElementById("num").innerHTML + "号被选中！")
+    }
+</script>
+<table>
+    <tr>
+        <td>班级：</td>
+        <td>
+            <div id="class"></div>
+        </td>
+        <td>班</td>
+    </tr>
+    <tr>
+        <td>学号：</td>
+        <td>
+            <div id="num"></div>
+        </td>
+        <td>号</td>
+    </tr>
+</table>
+<input type="button" value="开始生成" onclick="MyStart()">
+<input type="button" value="停止抽号" onclick="MyStop()">
+</body>
+</html>

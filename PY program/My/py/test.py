@@ -1,5 +1,6 @@
+# 文件的分割与获取
 import os
-os.chdir(r"C:\MyData\MyProgram\PY program\My")
+os.chdir(r"D:\MyData\MyProgram\PY program\My")
          
 def save (name,work):
     name_file=open("./cash/names.txt",'a')

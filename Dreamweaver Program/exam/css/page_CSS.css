@@ -1,0 +1,271 @@
+/*全局样式*/
+html {
+    height: 100%;
+}
+
+body {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: #3366ff 2px solid;
+}
+
+/*头部样式*/
+#page_head {
+    height: 100px;
+}
+
+#wordScroll {
+    width: 600px;
+    height: 80px;
+    font-size: 60px;
+    font-family: 隶书;
+    display: inline-block;
+}
+
+#btn_login {
+    margin-top: 15px;
+    float: right;
+    display: inline-block;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/*菜单样式*/
+#page_menu {
+    height: 40px;
+    border: 1px dashed green;
+}
+
+ul.first_menu li a {
+    color: #000000;
+}
+
+ul.first_menu li {
+    /*border-right: 1px red solid;*/
+    text-align: center;
+    font-size: 29.5px;
+    float: left;
+    list-style: none;
+    width: 135px;
+    background-color: bisque;
+}
+
+ul.first_menu li:hover {
+    background-color: #99ffcc;
+}
+
+ul.first_menu li ul.second_menu {
+    display: none;
+}
+
+ul.first_menu li:hover ul.second_menu {
+    display: block;
+}
+
+ul.first_menu li:hover ul.second_menu li:hover {
+    background-color: mediumvioletred;
+}
+
+
+/*图片轮播*/
+#page_img {
+    height: 650px;
+    width: 960px;
+}
+
+.slider {
+    width: 960px;
+    height: 650px;
+    border: 2px solid crimson;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+}
+
+.slider .list .item {
+    width: 960px;
+    height: 650px;
+    float: left;
+}
+
+.slider .list .item:first-of-type {
+    opacity: 1;
+}
+
+.slider .list .item img {
+    width: 960px;
+    height: 650px;
+    display: block;
+}
+
+.slider .prev {
+    background-image: url("../images/left.png");
+    position: absolute;
+    top: 325px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.slider .next {
+    background-image: url("../images/right.png");
+    position: absolute;
+    top: 325px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.slider .pageination {
+    list-style-type: none;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+.slider .pageination .bullet {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    float: left;
+    z-index: 999;
+    position: relative;
+    border: 2px solid yellow;
+    cursor: pointer;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+}
+
+.slider .pageination .bullet.focus {
+    background-color: hotpink;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+}
+
+/*图文解释*/
+#page_context {
+    /*height: 100px;*/
+    width: 960px;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+/*主体样式*/
+#page_main {
+    height: 750px;
+    border: 1px solid red;
+}
+
+/*左主体*/
+#main_left {
+    border-right: 1px solid red;
+    float: left;
+    width: 200px;
+    height: 750px;
+}
+
+#main_left ul {
+    list-style-type: none;
+}
+
+#main_left ul li {
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.lists a {
+    color: #000000;
+}
+
+#main_left ul li:hover {
+    background-color: #99ffff;
+}
+
+#main_left button {
+    font-size: 30px;
+    margin-top: 40px;
+    width: 180px;
+    height: 80px;
+    cursor: pointer;
+}
+
+#photo {
+    background-image: url("../images/photo.jpg");
+    height: 175px;
+}
+
+/*右主体*/
+#main_right {
+    float: left;
+    width: 756px;
+    height: 750px;
+}
+
+#main_right div {
+    float: left;
+    display: none;
+    height: 750px;
+    width: 700px;
+    margin-left: 30px;
+}
+#main_right h1{
+    text-align: center;
+}
+
+#default {
+    font-size: 30px;
+}
+
+#default p {
+    text-indent: 2em
+}
+#Last li{
+    font-size: 20px;
+}
+#Knowledge a{
+    font-size: 18px;
+}
+#Software > ul > li {
+    list-style-type: none;
+}
+
+#Software > ul > li > ul > li {
+    list-style-type: none;
+}
+
+/*bottom样式*/
+#page_bottom {
+    height: 200px;
+}
+
+#page_bottom p {
+    text-align: center;
+    margin: 13px 13px;
+}

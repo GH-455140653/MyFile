@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -34,18 +34,18 @@
 		<div></div>
 		<div></div>
 		<script type="text/javascript">
-			var speedX = 3;
-			var speedY = 3;
-			var div_1 = document.querySelector("div"); //获取符合条件的第一个子元素属性的文本内容
-			var div_2 = document.querySelector("div:nth-of-type(2)");
+			const speedX = 3;
+			const speedY = 3;
+			const div_1 = document.querySelector("div"); //获取符合条件的第一个子元素属性的文本内容
+			const div_2 = document.querySelector("div:nth-of-type(2)");
 			div_1.speedX = 5;
 			div_1.speedY = 3;
 			div_2.speedX = 5;
 			div_2.speedY = 3;
 
 			function move(el) {
-				var curleft = parseInt(window.getComputedStyle(el).left); //获取该页面指定元素的css样式并转化为十进制进行解析
-				var curtop = parseInt(window.getComputedStyle(el).top);
+				const curleft = parseInt(window.getComputedStyle(el).left); //获取该页面指定元素的css样式并转化为十进制进行解析
+				const curtop = parseInt(window.getComputedStyle(el).top);
 				check_border_collision(el); //碰撞检测
 				var tempX, tempY;
 				if(check_block_collision(div_1, div_2)) {
@@ -91,32 +91,30 @@
 			}
 
 			function check_block_collision(block_1, block_2) {
-				var left1 = parseInt(window.getComputedStyle(block_1).left);
-				var left2 = parseInt(window.getComputedStyle(block_2).left);
-				var top1 = parseInt(window.getComputedStyle(block_1).top);
-				var top2 = parseInt(window.getComputedStyle(block_2).top);
-				var width1 = parseInt(window.getComputedStyle(block_1).width);
-				var width2 = parseInt(window.getComputedStyle(block_2).width);
-				var height1 = parseInt(window.getComputedStyle(block_1).height);
-				var height2 = parseInt(window.getComputedStyle(block_2).height);
+				const left1 = parseInt(window.getComputedStyle(block_1).left);
+				const left2 = parseInt(window.getComputedStyle(block_2).left);
+				const top1 = parseInt(window.getComputedStyle(block_1).top);
+				const top2 = parseInt(window.getComputedStyle(block_2).top);
+				const width1 = parseInt(window.getComputedStyle(block_1).width);
+				const width2 = parseInt(window.getComputedStyle(block_2).width);
+				const height1 = parseInt(window.getComputedStyle(block_1).height);
+				const height2 = parseInt(window.getComputedStyle(block_2).height);
 
-				var center1 = {
+				const center1 = {
 					x: left1 + width1 / 2,
 					y: top1 + height1 / 2
-				}
+				};
 
-				var center2 = {
+				const center2 = {
 					x: left2 + width2 / 2,
 					y: top2 + height2 / 2
-				}
+				};
 
-				var diffX = Math.abs(center1.x - center2.x);
-				var diffY = Math.abs(center1.y - center2.y);
+				const diffX = Math.abs(center1.x - center2.x);
+				const diffY = Math.abs(center1.y - center2.y);
 
-				if(diffX < (width1 + width2) / 2 && diffY < (height1 + height2) / 2) {
-					return true;
-				}
-				return false;
+				return diffX < (width1 + width2) / 2 && diffY < (height1 + height2) / 2;
+
 			}
 			setInterval(function() {
 				move(div_1);

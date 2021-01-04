@@ -1,6 +1,7 @@
+# easygui的基本用法尝试
 import easygui as eg
 
-# eg.msgbox("hello world", '打招呼', '同意', image='../data/imag/img_small.jpg')  # messagebox
+# eg.msgbox("hello world", '打招呼', '同意', image='../data/image/img_small.jpg')  # messagebox
 # eg.egdemo()
 #
 # d=eg.ccbox('hello world','打招呼',['agree','disagree'],)#continue/cancel box

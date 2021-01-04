@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示框使用实例</title>
+    <script type="text/javascript">
+        function btn_prompt() {
+            var name = prompt("请输入你的姓名", "李大钊")
+            if (name != null && name != "") {
+                document.write("您好，" + name + "!")
+            }
+        }
+
+        function btn_confirm() {
+            var name = confirm("请做出选择");
+            if (name == true) {
+                alert("选择了“确定”按钮")
+            } else {
+                alert("选择了“取消”按钮")
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="btn_confirm()" value="点击显示确认框">
+<input type="button" onclick="btn_prompt()" value="单击显示提示框">
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 幼圆;
+    font-size: 16px;
+    text-align: center;
+}
+
+#container {
+    margin: auto;
+    width: 960px;
+}
+
+#top {
+    width: 960px;
+    height: 118px;
+    background-color: lightgray;
+    margin-bottom: 5px;
+}
+
+#main {
+    width: 960px;
+    height: 600px;
+    margin-bottom: 5px;
+}
+
+#main_left {
+    width: 255px;
+    height: 597.5px;
+    float: left;
+    background-color: #9ff000;
+}
+
+#main_right {
+    width: 700px;
+    height: 590px;
+    float: left;
+    background-color: #cff000;
+    margin-left: 5px;
+}
+
+#bottom {
+    width: 960px;
+    height: 100px;
+    background-color: lightgray;
+padding-top: 10px;
+}
+
+#top li {
+    list-style-type: none;
+    display: inline;
+    width: 50px;
+    font-size: 30px;
+    font-family: 华文新魏;
+    cursor: pointer;
+    padding: 20px 20px 20px 20px;
+}
+
+#top ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#top img {
+    float: left;
+}
+
+#main_left li {
+    list-style-type: none;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-family: 华文新魏;
+    cursor: pointer;
+}
+
+#main_right h3 {
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+
+#bottom p {
+    text-align: center;
+}
+
+a:hover {
+    color: #0F0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    padding: 35px;margin: 0
+}

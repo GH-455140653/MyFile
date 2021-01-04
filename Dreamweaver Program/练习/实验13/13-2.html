@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现动态日期显示</title>
+    <script src="../../exam/js/public_function.js"></script>
+    <script src="../../exam/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            setInterval("te();", 1000); //每隔一秒运行一次
+        })
+        function te() {
+            document.getElementById('test').innerHTML=showday();
+        }
+    </script>
+</head>
+<body>
+<div id="test"></div>
+</body>
+</html>

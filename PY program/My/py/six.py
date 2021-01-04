@@ -1,3 +1,4 @@
+# 运用pickle与easygui实现用户自定义选取存储
 import pickle
 import easygui as eg
 

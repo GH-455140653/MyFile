@@ -1,3 +1,4 @@
+# 运用pickle对文件进行存储和读取
 import os
 import pickle
 

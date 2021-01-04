@@ -1,7 +1,485 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8727b8fa-e749-42aa-b95e-f36606b65150" name="默认更改列表" comment="" />
+    <list default="true" id="8727b8fa-e749-42aa-b95e-f36606b65150" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../C-clion/.idea/C-clion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/.idea/Dreamweaver Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/ch13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/eg_mouse1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/eg_mouse2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/pic0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/pic3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/javaScript/images/pic4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/images/image1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/images/image4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/multimedia/62.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/multimedia/exam01.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/multimedia/exam01.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/multimedia/h3c_newit1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dreamweaver Program/练习/实验10/multimedia/蔡琴明月几时有.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Progrom/Practice/Practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Progrom/Practice/src/Algorithm/贪心算法/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Progrom/homework/homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My/data/text/古诗.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My/data/text/打油诗.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My/py/ex/ex_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My/py/hw/hw_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/out/production/Servlet Program/production/Servlet Program/artifacts/Servlet_Program_war_exploded/WEB-INF/classes/production/Servlet Program/Servlet Program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/Servlet/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/Servlet/output.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/exam/exam_2_2/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/exam/exam_2_2/output1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/exam/exam_2_2/output2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/exam/exam_2_2/output3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/bottom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/border_bottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/border_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/border_up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt1-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt1.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt2-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt3-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt4-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt5-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt6-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt7-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt8-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt9-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/bt9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/colm-bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/colm-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/colm-bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/double.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/images/photo.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/index-main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/left.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/music/隐形的翅膀.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servlet Program/web/page/top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb Program/JSP_MVC/JSP_MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb Program/JSP_MVC/out/artifacts/JSP_MVC_war_exploded/WEB-INF/classes/JSP_MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb Program/JSP_MVC/out/production/JSP_MVC/JSP_MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb Program/NGU/NGU.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb Program/servlet_SQL/servlet_SQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/javaWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/6.3/A.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/6.3/AA.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/6.3/B.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/6.3/C.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/ch_6.3/1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/ch_6.3/2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/ch_6.3/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/ch_6.3/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam1/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam1/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam1/output.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam2/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam2/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam2/moutput.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam2/woutput.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam3/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam3/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/exam/exam_1/exam3/output.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/myFile/first.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/myFile/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/bottom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/border_bottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/border_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/border_up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt1-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt1.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt2-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt3-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt4-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt5-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt6-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt7-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt8-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt9-a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/bt9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/colm-bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/colm-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/colm-bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/double.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/images/photo.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/index-main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/left.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/music/隐形的翅膀.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/page/top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/practice/6-3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/practice/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/practice/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/practice/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/input.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/input1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/input2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/java.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/net.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/output.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/request/output1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/book.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/count.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session/handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/book.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/count.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/deleteAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/session1/handle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/snake.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/vc60.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/vc60.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/xiadi.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/xiadi.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/Debug/xiadi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/shiyan_3_1/Debug/vc60.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../C Program/shiyan_3_1/Debug/vc60.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/shiyan_3_1/shiyan_3_1.ncb" beforeDir="false" afterPath="$PROJECT_DIR$/../C Program/shiyan_3_1/shiyan_3_1.ncb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C Program/shiyan_3_1/shiyan_3_1.opt" beforeDir="false" afterPath="$PROJECT_DIR$/../C Program/shiyan_3_1/shiyan_3_1.opt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/Debug/findnumber.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/Debug/findnumber.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/Debug/findnumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.vcxprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/findnumber_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.10704-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.10704-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.10704.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.10704.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/stdafx.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/Debug/vc100.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/findnumber.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/findnumber.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/findnumber.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/findnumber.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/stdafx.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/stdafx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/findnumber/targetver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/findnumber/ipch/findnumber-14fc97a3/findnumber-a5ee43f6.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice_YH_triangle.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice_YH_triangle.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/Debug/practice_YH_triangle.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/ipch/practice-cc7ed726/practice-8a1eea57.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/ipch/practice-cc7ed726/practice_yh_triangle-cde2464c.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.496-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.496-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.496.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.496.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.9700-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.9700-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.9700.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.9700.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.vcxprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_YH_triangle_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/practice_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/stdafx.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/Debug/vc100.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/practice.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/practice.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/practice.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/practice.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/stdafx.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/stdafx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/practice/practice/targetver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/Debug/prime.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/Debug/prime.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/Debug/prime.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/ipch/prime-23ce97b7/prime-c9d843e9.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.14852-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.14852-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.14852.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.14852.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.vcxprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/prime_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/Debug/vc100.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/prime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/prime.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/prime.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/prime/prime/prime.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/Debug/snake.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/Debug/snake.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/Debug/snake.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/ipch/snake-b73bcdb/snake-9ca0c1e.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.2420-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.2420-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.2420.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.2420.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/main.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.vcxprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/snake_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/Debug/vc100.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/snake.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/snake.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/snake.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/snake/snake/snake.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/Debug/sort.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/Debug/sort.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/Debug/sort.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/ipch/sort-c121c938/sort-37642734.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.4512-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.4512-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.4512.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.4512.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/mt.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/mt.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/mt.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/rc.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.exe.embed.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.exe.embed.manifest.res" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.exe.intermediate.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.vcxprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/sort_manifest.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/stdafx.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/vc100.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/Debug/vc100.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/sort.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/sort.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/sort.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/sort.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/stdafx.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/stdafx.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/sort/sort/targetver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PY program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PY program.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/data/imag/img_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/My/data/image/img_small.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/first.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/first.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/five.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/five.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/four.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/four.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/lrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/lrl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/second.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/second.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/signInsubmit.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/signInsubmit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My/py/third.py" beforeDir="false" afterPath="$PROJECT_DIR$/My/py/third.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/Ajax/Ajax_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/Ajax/Ajax_02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/jQuery/jQuery_09.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/jQuery/jQuery_09.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/jQuery/jQuery_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/jQuery/jQuery_10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/logIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/logIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/practice/JS_Animation_04.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/practice/JS_Animation_04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/userCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/userCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Page/MyProject/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/../Page/MyProject/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/.vs/111/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/.vs/111/v16/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/.vs/111/v16/ipch/AutoPCH/1f1b005a5c8fff13/源.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/.vs/111/v16/ipch/AutoPCH/adddcddd963aff0f/单链表.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/.vs/111/v16/ipch/AutoPCH/eeeae7adfcc8497a/源1.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/111.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/111.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/111.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/111.vcxproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.ilk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/111.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/CL.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/111.tlog/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/vc142.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/vc142.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/单链表.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/源.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/Debug/源1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VS Program/111/单链表.cpp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,22 +506,49 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JupyterTrust" id="2a6b986a-4dd0-4f91-b44d-c20a277b4b7a" />
   <component name="ProjectId" id="1XboOOwfhNYefDNYX0fnXAzkNoo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/My/data/text" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.six">
-    <configuration name="four" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyData\MyProgram\PY program\My\data\text" />
+      <recent name="D:\MyData\MyProgram\PY program\My\data\image" />
+      <recent name="D:\MyData\MyProgram\PY program\My\py" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyData\MyProgram\PY program\My\py" />
+      <recent name="D:\MyData\MyProgram\PY program\My\py\practice\numpy" />
+      <recent name="D:\MyData\MyProgram\PY program\My\py\practice\pandas" />
+      <recent name="D:\MyData\MyProgram\PY program\My\py\practice" />
+      <recent name="D:\MyData\MyProgram\PY program\My\py\practice\file" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.WordCloud">
+    <configuration name="WordCloud" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PY program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,7 +561,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\MyData\MyProgram\PY program\My\py\four.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/WordCloud.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +570,117 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="signInsubmit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PY program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py/ex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/ex/ex_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PY program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py/ex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/ex/ex_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hw_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PY program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py/hw" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/hw/hw_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lottery" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PY program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/lottery.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pra_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PY program" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py/practice/file" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/practice/file/pra_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="signInsubmit" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PY program" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,89 +702,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="six" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PY program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/six.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PY program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="third" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PY program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My/py" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My/py/third.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.four" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.third" />
+      <item itemvalue="Python.lottery" />
       <item itemvalue="Python.signInsubmit" />
-      <item itemvalue="Python.six" />
+      <item itemvalue="Python.hw_2" />
+      <item itemvalue="Python.ex_2" />
+      <item itemvalue="Python.ex_3" />
+      <item itemvalue="Python.pra_file" />
+      <item itemvalue="Python.WordCloud" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.six" />
-        <item itemvalue="Python.third" />
-        <item itemvalue="Python.signInsubmit" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.four" />
+        <item itemvalue="Python.WordCloud" />
+        <item itemvalue="Python.ex_3" />
+        <item itemvalue="Python.pra_file" />
+        <item itemvalue="Python.ex_2" />
+        <item itemvalue="Python.hw_2" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -215,97 +767,155 @@
       <workItem from="1582698681582" duration="5700000" />
       <workItem from="1582769714243" duration="329000" />
       <workItem from="1582770848496" duration="776000" />
+      <workItem from="1582957474256" duration="4462000" />
+      <workItem from="1582963374183" duration="718000" />
+      <workItem from="1582985617594" duration="79000" />
+      <workItem from="1583062041310" duration="705000" />
+      <workItem from="1583130974184" duration="60000" />
+      <workItem from="1583201856226" duration="487000" />
+      <workItem from="1583376291995" duration="653000" />
+      <workItem from="1583712904100" duration="38000" />
+      <workItem from="1583716152869" duration="7000" />
+      <workItem from="1583747387654" duration="680000" />
+      <workItem from="1583754261352" duration="493000" />
+      <workItem from="1584187946371" duration="391000" />
+      <workItem from="1584188350239" duration="256000" />
+      <workItem from="1584190824824" duration="275000" />
+      <workItem from="1584194666186" duration="58000" />
+      <workItem from="1584236881273" duration="5807000" />
+      <workItem from="1584248443072" duration="108000" />
+      <workItem from="1584248671969" duration="217000" />
+      <workItem from="1584274151902" duration="1048000" />
+      <workItem from="1584282115287" duration="2206000" />
+      <workItem from="1584284413541" duration="1132000" />
+      <workItem from="1584442044590" duration="82000" />
+      <workItem from="1584533735032" duration="355000" />
+      <workItem from="1584947853063" duration="2414000" />
+      <workItem from="1584950754098" duration="5203000" />
+      <workItem from="1585307396731" duration="517000" />
+      <workItem from="1585314881842" duration="16000" />
+      <workItem from="1585365544447" duration="614000" />
+      <workItem from="1585367083201" duration="375000" />
+      <workItem from="1585367747225" duration="30000" />
+      <workItem from="1585396711661" duration="258000" />
+      <workItem from="1585528367246" duration="166000" />
+      <workItem from="1585717004981" duration="63000" />
+      <workItem from="1587872819787" duration="82000" />
+      <workItem from="1587872942769" duration="41000" />
+      <workItem from="1588903403882" duration="122000" />
+      <workItem from="1588903533473" duration="113000" />
+      <workItem from="1590755583873" duration="34000" />
+      <workItem from="1590755625646" duration="436000" />
+      <workItem from="1592553119716" duration="286000" />
+      <workItem from="1592846483699" duration="63000" />
+      <workItem from="1592846552583" duration="490000" />
+      <workItem from="1597994156416" duration="5642000" />
+      <workItem from="1598069170770" duration="5588000" />
+      <workItem from="1598092085882" duration="1381000" />
+      <workItem from="1598100183902" duration="1555000" />
+      <workItem from="1600075919540" duration="263000" />
+      <workItem from="1600076191271" duration="671000" />
+      <workItem from="1600077528634" duration="25000" />
+      <workItem from="1600077559331" duration="20000" />
+      <workItem from="1600087865727" duration="5000" />
+      <workItem from="1600088435182" duration="207000" />
+      <workItem from="1600433251560" duration="16000" />
+      <workItem from="1600865023793" duration="24000" />
+      <workItem from="1600865053886" duration="3166000" />
+      <workItem from="1600869091535" duration="756000" />
+      <workItem from="1601039752759" duration="84000" />
+      <workItem from="1601039844162" duration="719000" />
+      <workItem from="1601081084603" duration="2662000" />
+      <workItem from="1601083772493" duration="76000" />
+      <workItem from="1601083855112" duration="805000" />
+      <workItem from="1601447287471" duration="52000" />
+      <workItem from="1601447345741" duration="1543000" />
+      <workItem from="1601465244202" duration="3670000" />
+      <workItem from="1601514172292" duration="4950000" />
+      <workItem from="1601633670530" duration="14115000" />
+      <workItem from="1601683069108" duration="2672000" />
+      <workItem from="1601983351887" duration="708000" />
+      <workItem from="1602237622495" duration="9225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#Notifications" timestamp="1582614169807">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601039901315">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1582614169807" />
-    <state x="361" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582690831497">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="414" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601039901315" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1601988654322">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582690831497" />
-    <state x="609" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582769777909">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601988654322" />
+    <state width="1877" height="296" key="GridCell.Tab.0.bottom" timestamp="1602249736406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582769777909" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1582610763279">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602249736406" />
+    <state width="1877" height="296" key="GridCell.Tab.0.center" timestamp="1602249736406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582610763279" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1582770042788">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602249736406" />
+    <state width="1877" height="296" key="GridCell.Tab.0.left" timestamp="1602249736406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582770042788" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1582770042787">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602249736406" />
+    <state width="1877" height="296" key="GridCell.Tab.0.right" timestamp="1602249736406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582770042787" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1582770042787">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602249736406" />
+    <state x="570" y="152" key="SettingsEditor" timestamp="1602241649913">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582770042787" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1582770042788">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="570" y="152" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602241649913" />
+    <state x="1020" y="178" key="editAsTableFormatDialogDimension" timestamp="1601517101903">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582770042788" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582613989360">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582613989360" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1582613989360">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582613989360" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1582613989360">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582613989360" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1582613989360">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582613989360" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1582614181042">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582614181042" />
-    <state x="467" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1582610728187">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="467" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582610728187" />
-    <state x="323" y="151" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582613424730">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="323" y="151" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1582613424730" />
-    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1582612951562">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1582612951562" />
-    <state x="70" y="254" width="1350" height="638" key="dock-window-2" timestamp="1582612951562">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="70" y="254" width="1350" height="638" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1582612951562" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582702529940">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582702529940" />
+    <state x="1020" y="178" key="editAsTableFormatDialogDimension/0.0.1920.1040@0.0.1920.1040" timestamp="1601517101903" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PY_program$first.coverage" NAME="first Coverage Results" MODIFIED="1582613659434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$3rd__1_.coverage" NAME="third Coverage Results" MODIFIED="1582613594842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$four__1_.coverage" NAME="four (1) Coverage Results" MODIFIED="1582690605104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$second.coverage" NAME="second Coverage Results" MODIFIED="1582612744821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$test.coverage" NAME="test Coverage Results" MODIFIED="1582693545614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$signInsubmit.coverage" NAME="signInsubmit Coverage Results" MODIFIED="1582699584757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$six.coverage" NAME="six Coverage Results" MODIFIED="1582769996205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$lrl.coverage" NAME="lrl Coverage Results" MODIFIED="1582612455890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
-    <SUITE FILE_PATH="coverage/PY_program$pickle_1.coverage" NAME="four Coverage Results" MODIFIED="1582614309617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$ex_3.coverage" NAME="ex_3 Coverage Results" MODIFIED="1602246289289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/ex" />
     <SUITE FILE_PATH="coverage/PY_program$first__1_.coverage" NAME="first (1) Coverage Results" MODIFIED="1582607886226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$file.coverage" NAME="file Coverage Results" MODIFIED="1598100480688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$second.coverage" NAME="second Coverage Results" MODIFIED="1582612744821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$five.coverage" NAME="five Coverage Results" MODIFIED="1582961567728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$six.coverage" NAME="six Coverage Results" MODIFIED="1582769996205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$pickle_1.coverage" NAME="four Coverage Results" MODIFIED="1582614309617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$hw_2.coverage" NAME="hw_2 Coverage Results" MODIFIED="1601642064905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/hw" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_docx.coverage" NAME="pra_docx Coverage Results" MODIFIED="1601517780383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/practice/file" />
+    <SUITE FILE_PATH="coverage/PY_program$WordCloud.coverage" NAME="WordCloud Coverage Results" MODIFIED="1602249674098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$lottery_update.coverage" NAME="lottery_update Coverage Results" MODIFIED="1585396960800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$four__1_.coverage" NAME="four (1) Coverage Results" MODIFIED="1582690605104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$practice.coverage" NAME="practice Coverage Results" MODIFIED="1601039892164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_numpy.coverage" NAME="pra_numpy Coverage Results" MODIFIED="1601466139375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$lrl.coverage" NAME="lrl Coverage Results" MODIFIED="1582612455890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_json.coverage" NAME="pra_json Coverage Results" MODIFIED="1601517044022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/practice" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_pandas.coverage" NAME="pra_pandas Coverage Results" MODIFIED="1601514778044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_csv.coverage" NAME="pra_csv Coverage Results" MODIFIED="1601517730958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/practice/file" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_matplotlib.coverage" NAME="pra_matplotlib Coverage Results" MODIFIED="1601518970342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/practice/matplotlib" />
+    <SUITE FILE_PATH="coverage/PY_program$pra_file.coverage" NAME="pra_file Coverage Results" MODIFIED="1602245794811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/practice/file" />
     <SUITE FILE_PATH="coverage/PY_program$third.coverage" NAME="third Coverage Results" MODIFIED="1582702279870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$ex_2.coverage" NAME="ex_2 Coverage Results" MODIFIED="1601685486109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py/ex" />
+    <SUITE FILE_PATH="coverage/PY_program$test.coverage" NAME="test Coverage Results" MODIFIED="1582693545614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$signInsubmit.coverage" NAME="signInsubmit Coverage Results" MODIFIED="1584188036178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$ex_1.coverage" NAME="ex_1 Coverage Results" MODIFIED="1601448121060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$first.coverage" NAME="first Coverage Results" MODIFIED="1584191019205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$3rd__1_.coverage" NAME="third Coverage Results" MODIFIED="1582613594842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
+    <SUITE FILE_PATH="coverage/PY_program$lottery.coverage" NAME="lottery Coverage Results" MODIFIED="1600433254437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/My/py" />
   </component>
 </project>

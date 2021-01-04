@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$运用</title>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function Btnsubmit() {
+            var msg = "表单数据获取：\n"
+            msg += "用户名:" + $("account").value;
+            msg += "\n密码:是" + $("password").value;
+            // msg += "用户名：" + $("account").value + "\n密码：" + $("password").value;
+            alert(msg);
+            return false;
+        }
+
+        function resetTest() {
+            alert("将数据清空");
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return Btnsubmit();" onreset="resetTest()">
+    <fieldset>
+        <legend>登录 | LOGIN</legend>
+        账号：<input type="text" id="account">
+        密码：<input type="password" id="password">
+        <input type="submit" value="提交">
+        <input type="reset" value="清空">
+    </fieldset>
+</form>
+</body>
+</html>

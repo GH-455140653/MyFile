@@ -1,0 +1,300 @@
+/*------------------------------------全局-----------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: #3366ff 2px dashed;
+}
+
+/*------------------------------------左边-----------------------------------*/
+.left {
+    float: left;
+    width: 15%;
+    background: #BCD2EE;
+    height: 900px;
+}
+
+.p1 {
+    text-indent: 35px;
+}
+
+.p0 {
+    text-indent: 60%;
+}
+
+
+/*----------------------------------介绍页面css(right0)------------------------------*/
+.right0 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    position: relative;
+    display: none;
+}
+
+.right0 > h1 {
+    position: absolute;
+    top: 80px;
+    left: 33%;
+}
+
+.right0 > .font > div {
+    position: absolute;
+    top: 160px;
+    left: 43%;
+}
+
+.right0 > h2 {
+    position: absolute;
+    top: 195px;
+    left: 46%;
+}
+
+.right0 > p {
+    position: absolute;
+    top: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*--------------------------------查询员工信息css(right1)-----------------------------*/
+.right1 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.input1 {
+    margin-left: 4%;
+}
+
+.select1 {
+    margin-left: 25%;
+}
+
+.button1 {
+    margin-left: 1%;
+}
+
+/*1.2的意思*/
+.button12 {
+    float: right;
+    margin-right: 5%;
+}
+
+.textarea10 {
+    line-height: 20px;
+    height: 20px;
+    width: 91%;
+    margin-left: 4%;
+    font-size: 16px;
+}
+
+.textarea1 {
+    margin-top: 8px;
+    line-height: 45px;
+    font-size: 25px;
+    height: 45px;
+    width: 91%;
+    margin-left: 4%;
+    outline: none;
+}
+
+.dm {
+    position: absolute;
+    left: 85%;
+}
+
+.one {
+    top: 154px;
+}
+
+.two {
+    top: 233px;
+}
+
+.three {
+    top: 314px;
+}
+
+.four {
+    top: 393px;
+}
+
+.five {
+    top: 472px;
+}
+
+.six {
+    top: 551px;
+}
+
+.seven {
+    top: 630px;
+}
+
+.div1 {
+    margin-top: 20px;
+    float: right;
+    margin-right: 5%;
+}
+
+.input12 {
+    width: 60px;
+}
+
+
+/*---------------------------------添加新员工css(right2)----------------------------------*/
+.right2 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+.form2 {
+    margin-top: 165px;
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+.select2 {
+    width: 153px;
+    font-size: 16px;
+}
+
+/*buttom2.0*/
+.button20 {
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+
+/*-----------------------------查询工资信息css(right3)---------------------------*/
+.searchwage {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+/*---------------------------------考勤信息css---------------------------*/
+.searchkdao {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+/*-------------------------------修改密码css(right7)------------------------------*/
+
+.right7 {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 900px;
+    display: none;
+}
+
+.form7 {
+    margin-top: 200px;
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+.form7 > input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+.form7 > input[type="reset"] {
+    padding: 0;
+}
+
+.form7 > input[type="submit"] {
+    padding: 0;
+}
+
+.button7 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    margin: 0 50px 0 50px;
+}
+
+.button8 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.div7 {
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+/*-------------------------------发布留言css(writemsg)------------------------------*/
+
+.writemsg {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.writemsg > .p3 {
+    position: absolute;
+    top: 160px;
+    left: 16%;
+}
+
+.writemsg > .t2 {
+    position: absolute;
+    top: 220px;
+    left: 16%;
+    width: 67%;
+    resize: none;
+}
+
+.writemsg > .publish {
+    font-size: 18px;
+    position: absolute;
+    top: 580px;
+    left: 46%;
+}
+
+.mymsg {
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    position: relative;
+    height: 900px;
+    display: none;
+}
+
+.page_bottom {
+    background-color: bisque
+}
+

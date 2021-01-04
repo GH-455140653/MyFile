@@ -19,7 +19,7 @@
                     removeCookies("loginAN");
                 }
             }
-        }
+        };
 
         function mouseOnclick_searchLocal() {
             var MOC_1 = document.getElementById("search").value;
@@ -40,316 +40,314 @@
         }
 
         function mouseOnclick_userCenter() {
-            console.log((document.getElementById("userName").innerHTML).toString()==="点击登录");
-            if((document.getElementById("userName").innerHTML).toString()!=="点击登录"){
-                document.querySelector('.img_02 a').href="./userCenter.html";
-            }else{
+            console.log((document.getElementById("userName").innerHTML).toString() === "点击登录");
+            if ((document.getElementById("userName").innerHTML).toString() !== "点击登录") {
+                document.querySelector('.img_02 a').href = "./userCenter.html";
+            } else {
                 alert("请先登陆！");
-                window.open("./logIn.html","_self");
+                window.open("./logIn.html", "_self");
             }
         }
     </script>
 </head>
 
 <body>
-    <div class="catalogue">
-        <div><span><a id="userName" href="logIn.html">点击登录</a></span></div>
-        <ul>
-            <li class="img_01">
-                <a href="#">我的意见</a>
-            </li>
-            <li class="img_02">
-                <a href="#" onclick="mouseOnclick_userCenter()">个人中心</a>
-            </li>
-            <li class="img_03">
-                <a href="#">网页导航</a>
-            </li>
-            <li class="img_04">
-                <a href="./index.html">网站首页</a>
-            </li>
+<div class="catalogue">
+    <div><span><a id="userName" href="logIn.html">点击登录</a></span></div>
+    <ul>
+        <li class="img_01">
+            <a href="#">我的意见</a>
+        </li>
+        <li class="img_02">
+            <a href="#" onclick="mouseOnclick_userCenter()">个人中心</a>
+        </li>
+        <li class="img_03">
+            <a href="#">网页导航</a>
+        </li>
+        <li class="img_04">
+            <a href="./index.html">网站首页</a>
+        </li>
+    </ul>
+</div>
+<div class="photo">
+    <div class="slider">
+        <ul class="list">
+            <li class="item"><img src="./img/img_01.jpg" alt=""></li>
+            <li class="item"><img src="./img/img_02.jpg" alt=""></li>
+            <li class="item"><img src="./img/img_03.jpg" alt=""></li>
+            <li class="item"><img src="./img/img_04.jpg" alt=""></li>
+        </ul>
+        <button class="prev"></button>
+        <button class="next"></button>
+        <!--ul.pageination>(li.bullet{$})*4-->
+        <ul class="pageination">
+            <li class="bullet focus">1</li>
+            <li class="bullet">2</li>
+            <li class="bullet">3</li>
+            <li class="bullet">4</li>
         </ul>
     </div>
-    <div class="photo">
-        <div class="slider">
-            <ul class="list">
-                <li class="item"><img src="./img/img_01.jpg" alt=""></li>
-                <li class="item"><img src="./img/img_02.jpg" alt=""></li>
-                <li class="item"><img src="./img/img_03.jpg" alt=""></li>
-                <li class="item"><img src="./img/img_04.jpg" alt=""></li>
-            </ul>
-            <button class="prev"></button>
-            <button class="next"></button>
-            <!--ul.pageination>(li.bullet{$})*4-->
-            <ul class="pageination">
-                <li class="bullet focus">1</li>
-                <li class="bullet">2</li>
-                <li class="bullet">3</li>
-                <li class="bullet">4</li>
-            </ul>
-        </div>
 
-        <script>
-            (function () {
-                var prevIndex, nextIndex;
-                var len;
-                var id;
-                init();
+    <script>
+        (function () {
+            var prevIndex, nextIndex;
+            var len;
+            var id;
+            init();
 
-                function init() {
-                    prevIndex = nextIndex = 0;
-                    len = document.querySelectorAll('.list .item').length;
-                    document.querySelector('.prev').onclick = function () {
-                        sliderPrev();
+            function init() {
+                prevIndex = nextIndex = 0;
+                len = document.querySelectorAll('.list .item').length;
+                document.querySelector('.prev').onclick = function () {
+                    sliderPrev();
+                };
+                document.querySelector('.next').onclick = function () {
+                    sliderNext();
+                };
+                var bullets = document.querySelectorAll('.slider .pageination .bullet');
+                for (var i = 0; i < bullets.length; i++) {
+                    bullets[i].index = i;
+                    bullets[i].onclick = function () {
+                        prevIndex = nextIndex;
+                        nextIndex = this.index;
+                        sliderTo(prevIndex, nextIndex);
                     }
-                    document.querySelector('.next').onclick = function () {
-                        sliderNext();
-                    }
-                    var bullets = document.querySelectorAll('.slider .pageination .bullet');
-                    for (var i = 0; i < bullets.length; i++) {
-                        bullets[i].index = i;
-                        bullets[i].onclick = function () {
-                            prevIndex = nextIndex;
-                            nextIndex = this.index;
-                            sliderTo(prevIndex, nextIndex);
-                        }
-                    }
-                    var slider = document.querySelector('.slider');
-                    slider.onmouseover = function () {
-                        stop();
-                    }
-                    slider.onmouseout = function () {
-                        auto();
-                    }
+                }
+                var slider = document.querySelector('.slider');
+                slider.onmouseover = function () {
+                    stop();
+                };
+                slider.onmouseout = function () {
                     auto();
+                };
+                auto();
+            }
+
+            function sliderPrev() {
+                prevIndex = nextIndex;
+                nextIndex--;
+                if (nextIndex === -1) {
+                    nextIndex = len - 1;
                 }
+                sliderTo(prevIndex, nextIndex);
+            }
 
-                function sliderPrev() {
-                    prevIndex = nextIndex;
-                    nextIndex--;
-                    if (nextIndex === -1) {
-                        nextIndex = len - 1;
-                    }
-                    sliderTo(prevIndex, nextIndex);
+            function sliderNext() {
+                prevIndex = nextIndex;
+                nextIndex++;
+                if (nextIndex === len) {
+                    nextIndex = 0;
                 }
+                sliderTo(prevIndex, nextIndex);
+            }
 
-                function sliderNext() {
-                    prevIndex = nextIndex;
-                    nextIndex++;
-                    if (nextIndex === len) {
-                        nextIndex = 0;
-                    }
-                    sliderTo(prevIndex, nextIndex);
-                }
+            function sliderTo(prev, next) {
+                var bullets = document.querySelectorAll('.slider .pageination .bullet');
+                bullets[prev].className = 'bullet';
+                bullets[next].className = 'bullet focus';
+                var lis = document.querySelectorAll('.list .item');
+                animate(lis[prev], {opacity: 0});
+                animate(lis[next], {opacity: 100});
+            }
 
-                function sliderTo(prev, next) {
-                    var bullets = document.querySelectorAll('.slider .pageination .bullet');
-                    bullets[prev].className = 'bullet';
-                    bullets[next].className = 'bullet focus'
-                    var lis = document.querySelectorAll('.list .item');
-                    animate(lis[prev], {opacity: 0});
-                    animate(lis[next], {opacity: 100});
-                }
+            function auto() {
+                clearInterval(id);
+                id = setInterval(function () {
+                    sliderNext()
+                }, 2000);
+            }
 
-                function auto() {
+            function stop() {
+                clearInterval(id);
+            }
+        })()
+    </script>
 
-                    clearInterval(id);
-                    id = setInterval(function () {
-                        sliderNext()
-                    }, 2000);
-                }
+    <div class="tupian_01"></div>
+    <div class="input"><label for="search"></label><input id="search" type="text" placeholder="请输入你要输入的内容"/></div>
+    <ul>
+        <li class="search_01" style="background-color: #E9E7EF">
+            <a onclick="mouseOnclick_searchLocal()">搜本站</a>
+        </li>
+        <li class="search_02" style="background-color: aliceblue;">
+            <a onclick="mouseOnclick_searchNet()">搜全站</a>
+        </li>
+    </ul>
+    <div class="tupian_02"></div>
+</div>
+<div class="search">
+    <ul class="search_net clear"></ul>
 
-                function stop() {
-                    clearInterval(id);
-                }
-            })()
-        </script>
+    <script>
+        function getData(data) {
+            var script = document.querySelector('#jsonp');
+            script.parentNode.removeChild(script);
+            $('.search_net').html('');
+            for (var i = 0; i < data.g.length; i++) {
+                $('<li style="padding-left: 160px">' + data.g[i].q + '</li>').appendTo('.search_net');
+            }
+        }
 
-        <div class="tupian_01"></div>
-        <div class="input"><input id="search" type="text" placeholder="请输入你要输入的内容"/></div>
-        <ul>
-            <li class="search_01" style="background-color: #E9E7EF">
-                <a onclick="mouseOnclick_searchLocal()">搜本站</a>
+        function getList(wd) {
+            var script = document.createElement('script');
+            script.id = 'jsonp';
+            script.src = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1441,21106,30495,30472&cb=getData&wd=' + wd;
+            document.body.appendChild(script);
+        }
+
+        $('input').keyup(function () {
+            var wd = $(this).val();
+            getList(wd);
+        })
+    </script>
+
+</div>
+<div class="main clear">
+    <div class="head clear">
+        <ul class="room_01">
+            <li class="head_01">
+                <a href="#" style="padding-left:10px ;">Photo</a>
             </li>
-            <li class="search_02" style="background-color: aliceblue;">
-                <a onclick="mouseOnclick_searchNet()">搜全站</a>
+            <li class="head_02">
+                <a href="#">Memory</a>
+            </li>
+            <li class="head_03" style="padding-left: 80px;">
+                <a href="#">Video</a>
+            </li>
+            <li class="head_04" style="padding-left: 85px;">
+                <a href="#">File</a>
             </li>
         </ul>
-        <div class="tupian_02"></div>
     </div>
-    <div class="search">
-        <ul class="search_net clear"></ul>
+    <div class="main_left">
+        <div class="tupian_03"></div>
+        <ul class="room_02">
+            <li style="border-top: dashed">
+                <a href="#">语文</a>
+            </li>
+            <li>
+                <a href="#">数学</a>
+            </li>
+            <li>
+                <a href="#">英语</a>
+            </li>
+            <li>
+                <a href="#">物理</a>
+            </li>
+            <li>
+                <a href="#">化学</a>
+            </li>
+            <li>
+                <a href="#">生物</a>
+            </li>
+            <li>
+                <a href="#">地理</a>
+            </li>
+            <li>
+                <a href="#">历史</a>
+            </li>
+            <li>
+                <a href="#">政治</a>
+            </li>
+        </ul>
+        <div class="tupian_04"></div>
+        <button class="btnFav" style="height: 50px;width: 200px;cursor: pointer">收藏本站</button>
 
         <script>
-            function getData(data) {
-                var script = document.querySelector('#jsonp');
-                script.parentNode.removeChild(script);
-                $('.search_net').html('');
-                for (var i = 0; i < data.g.length; i++) {
-                    $('<li style="padding-left: 160px">' + data.g[i].q + '</li>').appendTo('.search_net');
-                }
-            }
-
-            function getList(wd) {
-                var script = document.createElement('script');
-                script.id = 'jsonp';
-                script.src = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1441,21106,30495,30472&cb=getData&wd=' + wd;
-                document.body.appendChild(script);
-            }
-
-            $('input').keyup(function () {
-                var wd = $(this).val();
-                getList(wd);
+            var url = document.URL;
+            var title = document.title;
+            $(document).ready(function () {
+                $(".btnFav").click(function () {
+                    var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL';
+                    if (document.all) {
+                        window.external.addFavorite(url, title);
+                        alert('收藏成功');
+                    } else if (window.sidebar) {
+                        window.sidebar.addPanel(title, url, "");
+                        alert('收藏成功');
+                    } else {
+                        alert('您可以通过快捷键' + ctrl + ' + D 加入到收藏夹');
+                    }
+                })
             })
         </script>
 
     </div>
-    <div class="main clear">
-        <div class="head clear">
-            <ul class="room_01">
-                <li class="head_01">
-                    <a href="#" style="padding-left:10px ;">Photo</a>
+    <div class="main_right">
+        <div class="top clear">
+            <ul>
+                <li class="top_01">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">高考专业分数</a>
+                    </div>
                 </li>
-                <li class="head_02">
-                    <a href="#">Memory</a>
+                <li class="top_02">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">东北石油大学师生名册</a>
+                    </div>
                 </li>
-                <li class="head_03" style="padding-left: 80px;">
-                    <a href="#">Video</a>
+                <li class="top_03">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">《龙族》</a>
+                    </div>
                 </li>
-                <li class="head_04" style="padding-left: 85px;">
-                    <a href="#">File</a>
+            </ul>
+        </div>
+        <div class="middle clear">
+            <ul>
+                <li class="middle_01">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">大学物理答案</a>
+                    </div>
+                </li>
+                <li class="middle_02">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">马加爵案件分析</a>
+                    </div>
+                </li>
+                <li class="middle_03">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">计算机专业历年就业率</a>
+                    </div>
                 </li>
             </ul>
         </div>
-        <div class="main_left">
-            <div class="tupian_03"></div>
-            <ul class="room_02">
-                <li style="border-top: dashed" ;>
-                    <a href="#">语文</a>
+        <div class="bottom clear">
+            <ul>
+                <li class="bottom_01">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">如何看待大学生早恋</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">数学</a>
+                <li class="bottom_02">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">中国汉字分析</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">英语</a>
-                </li>
-                <li>
-                    <a href="#">物理</a>
-                </li>
-                <li>
-                    <a href="#">化学</a>
-                </li>
-                <li>
-                    <a href="#">生物</a>
-                </li>
-                <li>
-                    <a href="#">地理</a>
-                </li>
-                <li>
-                    <a href="#">历史</a>
-                </li>
-                <li>
-                    <a href="#">政治</a>
+                <li class="bottom_03">
+                    <div style="padding-top: 230px;text-align: center;">
+                        <a href="#">中美贸易战的弊端</a>
+                    </div>
                 </li>
             </ul>
-            <div class="tupian_04"></div>
-            <button class="btnFav" style="height: 50px;width: 200px;cursor: pointer" >收藏本站</button>
-
-            <script>
-                var url=document.URL;
-                console.log(url);
-                var title=document.title;
-                $(document).ready(function(){
-                    $(".btnFav").click(function(){
-                        var ctrl=(navigator.userAgent.toLowerCase()).indexOf('mac')!==-1?'Command/Cmd': 'CTRL';
-                        if(document.all){
-                            window.external.addFavorite(url, title);
-                            alert('收藏成功');
-                        }
-                        else if(window.sidebar){
-                            window.sidebar.addPanel(title, url, "");
-                            alert('收藏成功');
-                        }
-                        else{ alert('您可以通过快捷键' + ctrl + ' + D 加入到收藏夹');}
-                    })
-                })
-            </script>
-
-        </div>
-        <div class="main_right">
-            <div class="top clear">
-                <ul>
-                    <li class="top_01">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">高考专业分数</a>
-                        </div>
-                    </li>
-                    <li class="top_02">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">东北石油大学师生名册</a>
-                        </div>
-                    </li>
-                    <li class="top_03">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">《龙族》</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="middle clear">
-                <ul>
-                    <li class="middle_01">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">大学物理答案</a>
-                        </div>
-                    </li>
-                    <li class="middle_02">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">马加爵案件分析</a>
-                        </div>
-                    </li>
-                    <li class="middle_03">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">计算机专业历年就业率</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="bottom clear">
-                <ul>
-                    <li class="bottom_01">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">如何看待大学生早恋</a>
-                        </div>
-                    </li>
-                    <li class="bottom_02">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">中国汉字分析</a>
-                        </div>
-                    </li>
-                    <li class="bottom_03">
-                        <div style="padding-top: 230px;text-align: center;">
-                            <a href="#">中美贸易战的弊端</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
-    <div class="foot">
-        <ul>
-            <li>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</li>
-            <li>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</li>
-            <li>©ALIMAMA MUX, powered by alimama THX.法律声明</li>
-            <li>转载内容版权归作者及来源网站所有，本站原创内容转载请注明来源。</li>
-            <li>联系方式:</li>
-            <li>
-                <a href="#">&nbsp;QQ&nbsp;</a>
-                <a href="#">&nbsp;Wechat&nbsp;</a>
-                <a href="#">&nbsp;post&nbsp;</a>
-                <a href="#">&nbsp;Facebook&nbsp;</a>
-            </li>
-        </ul>
-    </div>
+</div>
+<div class="foot">
+    <ul>
+        <li>阿里妈妈MUX倾力打造的矢量图标管理、交流平台。</li>
+        <li>设计师将图标上传到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于前端工程师自由调整与调用。</li>
+        <li>©ALIMAMA MUX, powered by alimama THX.法律声明</li>
+        <li>转载内容版权归作者及来源网站所有，本站原创内容转载请注明来源。</li>
+        <li>联系方式:</li>
+        <li>
+            <a href="#">&nbsp;QQ&nbsp;</a>
+            <a href="#">&nbsp;Wechat&nbsp;</a>
+            <a href="#">&nbsp;post&nbsp;</a>
+            <a href="#">&nbsp;Facebook&nbsp;</a>
+        </li>
+    </ul>
+</div>
 </body>
 
 

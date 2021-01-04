@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ch6综合</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+    marquee {
+        clear: both;
+    }
+
+    /*清除左右两边浮动样式*/
+    p {
+        text-indent: 2em;
+    }
+
+    #div1 {
+        background: #99ffcc;
+        height: 60px;
+        padding: 10px 50px;
+        margin: 0 auto;
+    }
+
+    img {
+        float: left;
+        margin: 5px 10px;
+    }
+
+    #ul1 {
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+
+    #div2 {
+        background: #99ffcc;
+        height: 500px;
+    }
+</style>
+<body>
+<div id="div1">
+    <img src="images/h3clogo.png" alt="" height="60">
+    <ul id="ul1">
+        <li><a href="">产品技术</a></li>
+        <li><a href="">解决技术</a></li>
+        <li><a href="">服务支持</a></li>
+        <li><a href="">培训认证</a></li>
+        <li><a href="">合作伙伴</a></li>
+        <li><a href="">关于我们</a></li>
+    </ul>
+</div>
+<div id="div2">
+    <ul>
+        <li><img src="images/h3ccloud.jpg" width="300" height="230" border="0" alt=""></li>
+        <li>
+            <embed src="multimedia/h3c_newit1.mp4" width="400" autostart="true" loop="true">
+        </li>
+    </ul>
+    <marquee behavior="alternate" direction="up" height="100px" scrolldelay="500" bgcolor="#ffffff"
+             width="100%">
+        <p>云彩虹（ Cloud rainbow）的解决方案，可以实现在上、下级两级云资源管理平台的备份、资源性扩展与业务迁移分发，打破IT资源与业务之恶能本地部署的局限性......</p>
+    </marquee>
+    <hr color="red">
+    <p align="center">杭州华三通信技术有限公司保留一切权利浙CP备09064986号</p>
+</div>
+<embed src="multimedia/exam01.mp3" loop="true" autostart="true" width="0" height="0">
+</body>
+</html>

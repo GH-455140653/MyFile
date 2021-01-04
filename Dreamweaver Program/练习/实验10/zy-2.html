@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像画廊</title>
+</head>
+<style>
+    hr {
+        border: 3px solid greenyellow;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 隶属;
+        font-size: 30px;
+    }
+
+    .div_img {
+        float: left;
+        border: 10px groove darkred;
+        margin: 20px;
+        height: 200px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<body>
+
+<h1>图像画廊</h1>
+<hr>
+<div id="main">
+    <marquee behavior="alternate" direction="" OnMouseOver="this.stop()" OnMouseOut="this.start()">
+        <ul>
+            <li>
+                <div class="div_img"><img src="./images/image1.gif" alt="图片1"></div>
+            </li>
+            <li>
+                <div class="div_img"><img src="./images/image2.jpg" alt="图片2"></div>
+            </li>
+            <li>
+                <div class="div_img"><img src="./images/image3.jpg" alt="图片3"></div>
+            </li>
+            <li>
+                <div class="div_img"><img src="./images/image4.jpg" alt="图片4"></div>
+            </li>
+        </ul>
+    </marquee>
+</div>
+<embed src="./multimedia/exam01.mp3" loop="true" autostart="true" width="0" height="0">
+<hr>
+
+</body>
+</html>

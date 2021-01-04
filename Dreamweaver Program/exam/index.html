@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件工程首页</title>
+    <script src="./js/public_function.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            if (getCookies("loginAN")) {
+                document.getElementById('btn_login').innerHTML = getCookies("loginAN");
+                document.getElementById('btn_login').href = "javascript:void(0)";
+                document.getElementById('btn_login').title="";
+                if (!getCookies("loginPW")) {
+                    removeCookies("loginAN");
+                }
+            }
+            alert("欢迎来到软件工程首页！")
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="./css/page_CSS.css">
+<body>
+
+<div id="page_head">
+    <img src="./images/logo.gif" alt="logo" id="logo" style="height: 100px">
+    <marquee behavior="scroll" direction="" id="wordScroll" vspace="10px">学好软件工程，用头发賺钱，再用钱养头发</marquee>
+    <a href="./login.html" title="页面跳转" id="btn_login">登录</a>
+</div>
+
+<hr>
+
+<div id="page_menu">
+    <ul class="first_menu">
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="">课程简介</a>
+            <ul class="second_menu">
+                <li><a href="#default">简介</a></li><!--页面内超链接-->
+                <li><a href="">教学大纲</a></li>
+                <li><a href="">电子档案</a></li>
+                <li><a href="">教学日历</a></li>
+            </ul>
+        </li>
+        <li><a href="">师资队伍</a></li>
+        <li><a href="">教学课件</a></li>
+        <li><a href="">网络资源</a></li>
+        <li><a href="">学习测评</a>
+            <ul class="second_menu">
+                <li><a href="./login.html">用户登录</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="">测评</a></li>
+            </ul>
+        </li>
+        <li style="padding: 0 6px 0 6px"><a href="">最新前沿</a></li>
+    </ul>
+</div>
+
+<hr>
+
+<div id="page_img">
+    <div class="slider">
+        <ul class="list">
+            <li class="item">
+                <a href="https://baijiahao.baidu.com/s?id=1668480188825924666&wfr=spider&for=pc">
+                    <img src="./images/img_001.jpg" alt="微软的软件工程现代化转型" title="微软的软件工程现代化转型">
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://baijiahao.baidu.com/s?id=1668740144807053345&wfr=newsapp">
+                    <img src="./images/img_002.jpeg" alt="软件工程的迷途与沉思" title="软件工程的迷途与沉思">
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://baijiahao.baidu.com/s?id=1668809701876207625&wfr=spider&for=pc">
+                    <img src="./images/img_003.jpeg" alt="软件工程师如何平衡学习技术的深度和广度" title="软件工程师如何平衡学习技术的深度和广度">
+                </a>
+            </li>
+            <li class="item">
+                <a href="https://baijiahao.baidu.com/s?id=1646970170228868435&wfr=spider&for=pc">
+                    <img src="./images/img_004.jpeg" alt="软件工程9个就业方向和企业简介" title="软件工程9个就业方向和企业简介">
+                </a>
+            </li>
+        </ul>
+        <button class="prev"></button>
+        <button class="next"></button>
+        <ul class="pageination">
+            <li class="bullet focus">1</li>
+            <li class="bullet">2</li>
+            <li class="bullet">3</li>
+            <li class="bullet">4</li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<div id="page_context">
+    现代软件工程创造了一种文化、工具和实践，专注于开发高质量、安全和功能丰富的软件服务，以实现微软的数字化转型。
+    微软核心服务和工程（CSEO，前身为微软内部IT，服务微软内部客户）团队正在实施现代软件工程愿景，以创建一种文化、工具和实践，
+    致力于开发高质量、安全和功能丰富的服务，来实现微软的数字化转型。现代软件工程计划正在帮助CSEO痴迷于客户，加快新功能的交付，并提高工程效率。
+</div>
+
+<hr>
+
+<script type="text/javascript" src="./js/page_img&context.js"></script>
+
+<div id="page_main">
+    <div id="main_left">
+        <div id="photo"></div>
+        <ul>
+            <li class="lists"><a href="javascript:void(0)">最新动态</a></li>
+            <li class="lists"><a href="javascript:void(0)">文章推荐</a></li>
+            <li class="lists"><a href="javascript:void(0)">趣味知识</a></li>
+            <li class="lists"><a href="javascript:void(0)">实用软件</a></li>
+        </ul>
+        <script src="./js/page_mainLeftClick.js"></script>
+        <center>
+            <button id="btnFav">收藏网站</button>
+        </center>
+        <script src="./js/page_addFav.js"></script>
+    </div>
+    <div id="main_right">
+        <div id="Last">
+            <ul>
+                <h1>软件工程最新动态</h1>
+                <li>
+                    <a href="https://baijiahao.baidu.com/s?id=1668917959086256596&wfr=spider&for=pc">
+                        <p>计算机类各专业的详细介绍及就业方向，软件工程、信息安全等专业</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://baijiahao.baidu.com/s?id=1669978303077773513&wfr=spider&for=pc">
+                        <p>WWDC 2020</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.oschina.net/news/116418/the-state-of-developer-ecosystem-in-2020?from=20200614">
+                        <p>2020 年开发者生态报告：Python 超越 Java</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.oschina.net/news/116379/matlab-ban-and-edu-schools?from=20200614">
+                        <p>高校应拥抱开源，哈工大等国内高校被禁用 MATLAB</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.oschina.net/news/116375/python-and-go-most-popular-hacking-tools?from=20200614">
+                        <p>Python 和 Go 成为年度最受欢迎的黑客工具榜首</p>
+                    </a>
+                </li>
+                <li><a href="https://www.oschina.net/news/116419/wsl2-updates-via-windows-update?from=20200614">
+                        <p>Win 10 开始采用 Windows Update 的方式分发 WSL2</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="Article">
+            <h1>软件工程相关文章推送</h1>
+            <ul>
+                <li>
+                    <h3>维普：</h3>
+                    <ul>
+                        <li>
+                            <a href="http://www.cqvip.com/QK/89857X/201123/epub667747489201123020.html">
+                                <p>《软件工程》课程中大学生创新能力的培养</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cqvip.com/QK/96857X/200501/11515618.html">
+                                <p>软件工程技术发展思索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cqvip.com/QK/96857X/20194/7001678752.html">
+                                <P>代码克隆检测研究进展</P>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.cqvip.com/QK/95200X/200010/4695842.html">
+                                <p>RUP软件工程过程研究及应用</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>知网：</h3>
+                    <ul>
+                        <li>
+                            <a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDAUTO&filename=JSJA202006003&v=MDgyMDllUnZGeXJnVXIvQUx6N0JiN0c0SE5ITXFZOUZaNFI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUjdxZlk=">
+                                <p>软件升级问题的多目标优化方法</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDAUTO&filename=WLAQ202006036&v=MjU4Njc0SE5ITXFZOUdZb1I4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUjdxZlllUnZGeXJnVXJ2S01pSEtmN0c=">
+                                <p>软件工程质量管理中存在的问题及未来趋势探讨</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDAUTO&filename=JJKJ202016010&v=MTgyMTdXTTFGckNVUjdxZlllUnZGeXJnVTcvQUx5ZkFaTEc0SE5ITnFZOUVaSVI4ZVgxTHV4WVM3RGgxVDNxVHI=">
+                                <P>计算机软件工程的现代化技术研究</P>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDAUTO&filename=XXWX202005030&v=MDE2NzBSdkZ5cmdVN3ZPUFRYY2RyRzRITkhNcW85R1pJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSN3FmWWU=">
+                                <p>软件开发中的情感状态分析研究综述</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <h3>中国数字科技馆</h3>
+                        <li>
+                            <a href="https://www.cdstm.cn/theme/khsj/khzx/khqx/202001/t20200103_936266.html">
+                                <p>2020年人工智能将如何发展</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.cdstm.cn/theme/khsj/khzx/khqx/202006/t20200618_1029367.html">
+                                <p>AI仿生：人类进化新可能</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.cdstm.cn/gallery/hycx/qyzx/202006/t20200617_1029290.html">
+                                <p>海底的中微子望远镜</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.cdstm.cn/theme/khsj/khzx/khqw/201908/t20190828_923031.html">
+                                <p>机器学习加深了“知识”和“理解”之间的鸿沟</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="Knowledge">
+            <h1>软件工程趣味知识</h1>
+            <ul>
+                <li>
+                    <a href="https://www.sohu.com/a/169028387_609556"><p>三行情书代码</p></a>
+                    <img src="./images/love.jpeg" alt="">
+                </li>
+                <li>
+                    <a href="https://www.cnblogs.com/fanyong/archive/2011/06/26/2090706.html">
+                        <p>软件工程开发的各个阶段</p>
+                    </a>
+                    <img src="./images/img_01.jpg" alt="">
+                </li>
+                <li>
+                    <a href="https://baijiahao.baidu.com/s?id=1612012108763475194&wfr=spider&for=pc">
+                        <P>只有程序员才能看懂的冷笑话</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://new.qq.com/omn/20190413/20190413A05YK1.html">
+                        <p>996 007 ICU</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="Software">
+            <h1>软件工程涉及到的软件</h1>
+            <ul>
+                <li>
+                    <ul>
+                        <li style="display: inline-block;float: left">
+                            <a href="https://www.jetbrains.com/">
+                                <img src="./images/idea.jpg" alt="IntelliJ IDEA" title="跳转该软件下载地址">
+                            </a>
+                        <li style="text-indent: 2em;padding-left: 130px">IDEA 全称 IntelliJ IDEA，
+                            是java编程语言开发的集成环境。IntelliJ在业界被公认为最好的java开发工具，尤其在智能代码助手、
+                            代码自动提示、重构、JavaEE支持、各类版本工具(git、svn等)、JUnit、CVS整合、代码分析、
+                            创新的GUI设计等方面的功能可以说是超常的。
+                            IDEA是JetBrains公司的产品，这家公司总部位于捷克共和国的首都布拉格，开发人员以严谨著称的东欧程序员为主。
+                        </li>
+                        </li>
+                        <li>
+                            <p>IntelliJ IDEA</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li style="display: inline-block;float: left">
+                            <a href="https://www.eclipse.org/downloads/">
+                                <img src="./images/eclipse.png" alt="Eclipse" title="跳转该软件下载地址">
+                            </a>
+                        <li style="text-indent: 2em;padding-left: 130px">
+                            Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，
+                            用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具
+                            （Java Development Kit，JDK）。 尽管 Eclipse 是使用Java语言开发的，但它的用途并不限于 Java 语言；
+                            例如，支持诸如C/C++、COBOL、PHP等编程语言的插件已经可用.
+                        </li>
+                        </li>
+                        <li>
+                            <p style="padding-left: 20px">Eclipse</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li style="display: inline-block;float: left">
+                            <a href="https://sparxsystems.com/products/ea/downloads.html">
+                                <img src="./images/EA.jpg" alt="Enterprise Architect" title="跳转该软件下载地址">
+                            </a>
+                        <li style="text-indent: 2em;padding-left: 130px">
+                            <p>生命周期软件设计方案——Enterprise Architect是以目标为导向的软件系统。</p>
+                            <p>
+                                Enterprise Architect 是Sparx Systems 公司的旗舰产品。它覆盖了系统开发的整个周期，除了开发类模型之外，
+                                还包括事务进程分析，使用案例需求，动态模型，组件和布局，系统管理，非功能需求，用户界面设计，测试和维护等。
+                            </p>
+                        </li>
+                        </li>
+                        <li>
+                            <p>Enterprise Architect</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li style="display: inline-block;float: left">
+                            <a href="https://visualstudio.microsoft.com/zh-hans/"><img src="./images/VS.jpg" alt="Microsoft Visual Studio" title="跳转该软件下载地址"></a>
+                        <li style="text-indent: 2em;padding-left: 130px">
+                            Microsoft Visual Studio（简称VS）是美国微软公司的开发工具包系列产品。VS是一个基本完整的开发工具集，
+                            它包括了整个软件生命周期中所需要的大部分工具，如UML工具、代码管控工具、集成开发环境(IDE)等等。所写的目标代码适用于微软支持的所有平台。
+                            该软件主要用于编写C、C++、C#，高度集成的语法高亮提示能够极大的提高用户的编码效率。
+                        </li>
+                        </li>
+                        <li>
+                            <p>Microsoft Visual Studio</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="default" style="display: block;">
+            <h1><a href="https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/25279?fr=aladdin" style="color: #333333">软件工程简介</a></h1>
+            <p>
+                软件工程是每一位从事软件行业的人都需要了解的内容, 软件生产想要摆脱对个体的依赖, 则必须遵循一定的软件工程思想, 设法提高软件的生产率和软件质量.
+            </p>
+            <p>
+                随着软件工程学科的发展, 人们对计算机软件的认识逐渐深入, 软件工作的范围不仅仅是局限在程序编写, 而是扩展到了整个软件生命周期,
+                如软件基本概念的形成丶需求分析丶设计丶 实现 丶 测试丶安装部署丶运行维护, 直到软件被更新和替换新的版本.
+            </p>
+            <p>
+                软件工程还包括很多技术性的管理工作, 例如过程管理, 产品管理, 资源管理和质量管理, 在这些方面也逐步地建立起了标准或规范.
+            </p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="page_bottom">
+    <p>该网站最终解释权归作者所有，本网站仅用于学习开发，不得用于商业用途。</p>
+    <center>
+        <p id="time"></p>
+    </center>
+    <script src="./js/page_time.js"></script>
+    <p>
+        联系方式：<a href="javascript:void(0)" onclick="showMyNo()">QQ</a>
+        <a href="javascript:void(0)" onclick="showMyNo()">WeChat</a>
+        <a href="javascript:void(0)" onclick="showMyNo()">bilibili</a>
+        <a href="javascript:void(0)" onclick="showMyNo()">知乎</a>
+    </p>
+    <script>
+        function showMyNo() {
+            alert("QQ：455140653\n微信号：wx455140653\nB站名：执墨凝霜\n知乎名：执墨凝霜");
+        }
+    </script>
+    <p>
+        友情连接：
+        <select name="友情链接" id="selectBox" onchange="window.location=this.value">
+            <option value="default" disabled selected="selected">请选择</option>
+            <option value="http://www.nepu.edu.cn/">东北石油大学</option>
+            <option value="https://www.baidu.com/">百度</option>
+            <option value="https://www.zhihu.com/">知乎</option>
+            <option value="https://www.bilibili.com/">哔哩哔哩</option>
+        </select>
+    </p>
+    <p> copyright&copy;2020-2021</p>
+</div>
+<embed src="./Media/music.mp3" loop="true" autostart="true" width="0" height="0">
+
+</body>
+</html>

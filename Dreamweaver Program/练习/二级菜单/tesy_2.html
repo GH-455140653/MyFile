@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul li {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: yellow;
+            list-style: none;
+            float: left;
+            position: relative
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 30px;
+        }
+
+        li:hover {
+            background-color: green /*选中的时候的颜色*/
+        }
+
+        ul li:hover div {
+            display: block
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><a href="">菜单栏一</a>
+        <div>菜单栏二</div>
+    </li>
+    <li><a href="">菜单栏一</a>
+        <div>菜单栏二</div>
+    </li>
+    <li><a href="">菜单栏一</a>
+        <div>菜单栏二</div>
+    </li>
+    <li><a href="">菜单栏一</a>
+        <div>菜单栏二</div>
+    </li>
+</ul>
+
+</body>
+</html>

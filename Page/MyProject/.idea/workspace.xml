@@ -13,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -39,7 +39,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProject\ESM" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\js" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -68,6 +76,38 @@
       <workItem from="1580929173631" duration="6000" />
       <workItem from="1580929257016" duration="137000" />
       <workItem from="1580973792408" duration="46000" />
+      <workItem from="1581011969043" duration="273000" />
+      <workItem from="1581047845994" duration="2307000" />
+      <workItem from="1581050334616" duration="1511000" />
+      <workItem from="1581223527973" duration="18000" />
+      <workItem from="1581223664585" duration="11000" />
+      <workItem from="1581224942817" duration="5041000" />
+      <workItem from="1581234135879" duration="592000" />
+      <workItem from="1581303913893" duration="1127000" />
+      <workItem from="1581950097991" duration="33000" />
+      <workItem from="1581950167508" duration="42000" />
+      <workItem from="1581950225765" duration="204000" />
+      <workItem from="1581950570251" duration="3000" />
+      <workItem from="1581950989637" duration="69000" />
+      <workItem from="1581951067275" duration="29000" />
+      <workItem from="1581958383382" duration="43000" />
+      <workItem from="1581958456743" duration="10000" />
+      <workItem from="1582295130608" duration="1290000" />
+      <workItem from="1582514803041" duration="491000" />
+      <workItem from="1582955866451" duration="191000" />
+      <workItem from="1583131048303" duration="1722000" />
+      <workItem from="1583376286977" duration="4403000" />
+      <workItem from="1583381777886" duration="759000" />
+      <workItem from="1583644822756" duration="32000" />
+      <workItem from="1583747524407" duration="508000" />
+      <workItem from="1583764506997" duration="233000" />
+      <workItem from="1583987623945" duration="1331000" />
+      <workItem from="1584079186205" duration="249000" />
+      <workItem from="1585366194977" duration="16000" />
+      <workItem from="1585366236179" duration="876000" />
+      <workItem from="1585367130036" duration="92000" />
+      <workItem from="1585367475807" duration="6000" />
+      <workItem from="1585717020728" duration="28000" />
     </task>
     <servers />
   </component>
@@ -82,21 +122,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#更新/0.0.1536.824@0.0.1536.824" timestamp="1580555573282" />
-    <state x="550" y="178" key="FileChooserDialogImpl" timestamp="1580929334241">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="688" y="225" key="FileChooserDialogImpl" timestamp="1585367217598">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="550" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580929334241" />
+    <state x="550" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581950344262" />
+    <state x="688" y="225" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585367217598" />
     <state x="589" y="309" width="382" height="206" key="Github.CreateGistDialog" timestamp="1580555744297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="309" width="382" height="206" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1580555744297" />
-    <state x="271" y="79" key="SettingsEditor" timestamp="1580929367541">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="339" y="100" key="SettingsEditor" timestamp="1585367193019">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="271" y="79" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580929367541" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580719676615">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="271" y="79" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581958397561" />
+    <state x="339" y="100" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585367193019" />
+    <state x="372" y="46" width="1209" height="994" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1585367219334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="372" y="46" width="1209" height="994" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585367219334" />
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1585367207626">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580719676615" />
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585367207626" />
   </component>
 </project>

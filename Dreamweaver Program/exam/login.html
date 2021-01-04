@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件工程登录界面</title>
+    <script src="./js/public_function.js"></script>
+    <script type="text/javascript" src="./js/login_JS.js"></script>
+</head>
+<link rel="stylesheet" href="./css/login_CSS.css">
+<body>
+<div id="div_img"></div>
+<div id="div_main">
+    <center>
+        <form action="./index.html" name="login_form" onsubmit="return formSubmit()"
+              onreset="return formReset();">
+            <div id="FS">
+                <fieldset>
+                    <legend>登录 | LOGIN</legend>
+                    账号：<input type="text" id="account" name="account" maxlength="20" minlength="8"
+                              placeholder="请输入你的账号"><br>
+                    密码：<input type="password" id="password" name="password" minlength="8" maxlength="20"
+                              placeholder="请输入你的密码"><br>
+                    <input type="submit" class="btn" value="登录">
+                    <input type="reset" class="btn" value="重置">
+                    <input type="checkbox" id="psw_checked">记住密码
+                </fieldset>
+            </div>
+        </form>
+    </center>
+</div>
+</body>
+</html>

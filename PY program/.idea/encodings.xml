@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/My/cash/CSV.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/cash/ex3_3.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/cash/message.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/cash/result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/data/text/dys.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/data/text/file_cloude.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/data/text/gs.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/data/text/古诗.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/My/data/text/打油诗.txt" charset="GBK" />
+  </component>
+</project>

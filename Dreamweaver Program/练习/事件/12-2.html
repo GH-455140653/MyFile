@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交</title>
+    <script>
+        function testJS() {
+            if (document.form1.name1.value === "") {
+                alert("没有内容！");
+                return false;
+            } else {
+                alert("欢迎你，" + document.form1.name1.value);
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="12-1.html" onsubmit="return testJS();" name="form1">
+    姓名：<input type="text" name="name1">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

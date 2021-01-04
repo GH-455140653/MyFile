@@ -1,4 +1,4 @@
-##失败zhe
+##文件用不了，待处理！！
 def save(Class, name, number):
     Class_file = open(r"C:\MyData\MyProgram\PY program\My\Class.txt", 'a')
     name_file = open(r"C:\MyData\MyProgram\PY program\My\names.txt", 'a')

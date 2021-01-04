@@ -1,0 +1,218 @@
+/*全局*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.subject {
+    height: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: #9ff000 2px dashed;
+}
+
+
+/*左侧菜单*/
+#left {
+    float: left;
+    width: 20%;
+    height: 800px;
+    background: #9CC;
+}
+
+#left p {
+    line-height: 30px;
+}
+
+/*右侧功能模块*/
+#right {
+    background-color: #F8F8FF;
+    float: left;
+    width: 80%;
+    height: 800px;
+}
+
+#p2 {
+    text-indent: 2em;
+    letter-spacing: normal;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.p3 {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+#nowtime {
+    margin-top: 180px;
+}
+
+
+.p1 {
+    text-indent: 35px;
+    font-size: 20px;
+    font-family: 楷体;
+}
+
+.p0 {
+    text-indent: 60%;
+}
+
+/*主页面系统介绍 */
+#introduce {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 800px;
+    display: none;
+}
+
+/*更改我的资料 */
+#changeinfo {
+    height: 900px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+/*确认修改按钮 */
+#ok {
+    width: 120px;
+    height: 50px;
+}
+
+/*查看我的资料 */
+#searchinfo {
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+/*打印按钮 */
+#print {
+    margin-left: 1200px;
+    margin-top: 200px;
+    width: 120px;
+    height: 50px;
+}
+
+/*签到功能 */
+#kdao {
+    display: none;
+}
+
+/*签到按钮 */
+#qiandao {
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+/*文本意见反馈 */
+#opinion_txt {
+    display: none;
+    margin-left: 400px;
+}
+
+#opinion_tarea {
+    height: 20%;
+    width: 40%;
+    resize: none;
+}
+
+/*按钮*/
+.btn {
+    margin: 25px 0 0 170px;
+    width: 120px;
+    height: 50px;
+}
+
+#mymsg {
+    display: none;
+}
+
+/*添加留言*/
+#writemsg {
+    display: none;
+}
+
+.t2 {
+    margin-left: 200px;
+    resize: none;
+}
+
+
+/*发布留言按钮 */
+.publish {
+    width: 150px;
+    height: 50px;
+    margin-left: 480px;
+    font-size: 16px;
+}
+
+
+/*修改密码 */
+.changepassword {
+    margin: 0;
+    float: left;
+    width: 85%;
+    background-color: #F8F8FF;
+    height: 700px;
+    display: none;
+}
+
+.formPswUpdate {
+    margin-top: 200px;
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+.formPswUpdate > input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+.formPswUpdate > input[type="reset"] {
+    padding: 0;
+}
+
+.formPswUpdate > input[type="submit"] {
+    padding: 0;
+}
+
+.button7 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+    margin: 0 50px 0 50px;
+}
+
+.button8 {
+    font-size: 20px;
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.div7 {
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+/*页脚*/
+.page_bottom {
+    background-color: bisque
+}

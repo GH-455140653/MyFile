@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<style>
+    fieldset {
+        width: 500px;
+        height: 150px;
+    }
+</style>
+<form action="">
+    <fieldset>
+        <legend align="center">基本信息</legend>
+        姓名：<input type="text" name="name"><br>
+        性别：
+        <input type="radio" name="sex" value="男" checked>男
+        <input type="radio" name="sex" value="女">女<br>
+        身高：<input type="text" name="height"><br>
+        体重：<input type="text" name="weight"><br>
+        爱好：<input type="checkbox" name="sing" value="唱歌">唱歌
+        <input type="checkbox" name="dance" value="跳舞">跳舞
+    </fieldset>
+    <fieldset>
+        <legend align="left">其他信息</legend>
+        账号：<input type="text" name="accountant" maxlength="20" size="10" readonly><br>
+        密码：<input type="password" name="psw" readonly maxlength="20"><br>
+        身份：<input type="text" name="who" value="学生"><br>
+        <input type="hidden" name="hiddenField">
+        <input type="reset" value="重置">
+        <input type="button" onclick="javascript:alert('注册成功！')" value="注册新用户">
+        <input type="submit" name="submit" value="提交"><br>
+        <input type="file" name="file">
+    </fieldset>
+</form>
+</body>
+</html>

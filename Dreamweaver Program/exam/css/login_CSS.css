@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(#E9E7EF, #f7f7f7);
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+
+#div_main {
+    text-align: center;
+}
+
+#div_img {
+    margin: 10% auto 2% auto;
+    width: 128px;
+    height: 128px;
+    background-image: url("../images/login.png")
+}
+
+div input {
+    border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+    /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+    border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+    /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+    padding: 7px 0 7px 5px;
+}
+
+.btn {
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
+}
+
+legend {
+    font-family: 华文楷体;
+    font-size: 20px;
+}
+
+#FS {
+    height: 146px;
+    width: 400px;
+}

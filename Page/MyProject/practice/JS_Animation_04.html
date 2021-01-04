@@ -99,7 +99,7 @@
         <li class="item"><img src="../img/img_4.jpg" alt=""></li>
     </ul>
     <button class="prev"></button>
-    <buutton class="next"></buutton>
+    <button class="next"></button>
     <ul class="pageination">
         <li class="bullet focus">1</li>
         <li class="bullet">2</li>
@@ -138,10 +138,10 @@
 
             document.querySelector('.prev').onclick = function () {
                 sliderPrev();
-            }
+            };
             document.querySelector('.next').onclick = function () {
                 sliderNext();
-            }
+            };
 
             var bullets = document.querySelectorAll('.slider .pageination .bullet');
             for (var i = 0; i < bullets.length; i++) {
@@ -154,10 +154,10 @@
             var slider = document.querySelector('.slider');
             slider.onmouseover = function () {
                 stop();
-            }
+            };
             slider.onmouseout = function () {
                 auto();
-            }
+            };
             auto();
         }
 

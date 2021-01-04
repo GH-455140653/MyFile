@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择图片</title>
+    <script>
+        function changeImage() {
+            var a = document.getElementById("game").selectedIndex;//获取下拉框中选择项索引
+            document.getElementById("show").src = document.getElementById("game").options[a].value;//将图片更改为对应选择项
+        }
+    </script>
+</head>
+<body>
+<div>
+    <form action="">
+        <select name="" id="game" onchange="changeImage()">
+            <option>请选择</option>
+            <option value="./images/pic1.jpg">笔记本</option>
+            <option value="./images/pic3.jpg">手机</option>
+        </select>
+    </form>
+</div>
+<p align="center">
+    <img src="images/pic4.jpg" id="show">
+</p>
+</body>
+</html>

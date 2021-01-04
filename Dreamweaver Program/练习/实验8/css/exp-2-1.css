@@ -1,0 +1,63 @@
+#div3 {
+    width: 900px;
+    height: 160px;
+    border: 1px solid #F0F0F0;
+    float: left;
+}
+
+#div1 {
+    border: 1px solid #E0E0E0;
+    float: left;
+    margin: 5px;
+    width: 130px;
+    height: 150px;
+}
+
+#div2 {
+    width: 700px;
+    height: 150px;
+}
+
+
+li {
+    line-height: 1.5em;
+}
+
+.sp1 {
+    background-color: #FF0033;
+    color: white;
+    width: 20px;
+    height: 23px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sp2 {
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 黑体;
+}
+
+.sp3 {
+    font-weight: bolder;
+    color: #FF0033;
+    font-size: 16px;
+    font-family: 黑体;
+}
+
+#sp {
+    text-indent: 2em;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.sp4 {
+    color: #C0C0C0;
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 黑体;
+    text-decoration: line-through;
+}

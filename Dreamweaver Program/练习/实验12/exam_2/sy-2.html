@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>检查学号的合法性</title>
+    <script>
+        window.onload = function () {
+            $('inputText').focus();
+        }
+
+        function $(id) {
+            return document.getElementById(id)
+        }
+
+        function checkNo() {
+            var text_input = $('inputText');
+            if (text_input.value.length !== 10) {
+                alert('学号长度必须为10位数字，请重新输入！');
+                text_input.select();
+            } else if (isNaN(text_input.value)) {
+                alert("学号只能是数字，请重新输入！")
+                text_input.select();
+            } else {
+                alert("学号输入正确!")
+            }
+        }
+    </script>
+</head>
+<style>
+
+</style>
+<body>
+<h3>检查学号的合法性</h3>
+输入学号：<input type="text" id="inputText">
+<input type="button" onclick="checkNo()" value="合法性检查">
+</body>
+</html>

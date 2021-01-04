@@ -46,7 +46,7 @@
 				};
 				xhr.open('post','./jsonp/login.json',true);
 				xhr.setRequestHeader('Content-Type','application/x-www.form-urlencoded');
-				xhr.send('user=LRL&password=123');
+				xhr.send();
 			} else {
 				alert("请输入账号和密码！")
 			}
@@ -59,11 +59,20 @@
 			document.getElementById("Password").value = "";
 		}
 
-		// $('#Password').keydown(function() {
-		// 	if (event.keyCode === "13") {
-		// 		$('.btn_Login').click();
-		// 	}
-		// });
+		document.onkeydown = function (e) {
+			const theEvent = window.event || e;
+			const code = theEvent.keyCode || theEvent.which;
+			if (code === 13) {
+				$(".btn_Login").click();
+			}
+		}
+
+			// $('#Password').keydown(function () {
+			// 	if(event.keyCode==="13"){
+			// 		$('.btn_Login').click();
+			// 	}
+			// })
+
 
 	</script>
 	<style type="text/css">

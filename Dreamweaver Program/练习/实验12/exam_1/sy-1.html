@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <script>
+        function $(id) {
+            return document.getElementById(id)
+        }
+
+        function displayName() {
+            alert("账号：" + $("account").value);
+            return true;
+        }
+
+        function displayAll() {
+            var temp = document.getElementsByName("who");
+            var whoami;
+            for (var i = 0; i < temp.length; i++) {
+                if (temp[i].checked) {
+                    whoami = temp[i].value;
+                }
+            }
+            var msg = "账号：" + $('account').value + "\n密码：" + $('password').value + "\n用户类型：" + whoami;
+            alert(msg);
+        }
+
+        function checkInfo() {
+            if ($('password').value !== $('pwd_sure').value) {
+                alert("两次输入的密码必须一致！！")
+                $('pwd_sure').value = "";
+            }
+        }
+    </script>
+</head>
+<style>
+    #form_login {
+        text-align: center;
+    }
+</style>
+<body>
+
+<form action="" id="form_login" onsubmit="displayAll()">
+    <fieldset>
+        <legend>用户注册</legend>
+        账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<input type="text" id="account" onblur="displayName()"><br>
+        密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" id="password"><br>
+        密码确认：<input type="password" id="pwd_sure" onblur="checkInfo()"><br>
+        用户类型：
+        <input type="radio" value="教师" id="teacher" name="who">教师
+        <input type="radio" value="学生" id="student" name="who">学生
+        <input type="radio" value="管理员" id="admin" name="who">管理员
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </fieldset>
+</form>
+</body>
+</html>

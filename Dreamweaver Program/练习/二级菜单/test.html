@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单</title>
+</head>
+<style>
+    body, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .active {
+        background-color: mediumvioletred;
+        color: #fff;
+    }
+
+    ul {
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    ul li {
+        list-style: none;
+        /* font-size: 10px; */
+        text-indent: 1cm;
+        /* margin-top: 20px; */
+        padding: 10px;
+    }
+
+    #nav {
+        width: 400px;
+        height: 404px;
+        border: 1px solid #333;
+        position: absolute;
+        left: 200px;
+        top: 0;
+
+    }
+
+    #wrap {
+        position: relative;
+        width: 500px;
+        height: 600px;
+    }
+</style>
+<body>
+<div id="wrap">
+    <ul id="uli">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+        <li>list6</li>
+        <li>list7</li>
+        <li>list8</li>
+        <li>list9</li>
+        <li>list10</li>
+    </ul>
+    <div id="nav">坂口小可爱</div>
+</div>
+<script>
+    //获取id
+    var a = function (id) {
+        return document.getElementById(id);
+    }
+    //获取ul下面的所有li
+    var wrapuli = a('uli').children;
+    //设置一个空的对象
+    var flag;
+    console.log(wrapuli);
+    //遍历所有li
+    for (var j = 0; j < wrapuli.length; j++) {
+        //写一个自执行函数
+        (function (k) {
+            //li的鼠标滑过事件 鼠标滑过li 让它改变颜色 取一个新的元素名 active 并设置颜色 字体颜色 更简单明了的看出是否有滑过的样式
+            wrapuli[j].onmouseover = function () {
+                wrapuli[k].className = 'active';
+                //而nav的样式为显示 表示滑过li nav框也出现
+                a('nav').style.display = 'block';
+                //空的对象等于形参k
+                flag = k;
+            }
+            //离开事件
+            wrapuli[j].onmouseout = function () {
+                //没触发时 li没有样式
+                wrapuli[k].className = '';
+                //nav框隐藏
+                a('nav').style.display = 'none';
+            }
+        })(j);//调用
+    }
+    //鼠标划过事件
+    a('nav').onmouseover = function () {
+        //滑过 nav显示
+        a('nav').style.display = 'block';
+        //li也显示触发效果
+        wrapuli[flag].className = 'active';
+    }
+
+    //鼠标离开事件
+    a('nav').onmouseout = function () {
+        //nav框隐藏
+        a('nav').style.display = 'none';
+        //同上
+        wrapuli[flag].className = '';
+    }
+</script>
+</body>
+</html>

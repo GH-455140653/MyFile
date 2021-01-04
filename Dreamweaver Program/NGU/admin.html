@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>管理员界面</title>
+    <link rel="stylesheet" href="./css/adminCenter.css">
+</head>
+<!--显示当前时间-->
+<script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+
+    function showTime() {/*文字时钟*/
+        var now = new Date();
+        var y = now.getFullYear();
+        var m = now.getMonth() + 1;
+        var d = now.getDate();
+        var h = now.getHours();
+        var mi = now.getMinutes();
+        if (mi < 10) {
+            mi = "0" + mi;
+        }
+        var s = now.getSeconds();
+        var str = y + "年" + m + "月" + d + "日 " + h + ":" + mi + ":" + s;
+        document.getElementById("showtime").innerHTML = str;
+        setTimeout('showTime()', 1000);
+    }
+</script>
+<body onLoad="showTime()">
+<div class="subject" id="subject">
+    <!--左边列表-->
+    <div class="left">
+        <br>
+        <h3 align="center"><a href="javascript:void(0)" id="r0">NGU人事工资管理系统</a></h3><br>
+        <p class="p0">用户：<span>root</span></p>
+        <p class="p0">管理员</p>
+        <p class="p0"><a href=""><u>退出登录</u></a></p><br>
+
+        <h4>&nbsp;&nbsp;&nbsp;人事管理</h4>
+        <p class="p1"><a href="javascript:void(0)" id="r1">员工信息管理</a></p>
+        <p class="p1"><a href="javascript:void(0)" id="r2">员工添加</a></p><br>
+
+        <h4>&nbsp;&nbsp;&nbsp;工资管理</h4>
+        <p class="p1"><a href="javascript:void(0)" id="g1">查询工资信息</a></p><br>
+
+        <h4>&nbsp;&nbsp;&nbsp;考勤管理</h4>
+        <p class="p1"><a href="javascript:void(0)" id="k1">查询考勤信息</a></p><br>
+
+        <h4>&nbsp;&nbsp;&nbsp;留言系统</h4>
+        <p class="p1"><a href="javascript:void(0)" id="l1">留言系统管理</a></p>
+        <p class="p1"><a href="javascript:void(0)" id="l2">发布公告</a></p><br>
+
+        <h4>&nbsp;&nbsp;&nbsp;个人中心</h4>
+        <p class="p1"><a href="javascript:void(0)" id="ge1">修改密码</a></p><br>
+    </div>
+
+    <!--系统简介-->
+    <div class="right0" id="right0">
+        <h1 align="center">欢迎使用NGU人事工资管理系统</h1><br>
+        <font class="font" color="#2E04BB">
+            <div id="showtime" align="center"></div>
+        </font><br><br><br>
+        <h2 align="center">系统简介</h2>
+        <p>
+            <font size="+2" face="华文隶书">&emsp;&emsp;人事工资管理系统是个企业单位不可缺少的部分，
+                它能够为用户提供充足的信息和快地的查询手段，所以人事工资管理系统的内容对于众业的决策者和管理者来说都是至关重要的。
+                人事工资管理系统屋款专业的人事档家管理软件，人事工资管理软件人事管理软件界面设计简法，美观以人性化的软件次程，
+                使营通用户不需站训是快速草图软件操作使用方法，上于极易。
+            </font>
+        </p>
+    </div>
+
+    <!--员工信息管理操作界面-->
+    <div class="right1" id="right1">
+        <br><br>
+        <span class="input1"><input type="" name="" value="" placeholder="请输入你需要查询的编号"></span>
+        <span class="select1"><select>
+				<option selected="selected">条件</option>
+				<option>销售部</option>
+				<option>宣传部</option>
+				<option>财务部</option>
+				<option>人力资源部</option>
+			</select></span>
+        <span class="button1"><button type="button">查询</button></span>
+        <span class="button12"><button type="button">批量删除</button></span><br><br>
+        <textarea cols="100" rows="1" class="textarea10" readonly="readonly">
+            员工编号&emsp;&emsp;&emsp;&emsp;员工姓名&emsp;&emsp;&emsp;&emsp;所在部门&emsp;&emsp;&emsp;&emsp;年龄&emsp;&emsp;&emsp;&emsp;性别&emsp;&emsp;&emsp;电话&emsp;&emsp;&emsp;底薪
+        </textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <textarea cols="100" rows="1" class="textarea1" readonly="readonly"></textarea><br><br>
+        <span class="one dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="two dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="three dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="four dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="five dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="six dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <span class="seven dm">
+				<button type="button" value="">&nbsp;删除&nbsp;</button>
+				&nbsp;
+				<button type="button" value="">&nbsp;修改&nbsp;</button>
+			</span>
+        <div class="div1">
+            <button type="button" value="">上一页</button>
+            <input type="text" name="" value="当前页" readonly="readonly" class="input12">
+            <button type="button" value="">下一页</button>
+        </div>
+    </div>
+
+    <!--添加员工操作界面-->
+    <div class="right2" id="right2">
+        <div class="form2">
+            <form>
+                员工编号： <input type="text" name=""><br><br>
+                员工姓名： <input type="text" name=""><br><br>
+                所在部门：
+                <select class="select2">
+                    <option>销售部</option>
+                    <option>宣传部</option>
+                    <option>财务部</option>
+                    <option>人力资源部</option>
+                </select><br><br>
+                年&emsp;&emsp;龄： <input type="text" name=""><br><br>
+                性&emsp;&emsp;别：
+                <select class="select2">
+                    <option>男</option>
+                    <option>女</option>
+                </select><br><br>
+                底&emsp;&emsp;薪： <input type="text" name=""><br><br>
+                电&emsp;&emsp;话： <input type="text" name=""><br><br><br>
+                <span><button type="submit" value="" class="button20">&nbsp;确&emsp;认&nbsp;</button></span>
+            </form>
+        </div>
+    </div>
+
+    <!--工资管理操作界面-->
+    <div id="searchwage" class="searchwage"></div>
+
+    <!--考勤管理操作界面-->
+    <div id="searchkdao" class="searchkdao"></div>
+
+    <!--留言信息操作界面-->
+    <div class="mymsg" id="mymsg">
+        查询留言信息
+    </div>
+
+    <!--发布留言信息操作界面-->
+    <div class="writemsg" id="writemsg">
+        <p class="p3"><font size="+3">留言内容:</font></p><br>
+        <textarea class="t2" rows="20" cols="100" placeholder="请输入你需要留下的内容"></textarea><br><br>
+        <button type="button" class="publish" name="" value="">&nbsp;发布&nbsp;</button>
+    </div>
+
+    <!--修改密码操作界面-->
+    <script>
+        function $(name) {
+            return document.getElementByname(name)
+        }
+
+        function submitCheck() {
+            var account = $('name');
+            var password = $('password');
+            var psw = $('psw');
+            var psw_sure = $('ps_sure');
+            if (account === "" || password === "" || psw === "" || psw_sure === "") {
+                alert("请完整输入需要填写的内容！");
+            } else if (password !== 123) {
+                alert("原始密码输入错误！\n请重新输入！！！");
+            } else if (psw !== psw_sure) {
+                alert("两次输入新密码不一致！\n请重新输入！！！");
+            } else {
+                return true;
+            }
+        }
+    </script>
+    <div class="right7" id="right7">
+        <form class="form7" action="servlet" method="post" onsubmit="return submitCheck()">
+            <input type="hidden" name="key" value="UserPasswordUpdate">
+            账号 :&emsp;&emsp;&emsp;<input type="text" name="name" value="<%=no%>" readonly><br><br>
+            原密码 :&emsp;&emsp;<input type="password" name="password" placeholder="请输入原始密码"><br><br>
+            新密码 :&emsp;&emsp;<input type="password" name="psw" placeholder="请输入新密码"><br><br>
+            确认密码 :&emsp;<input type="password" name="psw_sure" placeholder="请再次输入修改后的密码"><br><br>
+            <input type="submit" class="button7" value="确认">
+            <input type="reset" value="重置" class="button8">
+        </form>
+    </div>
+</div>
+<hr>
+<div class="page_bottom">
+    <center>
+        <p>该网站最终解释权归作者所有，本网站仅用于学习开发，不得用于商业用途。</p>
+        <p>Copyright&copy; 2020-2021 NGU</p>
+        <p>All rights reserved</p>
+    </center>
+</div>
+</body>
+<script type="text/javascript" src="./js/admin_click.js"></script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<h3>对象的类型应用实例</h3>
+<script>
+    var course1 = new Array(1, '你好', '我的世界', 'dsfasd');
+    var course2 = [1, '你好', '我的世界', 'dsfasd'];
+
+    document.write("数组中的元素：<br>");
+    for (var course1Key in course1) {
+        document.write(course1[course1Key] + " ");
+    }
+    document.write("<br>");
+
+    document.write(course2.join("-") + "<br>");
+    document.write(course2.join("+") + "<br>");
+    document.write(course2.join() + "<br>");
+
+    document.write("<br>删除数组最后一个元素是：" + course2.pop());
+    var s = course2.push("大学物理", "高等数学");
+    document.write("<br>课程数组2的长：=" + s);
+
+    var ss = course1.shift();
+    document.write("<br>删除数组第一个元素是：" + ss);
+
+    var a = course1.unshift("大学语文");
+    document.write("<br>数组元素分别：" + course1 + "<br>数组的长度=" + s);
+
+</script>
+</body>
+</html>

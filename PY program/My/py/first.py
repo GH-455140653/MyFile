@@ -1,8 +1,9 @@
+# 猜数字小游戏
 import random
 
 print('------------the first program-----------------')
 # 留意：从input内获取到的数据全为字符串，尽管你在外输入的是数字！！！
-secret = random.randint(0, 100)##
+secret = random.randint(0, 100)
 # print(secret)
 try:
     temp = int(input('请从0-100猜一个数字：'))
@@ -21,3 +22,4 @@ try:
                 temp = int(input("小了小了！\n请继续猜一个数字："))
 except:
     print("请正确输入数字！！！")
+x = input("按任意键结束")

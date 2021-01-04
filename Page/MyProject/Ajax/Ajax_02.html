@@ -17,8 +17,8 @@
             console.error('请求失败');
         }
     }
-    // xhr.open('post','./accessed.php',true);//格式解析失败，需要服务器
-    xhr.open('post','../jsonp/jsonp_02.json',true);
+    xhr.open('post','./accessed.php',true);//格式解析失败，需要服务器
+    // xhr.open('post','../jsonp/jsonp_01.json',true);
     xhr.setRequestHeader('Content-Type','application/x-www.form-urlencoded');
     xhr.send('user=lrl&password=123');
 </script>
