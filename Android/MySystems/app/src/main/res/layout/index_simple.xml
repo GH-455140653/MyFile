@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,3">
+
+        <TableRow>
+            <TextView />
+            <ImageView
+                android:id="@+id/index_smp_photo"
+                android:layout_width="200px"
+                android:layout_height="200px" />
+
+            <TextView
+                android:id="@+id/index_smp_text"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center"
+                android:minWidth="250sp"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

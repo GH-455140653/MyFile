@@ -1,0 +1,31 @@
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\BLL.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\BLL.pdb
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\DAL.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\Model.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\DAL.pdb
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\bin\Debug\Model.pdb
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\obj\Debug\BLL.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\BLL\obj\Debug\BLL.pdb
+D:\QQFileDownload\mybbs\BLL\bin\Debug\BLL.dll
+D:\QQFileDownload\mybbs\BLL\bin\Debug\BLL.pdb
+D:\QQFileDownload\mybbs\BLL\bin\Debug\DAL.dll
+D:\QQFileDownload\mybbs\BLL\bin\Debug\Model.dll
+D:\QQFileDownload\mybbs\BLL\bin\Debug\DAL.pdb
+D:\QQFileDownload\mybbs\BLL\bin\Debug\Model.pdb
+D:\QQFileDownload\mybbs\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\QQFileDownload\mybbs\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QQFileDownload\mybbs\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\QQFileDownload\mybbs\BLL\obj\Debug\BLL.dll
+D:\QQFileDownload\mybbs\BLL\obj\Debug\BLL.pdb
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\BLL.dll
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\BLL.pdb
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\DAL.dll
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\Model.dll
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\DAL.pdb
+D:\MyData\MyProgram\ASP Program\Project\BLL\bin\Debug\Model.pdb
+D:\MyData\MyProgram\ASP Program\Project\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\MyData\MyProgram\ASP Program\Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\MyData\MyProgram\ASP Program\Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\MyData\MyProgram\ASP Program\Project\BLL\obj\Debug\BLL.dll
+D:\MyData\MyProgram\ASP Program\Project\BLL\obj\Debug\BLL.pdb

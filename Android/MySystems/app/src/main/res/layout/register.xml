@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_gravity="center"
+        android:background="@drawable/register_font" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,4">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView />
+
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rgt_name"
+                android:textSize="30sp" />
+
+
+            <EditText
+                android:id="@+id/rgt_get_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_account"
+                android:maxWidth="250sp"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="25sp" />
+
+            <TextView android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_password"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/rgt_get_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_password"
+                android:inputType="number"
+                android:maxWidth="250sp"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/rgt_cb_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="register"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:text="@string/login_register_btn"
+        android:textSize="30sp" />
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/user_query_iv"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_add_font" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,3">
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_username"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/user_add_username_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_query_usernameHint"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_userSex"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/user_add_userSex_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/user_query_usernameHint"
+                android:minWidth="250sp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/user_add_man_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="男"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/user_add_woman_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textSize="30sp" />
+
+            </RadioGroup>
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_userTel"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/user_add_userTel_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_query_userTelHint"
+                android:inputType="number"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_userIdNum"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/user_add_userIdNum_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_query_userIdNumHint"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_userDate"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/user_add_userDate_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:hint="@string/user_query_userDateHint"
+                android:inputType="datetime"
+                android:minWidth="250sp"
+                android:singleLine="false"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/user_query_userAddress"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/user_add_userAddress_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_query_userAddressHint"
+                android:inputType="textMultiLine"
+                android:maxWidth="250sp"
+                android:singleLine="false"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/user_query_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="query"
+            android:paddingLeft="100sp"
+            android:paddingRight="100sp"
+            android:text="添加/修改"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,3">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:src="@drawable/finance_add_font" />
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_houseNum"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/finance_add_houseNum_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="250sp"
+                android:spinnerMode="dialog"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_userName"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/finance_add_userName_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="250sp"
+                android:spinnerMode="dialog"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_date"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_date_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_dateHint"
+                android:inputType="date"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_netRant"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_netRant_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_netRantHint"
+                android:inputType="date"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_houseRant"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_houseRant_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_houseRantHint"
+                android:inputType="date"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_preEle"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_preEle_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_preEle_ed"
+                android:inputType="numberDecimal"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_preWat"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_preWat_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_preWatHint"
+                android:inputType="numberDecimal"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_nowEle"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_nowEle_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_nowEleHint"
+                android:inputType="numberDecimal"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/finance_add_nowWat"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/finance_add_nowWat_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/finance_add_nowWatHint"
+                android:inputType="numberDecimal"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="add"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:text="添加"
+        android:textSize="25sp" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mysystems">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".IndexActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/activity_MemberCenter"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".UserActivity"
+            android:label="@string/activity_UserManager"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".User_add"
+            android:label="@string/activity_UserAdd"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".User_update"
+            android:label="@string/activity_UserUpdate"
+            android:parentActivityName=".UserActivity" />
+        <activity
+            android:name=".HouseActivity"
+            android:label="@string/activity_HouseManager"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".House_add"
+            android:label="@string/activity_HouseAdd"
+            android:parentActivityName=".HouseActivity" />
+        <activity
+            android:name=".House_update"
+            android:label="@string/activity_HouseUpdate"
+            android:parentActivityName=".HouseActivity" />
+        <activity
+            android:name=".FinanceActivity"
+            android:label="@string/activity_RantManager"
+            android:parentActivityName=".IndexActivity" />
+        <activity
+            android:name=".Finance_add"
+            android:label="@string/activity_FinanceAdd"
+            android:parentActivityName=".FinanceActivity" />
+        <activity
+            android:name=".Finance_show"
+            android:label="@string/activity_FinanceShow"
+            android:parentActivityName=".FinanceActivity" />
+
+    </application>
+</manifest>

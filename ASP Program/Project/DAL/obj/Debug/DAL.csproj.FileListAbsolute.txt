@@ -1,0 +1,25 @@
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\bin\Debug\DAL.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\bin\Debug\DAL.pdb
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\bin\Debug\Model.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\bin\Debug\Model.pdb
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\obj\Debug\DAL.dll
+C:\Users\23190\Documents\Visual Studio 2015\Projects\mybbs\DAL\obj\Debug\DAL.pdb
+D:\QQFileDownload\mybbs\DAL\bin\Debug\DAL.dll
+D:\QQFileDownload\mybbs\DAL\bin\Debug\DAL.pdb
+D:\QQFileDownload\mybbs\DAL\bin\Debug\Model.dll
+D:\QQFileDownload\mybbs\DAL\bin\Debug\Model.pdb
+D:\QQFileDownload\mybbs\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\QQFileDownload\mybbs\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QQFileDownload\mybbs\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\QQFileDownload\mybbs\DAL\obj\Debug\DAL.dll
+D:\QQFileDownload\mybbs\DAL\obj\Debug\DAL.pdb
+D:\MyData\MyProgram\ASP Program\Project\DAL\bin\Debug\DAL.dll
+D:\MyData\MyProgram\ASP Program\Project\DAL\bin\Debug\DAL.pdb
+D:\MyData\MyProgram\ASP Program\Project\DAL\bin\Debug\Model.dll
+D:\MyData\MyProgram\ASP Program\Project\DAL\bin\Debug\Model.pdb
+D:\MyData\MyProgram\ASP Program\Project\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\MyData\MyProgram\ASP Program\Project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\MyData\MyProgram\ASP Program\Project\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\MyData\MyProgram\ASP Program\Project\DAL\obj\Debug\DAL.dll
+D:\MyData\MyProgram\ASP Program\Project\DAL\obj\Debug\DAL.pdb

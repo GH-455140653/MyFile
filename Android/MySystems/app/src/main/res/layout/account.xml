@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="0,3,4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:src="@drawable/account_font" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="数据无价，谨慎操作！"
+            android:textSize="20sp" />
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/account_account"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/account_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/account_act_hint"
+                android:minWidth="250sp"
+                android:singleLine="true" />
+
+            <TextView android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_password"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/account_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/account_pwd_hint"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+
+            <Switch
+                android:id="@+id/account_pwd_switch"
+                android:showText="false" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_pwdSure"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/account_pwdSure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/account_pwdSure_hint"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+
+            <Switch
+                android:id="@+id/account_pwdSure_switch"
+                android:showText="false" />
+
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:layout_span="2" />
+
+            <Button
+                android:onClick="modify"
+                android:text="@string/account_modify"
+                android:textSize="20sp" />
+
+            <TextView android:layout_span="2" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

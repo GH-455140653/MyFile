@@ -1,0 +1,21 @@
+﻿body {
+    background: url("../../img/img-c6a7586fb0240accf314ee84ccee4e89.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+a:link {
+    color: #00FF00;
+}
+
+a:visited {
+    color: #FF0000;
+}
+
+a:hover {
+    color: #FF00FF;
+}
+
+a:active {
+    color: #0000FF;
+}

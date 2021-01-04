@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="index_lv">
+        <item>个人中心</item>
+        <item>租客信息</item>
+        <item>房屋管理</item>
+        <item>财务管理</item>
+        <item>退出系统</item>>
+    </string-array>
+</resources>

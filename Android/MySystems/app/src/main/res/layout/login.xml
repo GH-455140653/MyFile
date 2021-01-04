@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30sp"
+        android:src="@drawable/login_font" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_account"
+                android:textSize="30sp" />
+
+
+            <EditText
+                android:id="@+id/get_account"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_account"
+                android:maxWidth="250sp"
+                android:minWidth="250sp"
+                android:singleLine="true"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_password"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/get_password"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_password"
+                android:inputType="number"
+                android:maxWidth="250sp"
+                android:minWidth="250sp"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="25sp"
+                tools:ignore="TextFields" />
+
+            <CheckBox
+                android:id="@+id/cb_pwd_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </CheckBox>
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/login_rmb_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:text="@string/login_rmb_pwd"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="register"
+            android:paddingLeft="50sp"
+            android:paddingRight="50sp"
+            android:text="@string/login_register_btn"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50sp"
+            android:paddingRight="50sp"
+            android:text="@string/login_btn_submit"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_bug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:text="@string/login_link_bug"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>
