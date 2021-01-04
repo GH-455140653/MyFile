@@ -1,0 +1,19 @@
+$RECYCLE.BIN
+backup
+BaiduNetdiskDownload
+game
+netEasyDownload
+pe盘
+Program Files (x86)
+QQ FileDownload
+QQMusicCache
+QQMusicDownload
+System Volume Information
+UltralSo
+u盘
+WeGameApps
+背景图
+英雄时刻
+虎牙录像
+迅雷下载
+镜像

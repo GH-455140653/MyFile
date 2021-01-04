@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>userHandle</servlet-name>
+<!--        <servlet-class>com.dqpi.Handle.indexHandle</servlet-class>-->
+        <servlet-class>com.dqpi.Handle.PageHandle.indexHandle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userHandle</servlet-name>
+        <url-pattern>/userhandle</url-pattern>
+    </servlet-mapping>
+</web-app>

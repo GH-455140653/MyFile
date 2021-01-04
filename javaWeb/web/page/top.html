@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+.font2 {font-size: 12px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/bt2-a.jpg','images/bt1-a.jpg','images/bt3-a.jpg','images/bt4-a.jpg','images/bt6-a.jpg','images/bt7-a.jpg','images/bt8-a.jpg','images/bt5-a.jpg','images/bt9-a.jpg')">
+<table width="917" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="917" height="215"><img src="images/banner.jpg" width="917" height="215" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><a href="index.jsp" target="_top" onclick="MM_nbGroup('down','group1','menu2','images/bt2-a.jpg',1)" onmouseover="MM_nbGroup('over','menu2','images/bt2-a.jpg','images/bt2-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt2.jpg" alt="" name="menu2" width="117" height="28" border="0" id="menu2" onload="" /></a></td>
+        <td><a href="photo.jsp" target="_top" onclick="MM_nbGroup('down','group1','menu1','images/bt1-a.jpg',1)" onmouseover="MM_nbGroup('over','menu1','images/bt1-a.jpg','images/bt1-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt1.jpg" alt="" name="menu1" width="100" height="28" border="0" id="menu1" onload="" /></a></td>
+        <td><a href="journal.jsp" target="_top" onclick="MM_nbGroup('down','group1','menu3','images/bt3-a.jpg',1)" onmouseover="MM_nbGroup('over','menu3','images/bt3-a.jpg','images/bt3-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt3.jpg" alt="" name="menu3" width="100" height="28" border="0" id="menu3" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','menu43','images/bt4-a.jpg',1)" onmouseover="MM_nbGroup('over','menu43','images/bt4-a.jpg','images/bt4-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt4.jpg" alt="" name="menu43" width="100" height="28" border="0" id="menu" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','menu6','images/bt6-a.jpg',1)" onmouseover="MM_nbGroup('over','menu6','images/bt6-a.jpg','images/bt6-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt6.jpg" alt="" name="menu6" border="0" id="menu6" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','menu72','images/bt7-a.jpg',1)" onmouseover="MM_nbGroup('over','menu72','images/bt7-a.jpg','images/bt7-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt7.jpg" alt="" name="menu72" width="100" height="28" border="0" id="menu6" onload="" /></a></td>
+        <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','menu82','images/bt8-a.jpg',1)" onmouseover="MM_nbGroup('over','menu82','images/bt8-a.jpg','images/bt8-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt8.jpg" alt="" name="menu82" width="100" height="28" border="0" id="menu62" onload="" /></a></td>
+        <td><a href="vote.jsp" target="_top" onclick="MM_nbGroup('down','group1','menu52','images/bt5-a.jpg',1)" onmouseover="MM_nbGroup('over','menu52','images/bt5-a.jpg','images/bt5-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt5.jpg" alt="" name="menu52" width="100" height="28" border="0" id="menu7" onload="" /></a></td>
+        <td><a href="mailto:dqpidj@163.com" target="_top" onclick="MM_nbGroup('down','group1','menu9','images/bt9-a.jpg',1)" onmouseover="MM_nbGroup('over','menu9','images/bt9-a.jpg','images/bt9-a.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/bt9.jpg" alt="images/bt9-a.jpg" name="menu9" width="100" height="28" border="0" id="menu8" onload="" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

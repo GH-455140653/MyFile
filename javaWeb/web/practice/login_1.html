@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<style>
+    #div_img {
+        margin: 10% 30% 2% 47%;
+        width: 128px;
+        height: 128px;
+        background-image: url("./icon/login.png")
+    }
+
+    body {
+        background: #E9E7EF;
+    }
+
+    div input {
+        border: 1px solid #ccc; /*设置输入框边框，边缘线的颜色、大小、及实线虚线*/
+        /*设置输入框高度，也可以用height，但是用height的话，输入框的光标会置于顶部，还要设置其他样式去固定，而且还不一定会兼容很好*/
+        border-radius: 3px; /*这个属性石css3里面的,IE不支持*/
+        /*让广告距离左边5个像素，一开始光标是贴着左边输入框的边缘的*/
+        padding: 7px 0 7px 5px;
+    }
+
+    #div_main {
+        text-align: center;
+    }
+
+    .input_box {
+        height: 30px;
+        width: 200px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 95px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    window.onload = function () {
+        var responseMV="<%=reMV%>";
+    }
+
+    function submitOnClick() {
+        var account = document.getElementById("Account").value;
+        var password = document.getElementById("Password").value;
+        if (account === "" || password === "") {
+            alert("账号密码存在空值！");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    document.onkeydown = function (e) {
+        const theEvent = window.event || e;
+        const code = theEvent.keyCode || theEvent.which;
+        if (code === 13) {
+            $("#submit").click();
+        }
+    }
+</script>
+<body>
+<div id="div_img"></div>
+<div id="div_main">
+    <form action="handle.jsp" method="post" onsubmit="return submitOnClick()">
+        账号：<input type="text" placeholder="请输入账号" class="input_box" id="Account" name="Account"><br>
+        密码：<input type="password" placeholder="请输入密码" class="input_box" id="Password" name="Password"><br>
+        <input type="submit" value="登陆" class="btn" style="margin: 10px 0 0 137px">
+        <input type="reset" value="清空" class="btn">
+        <input type="checkbox" id="Checkbox"/>记住密码
+    </form>
+</div>
+</body>
+</html>

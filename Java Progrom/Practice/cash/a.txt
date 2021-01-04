@@ -1,0 +1,3 @@
+AA BB CC
+BB AA CC
+BB CC AA
